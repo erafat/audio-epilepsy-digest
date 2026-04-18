@@ -466,6 +466,10 @@ hr { border: 0; margin: 2.5rem 0; }
   .mic { width: 28px; height: 40px; }
   .host-name { font-size: .85rem; }
   .onair, .studio-clock { font-size: .62rem; }
+  .onair {
+    transform: scale(.7);
+    transform-origin: top left;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
