@@ -115,7 +115,7 @@ hr { border: 0; margin: 2.5rem 0; }
 
 .masthead-top {
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  grid-template-columns: 1fr;
   align-items: center;
   font-family: var(--mono);
   font-size: .72rem;
@@ -126,9 +126,10 @@ hr { border: 0; margin: 2.5rem 0; }
   border-bottom: 1px solid var(--rule-soft);
   margin-bottom: 1.5rem;
 }
-.masthead-top > :nth-child(1) { text-align: left; }
-.masthead-top > :nth-child(2) { text-align: center; }
-.masthead-top > :nth-child(3) { text-align: right; }
+.masthead-top > :nth-child(1) {
+  text-align: left;
+  white-space: nowrap;
+}
 .masthead-top .dot {
   display: inline-block;
   width: .45rem; height: .45rem;
@@ -1333,7 +1334,7 @@ body.density-roomy .studio.studio--banner {
 
 @media (max-width: 720px) {
   .studio.studio--banner .onair {
-    transform: scale(.7);
+    transform: scale(.49);
     transform-origin: top left;
   }
 }
@@ -1543,8 +1544,6 @@ body.density-roomy .studio.studio--banner {
   <header class="masthead">
     <div class="masthead-top">
       <span><span class="dot"></span>New issue · Mon 6 April</span>
-      <span>Audio Epilepsy Digest</span>
-      <span></span>
     </div>
 
     <div class="nameplate">
@@ -1642,14 +1641,13 @@ body.density-roomy .studio.studio--banner {
           </g>
           <line x1="60" y1="520" x2="540" y2="520" stroke="#e8dbb5" opacity=".4"/>
           <text x="60" y="545" font-family="IBM Plex Mono, monospace" font-size="12" letter-spacing="3" fill="#e8dbb5">AUDIO · EPILEPSY · DIGEST</text>
-          <text x="540" y="545" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="12" letter-spacing="3" fill="#e8dbb5">21:59</text>
         </svg>
       </div>
       <p class="feature-caption">Episode 02 · Composed in Atlanta.</p>
     </aside>
 
     <div class="feature-body">
-      <p class="kicker">In the current issue · Running time 21:59</p>
+      <p class="kicker">In the current issue</p>
       <h2 class="feature-title">What seizure counts miss.</h2>
       <div class="feature-dek">
         <p>
@@ -1672,19 +1670,15 @@ body.density-roomy .studio.studio--banner {
         <ol class="feature-topics">
           <li>
             <span>When pediatric status epilepticus should prompt a stronger genetics-first lens.</span>
-            <span class="stamp">02:14</span>
           </li>
           <li>
             <span>What the accelerated long-term forgetting paper shows — and does not show — about early memory burden.</span>
-            <span class="stamp">06:48</span>
           </li>
           <li>
             <span>Why ASM dose-response ought to remain drug-specific rather than assumed uniform.</span>
-            <span class="stamp">12:33</span>
           </li>
           <li>
             <span>Why the diazepam nasal spray SEIVAL paper matters more for endpoint design than for immediate prescribing.</span>
-            <span class="stamp">17:05</span>
           </li>
         </ol>
       </div>
@@ -1704,7 +1698,7 @@ body.density-roomy .studio.studio--banner {
 
   <!-- ============ ARCHIVE ============ -->
   <section id="archive" class="archive" data-screen-label="Back issues">
-    <h3 class="section-title">Back issues <span class="count">1 issue · updated weekly</span></h3>
+    <h3 class="section-title">Back issues <span class="count">1 issue</span></h3>
     <ol class="archive-list">
 
       <li class="archive-item archive-item--expandable" data-expanded="false">
@@ -1712,8 +1706,6 @@ body.density-roomy .studio.studio--banner {
           <div class="archive-body">
             <p class="archive-meta">
               <span class="tag">Special</span>
-              <span>23:36</span>
-              <span>3 April 2026</span>
             </p>
             <h4 class="archive-title">Thalamic sEEG — standard of care, or research?</h4>
             <p class="archive-dek">
@@ -1723,41 +1715,29 @@ body.density-roomy .studio.studio--banner {
               forcing false consensus.
             </p>
           </div>
-          <div class="archive-actions">
-            <button class="archive-play archive-expand-btn" aria-label="Expand episode 01">
-              <svg class="icon-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-              <svg class="icon-close" viewBox="0 0 24 24" style="display:none"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
-            </button>
-          </div>
-
         <div class="archive-expand-panel">
           <div class="archive-expand-inner">
 
             <iframe style="border-radius:8px; margin-bottom:1.25rem;" src="https://open.spotify.com/embed/episode/6FO9UVsw5y87k1qYFKNjDx?utm_source=generator&theme=0" width="100%" height="152" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
-            <p class="kicker" style="margin-bottom:.5rem;">In this discussion · 5 perspectives · 23:36</p>
+            <p class="kicker" style="margin-bottom:.5rem;">In this discussion · 5 perspectives</p>
 
             <div class="feature-chapters" style="margin-bottom:1rem;">
               <ol class="feature-topics">
                 <li>
                   <span>Should thalamic recording be standard practice or IRB-approved research in stereoEEG?</span>
-                  <span class="stamp">00:00</span>
                 </li>
                 <li>
                   <span>Is thalamic stereoEEG evaluation justified in routine clinical practice?</span>
-                  <span class="stamp">05:10</span>
                 </li>
                 <li>
                   <span>Thalamic sEEG as a clinically justified extension of hypothesis-driven intracranial exploration.</span>
-                  <span class="stamp">10:20</span>
                 </li>
                 <li>
                   <span>How thalamic stereoEEG optimizes neurostimulation therapy planning.</span>
-                  <span class="stamp">16:45</span>
                 </li>
                 <li>
                   <span>The broader role of thalamic sEEG in epilepsy clinical practice.</span>
-                  <span class="stamp">20:30</span>
                 </li>
               </ol>
             </div>
@@ -1779,8 +1759,6 @@ body.density-roomy .studio.studio--banner {
         <div class="archive-body">
           <p class="archive-meta">
             <span class="tag">Prologue</span>
-            <span>08:12</span>
-            <span>27 March 2026</span>
           </p>
           <h4 class="archive-title">Why a weekly audio briefing, now.</h4>
           <p class="archive-dek">
@@ -1790,9 +1768,6 @@ body.density-roomy .studio.studio--banner {
           </p>
         </div>
         <div class="archive-actions">
-          <button class="archive-play" aria-label="Play episode 00">
-            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-          </button>
           <p class="archive-links">
             <a href="#">Show notes</a>
             <a href="#">Download</a>
@@ -1833,8 +1808,6 @@ body.density-roomy .studio.studio--banner {
           <dd>Primary literature, full-text preferred.</dd>
           <dt>Cadence</dt>
           <dd>One brief per week, Monday mornings.</dd>
-          <dt>Length</dt>
-          <dd>15–25 minutes.</dd>
           <dt>Corrections</dt>
           <dd>Logged in the following issue.</dd>
         </dl>
@@ -1848,7 +1821,7 @@ body.density-roomy .studio.studio--banner {
   <section id="subscribe" class="subscribe" data-screen-label="Subscribe">
     <div>
       <p class="subscribe-head">Subscribe</p>
-      <p class="subscribe-title">A new briefing, every Monday at 07:00 CT.</p>
+      <p class="subscribe-title">A new briefing, every Monday.</p>
       <p class="subscribe-note">No tracking · No ads · Cancel anytime with `unsubscribe`.</p>
     </div>
     <div class="subscribe-buttons">
@@ -1998,11 +1971,13 @@ try { window.parent.postMessage({type:'__edit_mode_available'}, '*'); } catch(e)
 /* Expandable archive items */
 document.querySelectorAll('.archive-item--expandable').forEach(item => {
   const btn = item.querySelector('.archive-expand-btn');
-  btn.addEventListener('click', e => {
-    e.stopPropagation();
-    const expanded = item.dataset.expanded === 'true';
-    item.dataset.expanded = expanded ? 'false' : 'true';
-  });
+  if (btn) {
+    btn.addEventListener('click', e => {
+      e.stopPropagation();
+      const expanded = item.dataset.expanded === 'true';
+      item.dataset.expanded = expanded ? 'false' : 'true';
+    });
+  }
   item.addEventListener('click', () => {
     const expanded = item.dataset.expanded === 'true';
     item.dataset.expanded = expanded ? 'false' : 'true';

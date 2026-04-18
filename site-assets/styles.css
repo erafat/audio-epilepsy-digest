@@ -88,7 +88,7 @@ hr { border: 0; margin: 2.5rem 0; }
 
 .masthead-top {
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  grid-template-columns: 1fr;
   align-items: center;
   font-family: var(--mono);
   font-size: .72rem;
@@ -99,9 +99,10 @@ hr { border: 0; margin: 2.5rem 0; }
   border-bottom: 1px solid var(--rule-soft);
   margin-bottom: 1.5rem;
 }
-.masthead-top > :nth-child(1) { text-align: left; }
-.masthead-top > :nth-child(2) { text-align: center; }
-.masthead-top > :nth-child(3) { text-align: right; }
+.masthead-top > :nth-child(1) {
+  text-align: left;
+  white-space: nowrap;
+}
 .masthead-top .dot {
   display: inline-block;
   width: .45rem; height: .45rem;
@@ -467,7 +468,7 @@ hr { border: 0; margin: 2.5rem 0; }
   .host-name { font-size: .85rem; }
   .onair, .studio-clock { font-size: .62rem; }
   .onair {
-    transform: scale(.7);
+    transform: scale(.49);
     transform-origin: top left;
   }
 }
