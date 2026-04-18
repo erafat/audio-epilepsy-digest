@@ -647,7 +647,9 @@ hr { border: 0; margin: 2.5rem 0; }
   font-size: 4.4rem;
   line-height: .88;
   color: var(--accent);
-  margin: .22rem .5rem -.1rem 0;
+  margin: 0 .5rem -.1rem 0;
+  position: relative;
+  top: 10px;
 }
 
 /* ---------- Custom audio player ---------- */
@@ -831,10 +833,48 @@ hr { border: 0; margin: 2.5rem 0; }
 .feature-byline .divider { color: var(--ink-mute); opacity: .5; }
 
 @media (max-width: 860px) {
-  .feature { grid-template-columns: 1fr; gap: 2rem; }
-  .feature-cover { position: static; max-width: 18rem; }
+  .feature { display: block; }
+  .feature-cover {
+    position: static;
+    max-width: none;
+    float: left;
+    width: clamp(6.25rem, 30vw, 8rem);
+    margin: 0 1rem .75rem 0;
+  }
+  .feature-body { max-width: none; }
+  .feature-caption {
+    font-size: .62rem;
+    letter-spacing: .02em;
+    line-height: 1.35;
+  }
+  .kicker,
+  .feature-title {
+    margin-left: calc(clamp(6.25rem, 30vw, 8rem) + 1rem);
+  }
+  .feature-title {
+    font-size: clamp(1.9rem, 7vw, 2.4rem);
+    margin-bottom: 1rem;
+  }
+  .feature-dek,
+  .player,
+  .feature-chapters,
+  .feature-byline {
+    clear: both;
+    margin-left: 0;
+  }
   .player { grid-template-columns: auto 1fr; }
   .player-meta { display: none; }
+}
+
+@media (max-width: 360px) {
+  .feature-title {
+    font-size: 1.7rem;
+    line-height: 1.05;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+  }
 }
 
 /* =========================================================
@@ -1596,7 +1636,7 @@ body.density-roomy .studio.studio--banner {
       <div class="feature-cover-frame">
         <img src="site-assets/episode-2-cover.png" alt="Audio Epilepsy Digest — No. 02 cover" style="width:100%;height:100%;object-fit:cover;display:block;">
       </div>
-      <p class="feature-caption">Episode 02 · Composed in Atlanta.</p>
+      <p class="feature-caption">Episode 02 · Composed in Atlanta</p>
     </aside>
 
     <div class="feature-body">
