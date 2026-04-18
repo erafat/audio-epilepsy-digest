@@ -468,6 +468,7 @@ hr { border: 0; margin: 2.5rem 0; }
   .host-name { font-size: .85rem; }
   .onair, .studio-clock { font-size: .62rem; }
   .onair {
+    left: -.4rem;
     transform: scale(.49);
     transform-origin: top left;
   }
