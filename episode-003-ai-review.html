@@ -6,13 +6,13 @@
 <title>AI-Assisted Source Review · Episode 3 · Audio Epilepsy Digest</title>
 <meta name="description" content="Public AI-assisted source review report for Audio Epilepsy Digest episode 3.">
 <meta name="theme-color" content="#faf5e8">
-<link rel="canonical" href="https://erafat.github.io/audio-epilepsy-digest/episode-003-ai-review.html">
+<link rel="canonical" href="https://audioepilepsydigest.com/episode-003-ai-review.html">
 <link rel="icon" type="image/png" sizes="32x32" href="site-assets/favicon-32.png">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://erafat.github.io/audio-epilepsy-digest/episode-003-ai-review.html">
+<meta property="og:url" content="https://audioepilepsydigest.com/episode-003-ai-review.html">
 <meta property="og:title" content="AI-Assisted Source Review · Episode 3">
 <meta property="og:description" content="How AED reviewed episode 3 against the full-text source packet before human listening QA.">
-<meta property="og:image" content="https://erafat.github.io/audio-epilepsy-digest/site-assets/aed-social-card.png">
+<meta property="og:image" content="https://audioepilepsydigest.com/site-assets/aed-social-card.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -244,9 +244,9 @@ footer {
   <header>
     <p class="kicker">AI-Assisted Editorial Review</p>
     <h1>Episode 3 Source Review</h1>
-    <p class="deck">How AED reviewed the episode against the full-text source packet before human listening QA.</p>
+    <p class="deck">What was checked against the published papers, what was corrected, and what caveats listeners should keep in mind.</p>
     <div class="notice">
-      This is not independent peer review. It is an AI-assisted editorial and source-fidelity review against the full-text papers used to generate the episode.
+      This is not independent peer review. It is an internal editorial check — AI-assisted — to verify that the spoken audio stays faithful to what the published studies actually found.
     </div>
   </header>
 
@@ -260,7 +260,7 @@ footer {
 
     <section>
       <h2>Evidence Standard</h2>
-      <p>The episode was reviewed against full-text markdown versions of the four source articles, plus an episode-specific study-interpretation guardrail. Abstracts, citation metadata, and AI summaries were not treated as sufficient evidence.</p>
+      <p>The episode was reviewed against the full text of the four source articles — not abstracts or summaries — to catch places where the audio could misrepresent scope, effect size, or clinical implications.</p>
       <ol>
         <li>Caplan R, et al. “Association of Interictal Respiratory Variability and Severity of Postictal Hypoxemia After Generalized Convulsive Seizures.” <em>Neurology</em> (2026). PMID: 41805401. PMCID: PMC13034677.</li>
         <li>Cousyn L, et al. “Out of the lab, into real life: Evaluating at-home EEG self-monitoring.” <em>Epilepsia Open</em> (2026). PMID: 41701004. PMCID: PMC13052238.</li>
@@ -272,11 +272,11 @@ footer {
     <section>
       <h2>Process</h2>
       <div class="grid">
-        <div class="card"><span class="label">Step 1</span><strong>Generate from full text</strong><p class="fine">NotebookLM received the four source papers, producer brief, and study guardrails.</p></div>
-        <div class="card"><span class="label">Step 2</span><strong>Transcribe audio</strong><p class="fine">The audio was transcribed with direct WhisperKit CLI using the local MacWhisper-cached model path.</p></div>
-        <div class="card"><span class="label">Step 3</span><strong>Audit claims</strong><p class="fine">Spoken claims were checked against the source packet and classified by severity.</p></div>
+        <div class="card"><span class="label">Step 1</span><strong>Generate from full text</strong><p class="fine">The episode was generated directly from the four source papers, with explicit instructions to preserve study scope and avoid overstating findings.</p></div>
+        <div class="card"><span class="label">Step 2</span><strong>Transcribe audio</strong><p class="fine">The audio was converted to text so spoken claims could be checked line by line against the papers.</p></div>
+        <div class="card"><span class="label">Step 3</span><strong>Audit claims</strong><p class="fine">Each spoken claim was traced back to the source text and flagged if it overstated, misrepresented, or went beyond what the study supported.</p></div>
       </div>
-      <p>Each candidate received one forced gate verdict: <code>pass</code>, <code>pass_with_minor_edits</code>, <code>revise_before_human_QA</code>, or <code>regenerate_audio</code>.</p>
+      <p>Each draft received one editorial verdict: <em>cleared</em>, <em>cleared with minor notes</em>, <em>needs revision</em>, or <em>re-record required</em>. A draft could not advance until accuracy issues were resolved.</p>
     </section>
 
     <section>
@@ -287,19 +287,19 @@ footer {
         </thead>
         <tbody>
           <tr>
-            <td>First audio candidate</td>
-            <td><code>regenerate_audio</code></td>
-            <td>Source-fidelity blockers were found around respiratory/SUDEP mechanism language, home EEG equivalence, depression-screening language, mood-mechanism causality, and practice-mandate wording.</td>
+            <td>First draft</td>
+            <td>Re-record required</td>
+            <td>Accuracy problems found in respiratory/SUDEP mechanism language, home EEG equivalence, depression-screening language, mood-mechanism causality, and practice-mandate wording.</td>
           </tr>
           <tr>
-            <td>Second audio candidate</td>
-            <td><code>regenerate_audio</code></td>
-            <td>Major problems improved, but the patient-burden section still crossed from screening and underrecognition into unsupported treatment-status and causal language.</td>
+            <td>Second draft</td>
+            <td>Re-record required</td>
+            <td>Major problems improved, but the patient-burden section still crossed from screening and under-recognition into unsupported treatment-status and causal language.</td>
           </tr>
           <tr>
-            <td>Third audio candidate</td>
-            <td><code>pass_with_minor_edits</code></td>
-            <td>No unresolved <code>P0</code> or <code>P1</code> issues remained. The prior patient-burden blockers were fixed. Minor caveats were moved into the show notes.</td>
+            <td>Third draft</td>
+            <td>Cleared with minor notes</td>
+            <td>All prior accuracy blockers were fixed. The patient-burden language was corrected. Remaining minor caveats were carried into the show notes rather than blocking release.</td>
           </tr>
         </tbody>
       </table>
@@ -307,8 +307,8 @@ footer {
 
     <section>
       <h2>Final Result</h2>
-      <p><span class="verdict">Verdict: pass_with_minor_edits</span></p>
-      <p>No unresolved <code>P0</code> or <code>P1</code> source-fidelity issues were found in the staged third candidate.</p>
+      <p><span class="verdict">Verdict: Cleared with minor notes</span></p>
+      <p>No unresolved accuracy issues were found in the final draft. The episode faithfully represents what the source studies found.</p>
       <h3>Minor caveats carried into the show notes</h3>
       <ul>
         <li>Respiratory variability was associated with postictal hypoxemia after generalized convulsive seizures. It should not be treated as a standalone individual SUDEP prediction tool.</li>
