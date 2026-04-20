@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI-Assisted Source Review · Episode 3 · Audio Epilepsy Digest</title>
+<meta name="description" content="Public AI-assisted source review report for Audio Epilepsy Digest episode 3.">
+<meta name="theme-color" content="#faf5e8">
+<link rel="canonical" href="https://erafat.github.io/audio-epilepsy-digest/episode-003-ai-review.html">
+<link rel="icon" type="image/png" sizes="32x32" href="site-assets/favicon-32.png">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://erafat.github.io/audio-epilepsy-digest/episode-003-ai-review.html">
+<meta property="og:title" content="AI-Assisted Source Review · Episode 3">
+<meta property="og:description" content="How AED reviewed episode 3 against the full-text source packet before human listening QA.">
+<meta property="og:image" content="https://erafat.github.io/audio-epilepsy-digest/site-assets/aed-social-card.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper: #faf5e8;
+  --paper-card: #f6efdc;
+  --ink: #15191f;
+  --body: #2a2c2b;
+  --soft: #5a564a;
+  --rule: #b8ad97;
+  --rule-soft: #d7ccb4;
+  --accent: #a63323;
+  --teal: #1f5a5f;
+  --gold: #b58a1e;
+  --serif: "Newsreader", Georgia, "Times New Roman", serif;
+  --sans: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--body);
+  font-family: var(--serif);
+  font-size: 19px;
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+  background-image:
+    radial-gradient(circle at 10% 0%, rgba(166,51,35,.05), transparent 34rem),
+    radial-gradient(circle at 92% 18%, rgba(31,90,95,.05), transparent 34rem);
+}
+a {
+  color: var(--accent);
+  text-decoration-color: rgba(166,51,35,.35);
+  text-underline-offset: .18em;
+}
+.page {
+  max-width: 62rem;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+.topline {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 1px solid var(--rule-soft);
+  padding-bottom: .75rem;
+  color: var(--soft);
+  font-family: var(--mono);
+  font-size: .72rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.brand {
+  color: var(--ink);
+  font-weight: 600;
+}
+header {
+  padding: 3rem 0 2rem;
+  border-bottom: 5px double var(--ink);
+}
+.kicker {
+  font-family: var(--mono);
+  color: var(--accent);
+  font-size: .76rem;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  margin: 0 0 .8rem;
+}
+h1 {
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  line-height: .95;
+  font-weight: 520;
+  letter-spacing: -0.02em;
+}
+.deck {
+  max-width: 44rem;
+  margin: 1.2rem 0 0;
+  font-size: 1.2rem;
+  color: var(--soft);
+}
+.notice {
+  margin: 1.75rem 0 0;
+  padding: 1rem 1.15rem;
+  border-left: 4px solid var(--accent);
+  background: rgba(166,51,35,.08);
+  font-family: var(--sans);
+  font-size: .98rem;
+}
+main {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 2.2rem;
+  padding-top: 2.25rem;
+}
+section {
+  border-top: 1px solid var(--rule-soft);
+  padding-top: 1.4rem;
+}
+section:first-child { border-top: 0; padding-top: 0; }
+h2 {
+  margin: 0 0 .85rem;
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 1.05rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+h3 {
+  margin: 1.3rem 0 .45rem;
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 1rem;
+}
+p { margin: .75rem 0; }
+ul, ol { padding-left: 1.25rem; }
+li { margin: .35rem 0; }
+blockquote {
+  margin: 1.1rem 0;
+  padding: .4rem 0 .4rem 1rem;
+  border-left: 2px solid var(--rule);
+  color: var(--ink);
+  font-size: 1.22rem;
+  line-height: 1.45;
+}
+code {
+  font-family: var(--mono);
+  font-size: .92em;
+  background: rgba(31,90,95,.08);
+  padding: .05rem .25rem;
+  border-radius: 4px;
+}
+.verdict {
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  font-family: var(--mono);
+  font-size: .82rem;
+  font-weight: 600;
+  color: var(--teal);
+  border: 1px solid rgba(31,90,95,.35);
+  background: rgba(31,90,95,.08);
+  padding: .35rem .55rem;
+  border-radius: 6px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: .85rem;
+  margin: 1rem 0;
+}
+.card {
+  border: 1px solid var(--rule-soft);
+  background: rgba(246,239,220,.7);
+  border-radius: 8px;
+  padding: .9rem;
+}
+.card .label {
+  font-family: var(--mono);
+  color: var(--accent);
+  font-size: .72rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.card strong {
+  display: block;
+  margin-top: .35rem;
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: .95rem;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-family: var(--sans);
+  font-size: .92rem;
+}
+th, td {
+  border-top: 1px solid var(--rule-soft);
+  padding: .75rem .55rem;
+  vertical-align: top;
+  text-align: left;
+}
+th {
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: .72rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.fine {
+  color: var(--soft);
+  font-family: var(--sans);
+  font-size: .92rem;
+}
+footer {
+  border-top: 1px solid var(--rule-soft);
+  margin-top: 2.5rem;
+  padding-top: 1.2rem;
+  color: var(--soft);
+  font-family: var(--sans);
+  font-size: .9rem;
+}
+@media (max-width: 760px) {
+  body { font-size: 18px; }
+  .topline { display: block; }
+  .topline span { display: block; margin-bottom: .35rem; }
+  .grid { grid-template-columns: 1fr; }
+  th, td { display: block; width: 100%; }
+  th { border-top: 1px solid var(--rule); padding-bottom: .15rem; }
+  td { border-top: 0; padding-top: .15rem; }
+}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="topline">
+    <span class="brand">Audio Epilepsy Digest</span>
+    <span>Episode 003 · Source Review</span>
+  </div>
+
+  <header>
+    <p class="kicker">AI-Assisted Editorial Review</p>
+    <h1>Episode 3 Source Review</h1>
+    <p class="deck">How AED reviewed the episode against the full-text source packet before human listening QA.</p>
+    <div class="notice">
+      This is not independent peer review. It is an AI-assisted editorial and source-fidelity review against the full-text papers used to generate the episode.
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Review Goal</h2>
+      <p>The review asked a narrow question:</p>
+      <blockquote>Does the spoken audio stay faithful to the source papers, especially where clinical interpretation could be overstated?</blockquote>
+      <p>The review focused on respiratory variability and postictal hypoxemia, at-home EEG feasibility, ictal impairment of consciousness terminology, and patient-reported burden beyond seizure counts.</p>
+    </section>
+
+    <section>
+      <h2>Evidence Standard</h2>
+      <p>The episode was reviewed against full-text markdown versions of the four source articles, plus an episode-specific study-interpretation guardrail. Abstracts, citation metadata, and AI summaries were not treated as sufficient evidence.</p>
+      <ol>
+        <li>Caplan R, et al. “Association of Interictal Respiratory Variability and Severity of Postictal Hypoxemia After Generalized Convulsive Seizures.” <em>Neurology</em> (2026). PMID: 41805401. PMCID: PMC13034677.</li>
+        <li>Cousyn L, et al. “Out of the lab, into real life: Evaluating at-home EEG self-monitoring.” <em>Epilepsia Open</em> (2026). PMID: 41701004. PMCID: PMC13052238.</li>
+        <li>Marcinski Nascimento D, et al. “Persons with epilepsy and their caregivers understand the definition of ictal impairment of consciousness.” <em>Epilepsia</em> (2026). PMID: 41705916. PMCID: PMC13075620.</li>
+        <li>Wagner S, et al. “What does it mean to live with epilepsy? Burden of illness from the patient perspective.” <em>Epilepsia Open</em> (2026). PMID: 41770623. PMCID: PMC13052003.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Process</h2>
+      <div class="grid">
+        <div class="card"><span class="label">Step 1</span><strong>Generate from full text</strong><p class="fine">NotebookLM received the four source papers, producer brief, and study guardrails.</p></div>
+        <div class="card"><span class="label">Step 2</span><strong>Transcribe audio</strong><p class="fine">The audio was transcribed with direct WhisperKit CLI using the local MacWhisper-cached model path.</p></div>
+        <div class="card"><span class="label">Step 3</span><strong>Audit claims</strong><p class="fine">Spoken claims were checked against the source packet and classified by severity.</p></div>
+      </div>
+      <p>Each candidate received one forced gate verdict: <code>pass</code>, <code>pass_with_minor_edits</code>, <code>revise_before_human_QA</code>, or <code>regenerate_audio</code>.</p>
+    </section>
+
+    <section>
+      <h2>Verdict History</h2>
+      <table>
+        <thead>
+          <tr><th>Candidate</th><th>Verdict</th><th>What changed</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>First audio candidate</td>
+            <td><code>regenerate_audio</code></td>
+            <td>Source-fidelity blockers were found around respiratory/SUDEP mechanism language, home EEG equivalence, depression-screening language, mood-mechanism causality, and practice-mandate wording.</td>
+          </tr>
+          <tr>
+            <td>Second audio candidate</td>
+            <td><code>regenerate_audio</code></td>
+            <td>Major problems improved, but the patient-burden section still crossed from screening and underrecognition into unsupported treatment-status and causal language.</td>
+          </tr>
+          <tr>
+            <td>Third audio candidate</td>
+            <td><code>pass_with_minor_edits</code></td>
+            <td>No unresolved <code>P0</code> or <code>P1</code> issues remained. The prior patient-burden blockers were fixed. Minor caveats were moved into the show notes.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Final Result</h2>
+      <p><span class="verdict">Verdict: pass_with_minor_edits</span></p>
+      <p>No unresolved <code>P0</code> or <code>P1</code> source-fidelity issues were found in the staged third candidate.</p>
+      <h3>Minor caveats carried into the show notes</h3>
+      <ul>
+        <li>Respiratory variability was associated with postictal hypoxemia after generalized convulsive seizures. It should not be treated as a standalone individual SUDEP prediction tool.</li>
+        <li>At-home EEG self-monitoring supports feasibility in selected, supported patients. It does not replace routine EEG, ambulatory EEG, EMU evaluation, or expert interpretation. Interictal epileptiform discharge concordance with prior in-hospital recordings was reported for three of four IED-positive patients.</li>
+        <li>PHQ-9 and GAD-7 findings are screening results, not formal diagnoses. The patient-burden survey suggests under-recognition of mood and anxiety burden but does not establish treatment status, mechanism, or medication causality.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>What Changed</h2>
+      <ul>
+        <li>Removed or avoided language implying respiratory variability is an individual SUDEP prediction test.</li>
+        <li>Removed home EEG replacement or equivalence framing.</li>
+        <li>Preserved the limits of the consciousness terminology survey: English-speaking online respondents, comprehension rather than outcomes.</li>
+        <li>Replaced depression/anxiety diagnosis and treatment-status language with screening and under-recognition language.</li>
+        <li>Removed claims implying the patient-burden survey proved medication-caused depression.</li>
+        <li>Reframed the conclusion as a future research and care direction rather than a mandate to discard seizure diaries or deploy unproven prediction tools.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Boundaries</h2>
+      <p>This review does not certify clinical recommendations, replace human editorial judgment, replace independent expert review, transfer responsibility to the authors of the source studies, or make the episode a clinical guideline.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Audio Epilepsy Digest uses AI-assisted tools to help generate, transcribe, and source-check podcast drafts. Final editorial responsibility remains with AED. Original published articles remain the authoritative references.</p>
+    <p><a href="index.html">Back to Audio Epilepsy Digest</a></p>
+  </footer>
+</div>
+</body>
+</html>
