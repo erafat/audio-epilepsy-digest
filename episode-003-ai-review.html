@@ -223,11 +223,61 @@ footer {
   font-family: var(--sans);
   font-size: .9rem;
 }
+.fix-badge {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: .66rem;
+  font-weight: 600;
+  letter-spacing: .05em;
+  color: var(--accent);
+  background: rgba(166,51,35,.1);
+  border: 1px solid rgba(166,51,35,.25);
+  padding: .15rem .45rem;
+  border-radius: 4px;
+  vertical-align: middle;
+  margin-left: .55rem;
+}
+.fix-badge--2 {
+  color: var(--gold);
+  background: rgba(181,138,30,.1);
+  border-color: rgba(181,138,30,.3);
+}
+.diff {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .7rem;
+  margin: .85rem 0 1.6rem;
+}
+.diff-before, .diff-after {
+  padding: .8rem 1rem;
+  border-radius: 6px;
+  font-size: .97rem;
+  line-height: 1.52;
+}
+.diff-before {
+  background: rgba(166,51,35,.07);
+  border-left: 3px solid var(--accent);
+}
+.diff-after {
+  background: rgba(31,90,95,.07);
+  border-left: 3px solid var(--teal);
+}
+.diff-label {
+  font-family: var(--mono);
+  font-size: .68rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  margin: 0 0 .4rem;
+}
+.diff-before .diff-label { color: var(--accent); }
+.diff-after .diff-label { color: var(--teal); }
+.diff p:last-child { margin-bottom: 0; }
 @media (max-width: 760px) {
   body { font-size: 18px; }
   .topline { display: block; }
   .topline span { display: block; margin-bottom: .35rem; }
   .grid { grid-template-columns: 1fr; }
+  .diff { grid-template-columns: 1fr; }
   th, td { display: block; width: 100%; }
   th { border-top: 1px solid var(--rule); padding-bottom: .15rem; }
   td { border-top: 0; padding-top: .15rem; }
@@ -303,6 +353,71 @@ footer {
           </tr>
         </tbody>
       </table>
+    </section>
+
+    <section>
+      <h2>How the Language Changed</h2>
+      <p>These are the specific spoken claims that failed review, shown alongside the corrected language in the published draft. Quoted or closely paraphrased from the transcripts.</p>
+
+      <h3>Respiratory risk framing <span class="fix-badge">Fixed: Draft 1 → 2</span></h3>
+      <div class="diff">
+        <div class="diff-before">
+          <p class="diff-label">Draft 1 said</p>
+          <p>"How a patient breathes in deep sleep <strong>dictates</strong> how catastrophically oxygen crashes after a seizure… this <strong>proves a vulnerability</strong>, creating favorable circumstances for SUDEP."</p>
+        </div>
+        <div class="diff-after">
+          <p class="diff-label">Published version says</p>
+          <p>"High respiratory variability does <strong>not</strong> provide a standalone SUDEP prediction tool or individual SUDEP score. It may become one part of future multimodal risk stratification."</p>
+        </div>
+      </div>
+
+      <h3>Home EEG scope <span class="fix-badge">Fixed: Draft 1 → 2</span></h3>
+      <div class="diff">
+        <div class="diff-before">
+          <p class="diff-label">Draft 1 said</p>
+          <p>"IEDs <strong>perfectly matched</strong> prior hospital EEG, <strong>validating home tech works just as well as hospital tech</strong>."</p>
+        </div>
+        <div class="diff-after">
+          <p class="diff-label">Published version says</p>
+          <p>"At-home EEG does <strong>not replace</strong> routine EEG, ambulatory EEG, EMU evaluation, or expert interpretation. It may support future seizure forecasting research in selected patients."</p>
+        </div>
+      </div>
+
+      <h3>Patient comprehension generalization <span class="fix-badge">Fixed: Draft 1 → 2</span></h3>
+      <div class="diff">
+        <div class="diff-before">
+          <p class="diff-label">Draft 1 said</p>
+          <p>"Data <strong>proves</strong> patients can easily grasp highly nuanced medical concepts. The problem was <strong>doctors failing to explain</strong>."</p>
+        </div>
+        <div class="diff-after">
+          <p class="diff-label">Published version says</p>
+          <p>"Patient-facing definitions can be effective when standardized — with the caveat that this was an <strong>English-speaking online sample</strong>, with no proof of outcomes, safety behavior, or adherence."</p>
+        </div>
+      </div>
+
+      <h3>Practice mandate <span class="fix-badge">Fixed: Draft 1 → 2</span></h3>
+      <div class="diff">
+        <div class="diff-before">
+          <p class="diff-label">Draft 1 said</p>
+          <p>"The <strong>mandate is clear: clinics must</strong> measure physiologic risks. Non-REM breathing tells a massive amount about brainstem vulnerability."</p>
+        </div>
+        <div class="diff-after">
+          <p class="diff-label">Published version says</p>
+          <p>"Future care should measure broader domains <strong>without discarding</strong> seizure diaries or overhauling clinics with unproven prediction algorithms."</p>
+        </div>
+      </div>
+
+      <h3>Mood burden language <span class="fix-badge fix-badge--2">Fixed: Draft 2 → 3</span></h3>
+      <div class="diff">
+        <div class="diff-before">
+          <p class="diff-label">Draft 2 said</p>
+          <p>"One in three patients is likely walking around with <strong>undiagnosed, untreated depression</strong>… <strong>completely unmanaged severe mood disorders</strong>… underlying brain network dysfunction <strong>causes depression</strong>."</p>
+        </div>
+        <div class="diff-after">
+          <p class="diff-label">Published version says</p>
+          <p>"63.5% <strong>screened</strong> in the moderate-to-severe range on PHQ-9. 47.2% of those with PHQ-9 ≥10 <strong>did not report prior physician diagnosis</strong>. The descriptive web survey cannot establish mechanism or causality."</p>
+        </div>
+      </div>
     </section>
 
     <section>
