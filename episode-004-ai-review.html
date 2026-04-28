@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI-Assisted Source Review · Episode 4 · Audio Epilepsy Digest</title>
+<meta name="description" content="Public AI-assisted source review report for Audio Epilepsy Digest episode 4.">
+<meta name="theme-color" content="#faf5e8">
+<link rel="canonical" href="https://audioepilepsydigest.com/episode-004-ai-review.html">
+<link rel="icon" type="image/png" sizes="32x32" href="site-assets/favicon-32.png">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://audioepilepsydigest.com/episode-004-ai-review.html">
+<meta property="og:title" content="AI-Assisted Source Review · Episode 4">
+<meta property="og:description" content="How AED reviewed episode 4 against the full-text source packet before human listening QA.">
+<meta property="og:image" content="https://audioepilepsydigest.com/site-assets/aed-social-card.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper: #faf5e8;
+  --paper-card: #f6efdc;
+  --ink: #15191f;
+  --body: #2a2c2b;
+  --soft: #5a564a;
+  --rule: #b8ad97;
+  --rule-soft: #d7ccb4;
+  --accent: #a63323;
+  --teal: #1f5a5f;
+  --gold: #b58a1e;
+  --serif: "Newsreader", Georgia, "Times New Roman", serif;
+  --sans: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--body);
+  font-family: var(--serif);
+  font-size: 19px;
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+  background-image:
+    radial-gradient(circle at 10% 0%, rgba(166,51,35,.05), transparent 34rem),
+    radial-gradient(circle at 92% 18%, rgba(31,90,95,.05), transparent 34rem);
+}
+a {
+  color: var(--accent);
+  text-decoration-color: rgba(166,51,35,.35);
+  text-underline-offset: .18em;
+}
+.page {
+  max-width: 62rem;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+.topline {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 1px solid var(--rule-soft);
+  padding-bottom: .75rem;
+  color: var(--soft);
+  font-family: var(--mono);
+  font-size: .72rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.brand {
+  color: var(--ink);
+  font-weight: 600;
+  text-decoration: none;
+}
+header {
+  padding: 3rem 0 2rem;
+  border-bottom: 5px double var(--ink);
+}
+.kicker {
+  font-family: var(--mono);
+  color: var(--accent);
+  font-size: .76rem;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  margin: 0 0 .8rem;
+}
+h1 {
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  line-height: .95;
+  font-weight: 520;
+  letter-spacing: -0.02em;
+}
+.deck {
+  max-width: 44rem;
+  margin: 1.2rem 0 0;
+  font-size: 1.2rem;
+  color: var(--soft);
+}
+.notice {
+  margin: 1.75rem 0 0;
+  padding: 1rem 1.15rem;
+  border-left: 4px solid var(--accent);
+  background: rgba(166,51,35,.08);
+  font-family: var(--sans);
+  font-size: .98rem;
+}
+main {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 2.2rem;
+  padding-top: 2.25rem;
+}
+section {
+  border-top: 1px solid var(--rule-soft);
+  padding-top: 1.4rem;
+}
+section:first-child { border-top: 0; padding-top: 0; }
+h2 {
+  margin: 0 0 .85rem;
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 1.05rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+h3 {
+  margin: 1.3rem 0 .45rem;
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 1rem;
+}
+p { margin: .75rem 0; }
+ul, ol { padding-left: 1.25rem; }
+li { margin: .35rem 0; }
+blockquote {
+  margin: 1.1rem 0;
+  padding: .4rem 0 .4rem 1rem;
+  border-left: 2px solid var(--rule);
+  color: var(--ink);
+  font-size: 1.22rem;
+  line-height: 1.45;
+}
+code {
+  font-family: var(--mono);
+  font-size: .92em;
+  background: rgba(31,90,95,.08);
+  padding: .05rem .25rem;
+  border-radius: 4px;
+}
+.verdict {
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  font-family: var(--mono);
+  font-size: .82rem;
+  font-weight: 600;
+  color: var(--teal);
+  border: 1px solid rgba(31,90,95,.35);
+  background: rgba(31,90,95,.08);
+  padding: .35rem .55rem;
+  border-radius: 6px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: .85rem;
+  margin: 1rem 0;
+}
+.card {
+  border: 1px solid var(--rule-soft);
+  background: rgba(246,239,220,.7);
+  border-radius: 8px;
+  padding: .9rem;
+}
+.card .label {
+  font-family: var(--mono);
+  color: var(--accent);
+  font-size: .72rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.card strong {
+  display: block;
+  margin-top: .35rem;
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: .95rem;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-family: var(--sans);
+  font-size: .92rem;
+}
+th, td {
+  border-top: 1px solid var(--rule-soft);
+  padding: .75rem .55rem;
+  vertical-align: top;
+  text-align: left;
+}
+th {
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: .72rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.fine {
+  color: var(--soft);
+  font-family: var(--sans);
+  font-size: .92rem;
+}
+footer {
+  border-top: 1px solid var(--rule-soft);
+  margin-top: 2.5rem;
+  padding-top: 1.2rem;
+  color: var(--soft);
+  font-family: var(--sans);
+  font-size: .9rem;
+}
+.fix-badge {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: .66rem;
+  font-weight: 600;
+  letter-spacing: .05em;
+  color: var(--accent);
+  background: rgba(166,51,35,.1);
+  border: 1px solid rgba(166,51,35,.25);
+  padding: .15rem .45rem;
+  border-radius: 4px;
+  vertical-align: middle;
+  margin-left: .55rem;
+}
+.fix-badge--2 {
+  color: var(--gold);
+  background: rgba(181,138,30,.1);
+  border-color: rgba(181,138,30,.3);
+}
+.fix-badge--3 {
+  color: var(--teal);
+  background: rgba(31,90,95,.1);
+  border-color: rgba(31,90,95,.3);
+}
+.diff {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .7rem;
+  margin: .85rem 0 1.6rem;
+}
+.diff-before, .diff-after {
+  padding: .8rem 1rem;
+  border-radius: 6px;
+  font-size: .97rem;
+  line-height: 1.52;
+}
+.diff-before {
+  background: rgba(166,51,35,.07);
+  border-left: 3px solid var(--accent);
+}
+.diff-after {
+  background: rgba(31,90,95,.07);
+  border-left: 3px solid var(--teal);
+}
+.diff-label {
+  font-family: var(--mono);
+  font-size: .68rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  margin: 0 0 .4rem;
+}
+.diff-before .diff-label { color: var(--accent); }
+.diff-after .diff-label { color: var(--teal); }
+.diff p:last-child { margin-bottom: 0; }
+@media (max-width: 760px) {
+  body { font-size: 18px; }
+  .topline { display: block; }
+  .topline span { display: block; margin-bottom: .35rem; }
+  .grid { grid-template-columns: 1fr; }
+  .diff { grid-template-columns: 1fr; }
+  th, td { display: block; width: 100%; }
+  th { border-top: 1px solid var(--rule); padding-bottom: .15rem; }
+  td { border-top: 0; padding-top: .15rem; }
+}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="topline">
+    <a class="brand" href="index.html" aria-label="Audio Epilepsy Digest home">Audio Epilepsy Digest</a>
+    <span>Episode 004 · Source Review</span>
+  </div>
+
+  <header>
+    <p class="kicker">AI-Assisted Editorial Review</p>
+    <h1>Episode 4 Source Review</h1>
+    <p class="deck">How AED checked the drug-resistant epilepsy pathway episode against full-text sources, corrected overstatements across drafts, and carried residual caveats into the release notes.</p>
+    <div class="notice">
+      This is not independent peer review. It is an internal editorial check — AI-assisted — to verify that the spoken audio stays faithful to what the published studies actually found.
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Review Goal</h2>
+      <p>The review asked a narrow question:</p>
+      <blockquote>Does the spoken audio stay faithful to the source papers, especially where clinical interpretation could be overstated?</blockquote>
+      <p>The review focused on cenobamate and surgical delay, medication-response baselines, the FRANCE randomized trial of anterior thalamic deep brain stimulation, and early intracranial biomarker research for stimulation response.</p>
+    </section>
+
+    <section>
+      <h2>Evidence Standard</h2>
+      <p>The episode was reviewed against the full text of the source articles — not abstracts or summaries — to catch places where the audio could misrepresent scope, effect size, or clinical implications.</p>
+      <ol>
+        <li>Pellinen J, et al. "Delayed and deferred surgery associated with cenobamate use in people with drug-resistant focal epilepsy." <em>Epilepsia</em> (2026). PMID: 41885758.</li>
+        <li>Kerr WT, McFarlane KN. "Redefining the treatment pathway for medication-resistant epilepsy in the cenobamate era: Surgical obviation or surgical delay." <em>Epilepsia</em> (2026). PMID: 41972812.</li>
+        <li>Chabardes S, et al. "Deep brain stimulation of the thalamus for intractable epilepsy (FRANCE study): A randomized clinical trial." <em>Epilepsia</em> (2026). PMID: 41902639.</li>
+        <li>Aiello G, et al. "Intracranial biomarkers for anterior thalamic deep brain stimulation in epilepsy: a long-term observational study." <em>Brain</em> (2026). PMID: 41934257.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Process</h2>
+      <div class="grid">
+        <div class="card"><span class="label">Step 1</span><strong>Generate from full text</strong><p class="fine">The episode was generated directly from the source papers, with explicit instructions to preserve study scope and avoid overstating findings.</p></div>
+        <div class="card"><span class="label">Step 2</span><strong>Transcribe audio</strong><p class="fine">The audio was converted to text so spoken claims could be checked line by line against the papers.</p></div>
+        <div class="card"><span class="label">Step 3</span><strong>Audit claims</strong><p class="fine">Each spoken claim was traced back to the source text and flagged if it overstated, misrepresented, or went beyond what the study supported.</p></div>
+      </div>
+      <p>The final candidate was reviewed independently by two AI reviewers: <strong>Claude Opus 4.7</strong> and <strong>Codex 5.5 high</strong>. Both reviewed the transcript against the same full-text source packet and reached the same final editorial verdict.</p>
+      <p>Each draft received one editorial verdict: <em>cleared</em>, <em>cleared with minor notes</em>, <em>needs revision</em>, or <em>re-record required</em>. A draft could not advance until accuracy issues were resolved.</p>
+    </section>
+
+    <section>
+      <h2>Verdict History</h2>
+      <table>
+        <thead>
+          <tr><th>Draft</th><th>Verdict</th><th>What changed</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>First draft</td>
+            <td>Re-record required</td>
+            <td>The draft overstated how much cenobamate changed the surgery pathway, treated nonsignificant FRANCE results too positively, and made biomarker language sound closer to clinical decision support than the data allowed.</td>
+          </tr>
+          <tr>
+            <td>Second draft</td>
+            <td>Re-record required</td>
+            <td>The cenobamate framing improved, but residual pathway language, trial interpretation, and biomarker certainty still needed a cleaner re-record.</td>
+          </tr>
+          <tr>
+            <td>Third draft</td>
+            <td>Re-record required</td>
+            <td>The draft still used an incorrect year, overexplained the FRANCE control arm, and ended with a more deterministic biomarker synthesis than the source packet supports.</td>
+          </tr>
+          <tr>
+            <td>Fourth draft</td>
+            <td>Cleared with minor notes</td>
+            <td>The major source-fidelity issues were corrected. Remaining notes concern tone, caveats around mechanism, and precision that should stay visible in the release notes.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>How the Language Changed</h2>
+      <p>These are the specific spoken claims that failed review, shown alongside the corrected language in the published draft. Quoted or closely paraphrased from the transcripts.</p>
+
+      <h3>Cenobamate and Surgery Timing <span class="fix-badge">Fixed: Draft 1 -> 2</span></h3>
+      <div class="diff">
+        <div class="diff-before">
+          <p class="diff-label">Earlier drafts said</p>
+          <p>The episode implied that cenobamate had <strong>scrambled</strong> or <strong>rewritten</strong> the standard pathway, making surgery less central.</p>
+        </div>
+        <div class="diff-after">
+          <p class="diff-label">Final draft says</p>
+          <p>Cenobamate use was <strong>associated with delayed or deferred surgery</strong> in one selected subgroup, and seizure freedom was anchored to 34% of 47 treated patients rather than generalized to all drug-resistant epilepsy.</p>
+        </div>
+      </div>
+
+      <h3>FRANCE Trial Interpretation <span class="fix-badge fix-badge--2">Fixed: Draft 2 -> 3</span></h3>
+      <div class="diff">
+        <div class="diff-before">
+          <p class="diff-label">Earlier drafts said</p>
+          <p>The trial was narrated as if stimulation benefit was essentially established and the control arm could be explained by adherence, lifestyle, sleep, or other support mechanisms.</p>
+        </div>
+        <div class="diff-after">
+          <p class="diff-label">Final draft says</p>
+          <p>The between-group responder and seizure-reduction comparisons were <strong>not statistically significant</strong>, and the higher-than-expected control response may reflect enhanced follow-up, support, and diary reporting, with mechanism unproven.</p>
+        </div>
+      </div>
+
+      <h3>ANT Biomarker Claims <span class="fix-badge fix-badge--3">Fixed: Draft 3 -> 4</span></h3>
+      <div class="diff">
+        <div class="diff-before">
+          <p class="diff-label">Earlier drafts said</p>
+          <p>The biomarker segment made spectral differences sound like a near-term clinical tool for deciding who would respond to stimulation.</p>
+        </div>
+        <div class="diff-after">
+          <p class="diff-label">Final draft says</p>
+          <p>The ANT local-field-potential findings are <strong>research-stage</strong>, need prospective validation, and should not be treated as a current bedside decision rule.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Final Result</h2>
+      <p><span class="verdict">Verdict: Cleared with minor notes</span></p>
+      <p>The final draft resolved the release-blocking source-fidelity issues. Both AI reviewers, Claude Opus 4.7 and Codex 5.5 high, cleared it with minor notes. The episode may proceed to human listening QA, with the caveats below carried forward for transparency.</p>
+      <h3>Minor caveats carried into the show notes</h3>
+      <ul>
+        <li>The cenobamate findings should be read as a single-center association in a selected 47-patient subgroup, not proof that cenobamate broadly replaces epilepsy surgery.</li>
+        <li>Disparity mechanisms such as language barriers, socioeconomic constraints, and implicit bias are plausible external hypotheses, not direct Pellinen study findings.</li>
+        <li>The FRANCE trial supports cautious palliative framing for ANT-DBS but did not show statistically significant superiority over best medical therapy on the primary between-group endpoints.</li>
+        <li>The ANT biomarker work is hypothesis-generating and observational; it is not yet a validated clinical decision tool.</li>
+        <li>The opening and closing use stronger editorial language than the body of the episode, so the release notes preserve the more cautious source-based interpretation.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>What Changed</h2>
+      <ul>
+        <li>Replaced broad pathway-disruption language with an association-based description of delayed or deferred surgery.</li>
+        <li>Separated Kerr and McFarlane's commentary framing from Pellinen's primary retrospective data.</li>
+        <li>Reframed FRANCE as a trial with potential benefit but nonsignificant between-group primary comparisons.</li>
+        <li>Removed unsupported explanations for the control-arm response and retained uncertainty about mechanism.</li>
+        <li>Softened biomarker language from clinical-action framing to research-stage interpretation.</li>
+        <li>Moved residual tone and precision caveats into the publish-facing notes for the clinician-editor listen.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Boundaries</h2>
+      <p>This review does not certify clinical recommendations, replace human editorial judgment, replace independent expert review, transfer responsibility to the authors of the source studies, or make the episode a clinical guideline.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Audio Epilepsy Digest uses AI-assisted tools to help generate, transcribe, and source-check podcast drafts. Final editorial responsibility remains with AED. Original published articles remain the authoritative references.</p>
+    <p><a href="index.html">Back to Audio Epilepsy Digest</a></p>
+  </footer>
+</div>
+</body>
+</html>
