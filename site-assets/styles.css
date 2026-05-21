@@ -179,6 +179,7 @@ hr { border: 0; margin: 2.5rem 0; }
 }
 .wordmark .w-initial { color: var(--accent); font-weight: 600; }
 .wordmark .w-epilepsy { font-style: normal; font-weight: 500; }
+.wordmark .w-word { display: inline; }
 
 .tagline {
   font-family: var(--serif);
@@ -219,6 +220,14 @@ hr { border: 0; margin: 2.5rem 0; }
 @media (max-width: 720px) {
   .nameplate-seal, .nameplate-folio { position: static; display: inline-block; margin: 0 .5rem 1rem; }
   .nameplate-folio { text-align: center; }
+  .nameplate-inner { text-align: left; }
+  .wordmark {
+    display: inline-block;
+    text-align: left;
+    font-size: clamp(3.3rem, 17vw, 5.2rem);
+    line-height: .84;
+  }
+  .wordmark .w-word { display: block; }
 }
 
 /* =========================================================

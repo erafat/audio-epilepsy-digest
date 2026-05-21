@@ -210,6 +210,7 @@ hr { border: 0; margin: 2.5rem 0; }
 }
 .wordmark .w-initial { color: var(--accent); font-weight: 600; }
 .wordmark .w-epilepsy { font-style: normal; font-weight: 500; }
+.wordmark .w-word { display: inline; }
 
 .tagline {
   font-family: var(--serif);
@@ -250,6 +251,14 @@ hr { border: 0; margin: 2.5rem 0; }
 @media (max-width: 720px) {
   .nameplate-seal, .nameplate-folio { position: static; display: inline-block; margin: 0 .5rem 1rem; }
   .nameplate-folio { text-align: center; }
+  .nameplate-inner { text-align: left; }
+  .wordmark {
+    display: inline-block;
+    text-align: left;
+    font-size: clamp(3.3rem, 17vw, 5.2rem);
+    line-height: .84;
+  }
+  .wordmark .w-word { display: block; }
 }
 
 /* =========================================================
@@ -1591,9 +1600,9 @@ body.density-roomy .studio.studio--banner {
 
       <div class="nameplate-inner">
         <h1 class="wordmark" aria-label="Audio Epilepsy Digest">
-          <span class="w-initial">A</span>udio
-          <span class="w-epilepsy"><span class="w-initial">E</span>pilepsy</span>
-          <span class="w-initial">D</span>igest
+          <span class="w-word w-audio"><span class="w-initial">A</span>udio</span>
+          <span class="w-word w-epilepsy"><span class="w-initial">E</span>pilepsy</span>
+          <span class="w-word w-digest"><span class="w-initial">D</span>igest</span>
         </h1>
         <p class="tagline">A weekly audio briefing on epilepsy research.</p>
       </div>
