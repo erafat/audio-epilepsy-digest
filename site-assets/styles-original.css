@@ -108,7 +108,7 @@ hr {
   margin: 0 0 1rem;
 }
 .wordmark .w-initial { color: var(--oxblood); }
-.wordmark .w-epilepsy { font-style: italic; font-weight: 500; }
+.wordmark .w-epilepsy { font-style: normal; font-weight: 500; }
 
 .tagline {
   font-family: var(--serif);
