@@ -228,6 +228,11 @@ hr { border: 0; margin: 2.5rem 0; }
     line-height: 1.04;
   }
   .wordmark .w-word { display: block; }
+  .tagline {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+  }
 }
 
 /* =========================================================
