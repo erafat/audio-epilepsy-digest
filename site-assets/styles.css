@@ -229,9 +229,9 @@ hr { border: 0; margin: 2.5rem 0; }
   }
   .wordmark .w-word { display: block; }
   .tagline {
-    margin-left: 0;
+    margin-left: auto;
     margin-right: 0;
-    text-align: left;
+    text-align: right;
   }
 }
 
