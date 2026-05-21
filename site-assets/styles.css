@@ -224,8 +224,8 @@ hr { border: 0; margin: 2.5rem 0; }
   .wordmark {
     display: inline-block;
     text-align: left;
-    font-size: clamp(3.3rem, 17vw, 5.2rem);
-    line-height: .94;
+    font-size: clamp(3.63rem, 18.7vw, 5.72rem);
+    line-height: 1.04;
   }
   .wordmark .w-word { display: block; }
 }
