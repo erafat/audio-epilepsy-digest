@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+  <channel>
+    <title>Audio Epilepsy Digest</title>
+    <description>Audio Epilepsy Digest (AED) is a colleague-level podcast briefing on epilepsy research, controversies, and practice-shaping signals for epileptologists and academic epilepsy centers.</description>
+    <link>https://audioepilepsydigest.com/</link>
+    <atom:link href="https://audioepilepsydigest.com/podcast.xml" rel="self" type="application/rss+xml"/>
+    <language>en-us</language>
+    <managingEditor>Erafat D. Rehim, MD</managingEditor>
+    <webMaster>Erafat D. Rehim, MD</webMaster>
+    <itunes:author>Erafat D. Rehim, MD</itunes:author>
+    <itunes:summary>Audio Epilepsy Digest (AED) is a colleague-level podcast briefing on epilepsy research, controversies, and practice-shaping signals for epileptologists and academic epilepsy centers.</itunes:summary>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:type>episodic</itunes:type>
+    <itunes:image href="https://audioepilepsydigest.com/site-assets/show-cover.png"/>
+    <lastBuildDate>Tue, 26 May 2026 19:44:25 +0000</lastBuildDate>
+    <copyright>Copyright 2026 Erafat D. Rehim, MD</copyright>
+    <image>
+      <url>https://audioepilepsydigest.com/site-assets/show-cover.png</url>
+      <title>Audio Epilepsy Digest</title>
+      <link>https://audioepilepsydigest.com/</link>
+    </image>
+    <item>
+      <guid isPermaLink="false">aed-007-real-world-evidence-meets-surgical-assumptions</guid>
+      <title>Episode 7: Real-World Evidence Meets Surgical Assumptions</title>
+      <description>NOTE: This podcast is an evolving collaboration between human and AI. While we strive for accuracy, AI hosts may misinterpret or oversimplify source material. Always refer to the original published articles for clinical decision-making. If you find any claims made by the AI hosts to be inaccurate, please let us know. Your feedback directly improves future episodes.
+
+Episode 7: Real-World Evidence Meets Surgical Assumptions
+
+This weekly episode asks how epileptologists should counsel patients with drug-resistant focal epilepsy when new evidence strengthens some assumptions, weakens others, and warns against turning plausible anatomy or AI output into shortcuts.
+
+The episode covers real-world RNS postapproval outcomes, polymicrogyria epilepsy surgery, piriform cortex resection validation, and large-language-model diagnostic reasoning from seizure narratives.
+
+The practical message is restrained: outcome data, visible lesions, anatomical targets, and AI models can all be useful, but each answers a different question. Surgical counseling should stay grounded in evidence quality, individualized mapping, and expert review.
+
+Listen and follow Audio Epilepsy Digest:
+https://audioepilepsydigest.com/
+
+AI editorial/source review for this episode:
+https://audioepilepsydigest.com/episode-007-ai-review.html
+
+Key takeaways:
+- RNS postapproval data strengthen confidence in long-term palliative neuromodulation for selected adults with focal epilepsy, but they do not define universal treatment sequencing.
+- PMG-related epilepsy can be surgically treatable in selected patients, but the visible malformation is not automatically the full epileptogenic zone.
+- A 2026 validation study found no association between connectivity-defined piriform cortex resection and seizure freedom, arguing against routine targeting while preserving patient-specific network evaluation.
+- LLMs can organize seizure-semiology information above chance in a benchmark task, but reasoning and citation errors keep them in the decision-support category.
+
+Papers discussed include:
+1. Eliashiv D, et al. &quot;Postapproval Study for Brain-Responsive Neurostimulation for Drug-Resistant Focal Epilepsy.&quot; Neurology (2026). PMID: 42030518.
+2. Rinella K, et al. &quot;Efficacy of neurosurgical interventions for epilepsy in polymicrogyria.&quot; Epilepsia Open (2026). PMID: 41689720.
+3. &quot;No link between piriform cortex subregion resection and seizure freedom in two cohorts with temporal lobe epilepsy.&quot; Journal of Neurology (2026). PMID: 42174251.
+4. Poon MTC, et al. &quot;Evaluating large language models for diagnostic reasoning from unstructured clinical narratives in epilepsy.&quot; Communications Medicine (2026). PMID: 42174195.
+
+Source review note:
+This episode went through AED's automatic two-reviewer source review. The final regenerated candidate cleared both reviewers with minor notes before human audio QA.
+
+Caveats:
+- RNS findings are noncomparative postapproval outcomes, not proof that neuromodulation should bypass resection or ablation evaluation.
+- PMG surgery evidence is heterogeneous and does not make the visible lesion a universal target.
+- The piriform cortex result is a negative routine-targeting validation, not proof that piriform involvement never matters.
+- LLM benchmark performance is not clinical authorization for delegated surgical localization or triage.</description>
+      <link>https://audioepilepsydigest.com/#episode-007</link>
+      <pubDate>Tue, 26 May 2026 11:00:00 +0000</pubDate>
+      <itunes:author>Erafat D. Rehim, MD</itunes:author>
+      <itunes:summary>NOTE: This podcast is an evolving collaboration between human and AI. While we strive for accuracy, AI hosts may misinterpret or oversimplify source material. Always refer to the original published articles for clinical decision-making. If you find any claims made by the AI hosts to be inaccurate, please let us know. Your feedback directly improves future episodes.
+
+Episode 7: Real-World Evidence Meets Surgical Assumptions
+
+This weekly episode asks how epileptologists should counsel patients with drug-resistant focal epilepsy when new evidence strengthens some assumptions, weakens others, and warns against turning plausible anatomy or AI output into shortcuts.
+
+The episode covers real-world RNS postapproval outcomes, polymicrogyria epilepsy surgery, piriform cortex resection validation, and large-language-model diagnostic reasoning from seizure narratives.
+
+The practical message is restrained: outcome data, visible lesions, anatomical targets, and AI models can all be useful, but each answers a different question. Surgical counseling should stay grounded in evidence quality, individualized mapping, and expert review.
+
+Listen and follow Audio Epilepsy Digest:
+https://audioepilepsydigest.com/
+
+AI editorial/source review for this episode:
+https://audioepilepsydigest.com/episode-007-ai-review.html
+
+Key takeaways:
+- RNS postapproval data strengthen confidence in long-term palliative neuromodulation for selected adults with focal epilepsy, but they do not define universal treatment sequencing.
+- PMG-related epilepsy can be surgically treatable in selected patients, but the visible malformation is not automatically the full epileptogenic zone.
+- A 2026 validation study found no association between connectivity-defined piriform cortex resection and seizure freedom, arguing against routine targeting while preserving patient-specific network evaluation.
+- LLMs can organize seizure-semiology information above chance in a benchmark task, but reasoning and citation errors keep them in the decision-support category.
+
+Papers discussed include:
+1. Eliashiv D, et al. &quot;Postapproval Study for Brain-Responsive Neurostimulation for Drug-Resistant Focal Epilepsy.&quot; Neurology (2026). PMID: 42030518.
+2. Rinella K, et al. &quot;Efficacy of neurosurgical interventions for epilepsy in polymicrogyria.&quot; Epilepsia Open (2026). PMID: 41689720.
+3. &quot;No link between piriform cortex subregion resection and seizure freedom in two cohorts with temporal lobe epilepsy.&quot; Journal of Neurology (2026). PMID: 42174251.
+4. Poon MTC, et al. &quot;Evaluating large language models for diagnostic reasoning from unstructured clinical narratives in epilepsy.&quot; Communications Medicine (2026). PMID: 42174195.
+
+Source review note:
+This episode went through AED's automatic two-reviewer source review. The final regenerated candidate cleared both reviewers with minor notes before human audio QA.
+
+Caveats:
+- RNS findings are noncomparative postapproval outcomes, not proof that neuromodulation should bypass resection or ablation evaluation.
+- PMG surgery evidence is heterogeneous and does not make the visible lesion a universal target.
+- The piriform cortex result is a negative routine-targeting validation, not proof that piriform involvement never matters.
+- LLM benchmark performance is not clinical authorization for delegated surgical localization or triage.</itunes:summary>
+      <itunes:duration>00:20:26</itunes:duration>
+      <itunes:episode>7</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://media.audioepilepsydigest.com/audio/episode-007-audio.m4a" length="39445974" type="audio/mp4"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">aed-006-from-random-seizures-to-risk-states</guid>
+      <title>Episode 6: From Random Seizures to Risk States</title>
+      <description>NOTE: This podcast is an evolving collaboration between human and AI. While we strive for accuracy, AI hosts may misinterpret or oversimplify source material. Always refer to the original published articles for clinical decision-making. If you find any claims made by the AI hosts to be inaccurate, please let us know. Your feedback directly improves future episodes.
+
+Episode 6: From Random Seizures to Risk States
+
+This monthly special asks whether seizure timing is moving from clinical randomness toward individualized, time-varying risk states.
+
+The episode covers recent work on epilepsy chronobiology, seizure cycles, past-only forecasting pipelines, chance-model pitfalls, diary and wearable approaches, home EEG feasibility, sleep-drive physiology, and computational medication-timing models.
+
+The practical message is restrained: seizure timing is becoming a serious clinical-research variable, but current evidence supports better questions and better trials more than routine patient-facing forecasts or medication-timing changes.
+
+Listen and follow Audio Epilepsy Digest:
+https://audioepilepsydigest.com/
+
+AI editorial/source review for this episode:
+https://audioepilepsydigest.com/episode-006-ai-review.html
+
+Key takeaways:
+- Seizure timing can reflect circadian, sleep-wake, sleep-drive, and multidien risk rhythms, but that does not make seizures reliably predictable for routine care.
+- Forecasting claims need past-only implementation, meaningful chance models, simple benchmarks, prospective validation, and attention to false alarms and patient burden.
+- Wearable, diary, and home EEG studies show why the field is plausible, but feasibility and proof of principle are not the same as clinical effectiveness.
+- Medication-timing models and sleep-drive experiments are useful for hypothesis generation, not patient-specific treatment advice.
+
+Papers discussed include:
+1. Baud MO, et al. &quot;Timing is everything: Expert opinion on researching epilepsy rhythms by the ILAE Task Force on Chronobiology.&quot; Epilepsia (2026). PMID: 41483455.
+2. Yang H, et al. &quot;Seizure forecasting with epilepsy cycles: On the causality of forecasting pipelines.&quot; Epilepsia (2026). PMID: 41591752.
+3. Andrzejak RG, et al. &quot;Are seizure forecasts and cycles better than chance? What chance?&quot; Epilepsia (2026). PMID: 41783988.
+4. Chang CY, et al. &quot;Rigorous evaluation of five models for e-diary-only seizure forecasting-retrospective and prospective datasets do not outperform the Napkin method.&quot; Epilepsia (2026). PMID: 41085335.
+5. Xiong W, et al. &quot;Forecasting seizure likelihood from cycles of self-reported events and heart rate: a prospective pilot study.&quot; eBioMedicine (2023). PMID: 37331164.
+6. Cuddapah VA, et al. &quot;Sleep drive, not total sleep amount, increases seizure risk.&quot; Nature Communications (2025). PMID: 40730814.
+
+Source review note:
+This episode went through AED's automatic two-reviewer source review. Both reviewers cleared the episode with minor caveats before human audio QA.
+
+Caveats:
+- Forecasting remains probabilistic and research-stage.
+- The sleep-drive source is preclinical and should not be treated as human sleep advice.
+- Medication-timing modeling is not a recommendation to change antiseizure medication schedules.
+- Home EEG feasibility and forecasting protocols do not yet prove clinical effectiveness.</description>
+      <link>https://audioepilepsydigest.com/#episode-006</link>
+      <pubDate>Tue, 19 May 2026 11:00:00 +0000</pubDate>
+      <itunes:author>Erafat D. Rehim, MD</itunes:author>
+      <itunes:summary>NOTE: This podcast is an evolving collaboration between human and AI. While we strive for accuracy, AI hosts may misinterpret or oversimplify source material. Always refer to the original published articles for clinical decision-making. If you find any claims made by the AI hosts to be inaccurate, please let us know. Your feedback directly improves future episodes.
+
+Episode 6: From Random Seizures to Risk States
+
+This monthly special asks whether seizure timing is moving from clinical randomness toward individualized, time-varying risk states.
+
+The episode covers recent work on epilepsy chronobiology, seizure cycles, past-only forecasting pipelines, chance-model pitfalls, diary and wearable approaches, home EEG feasibility, sleep-drive physiology, and computational medication-timing models.
+
+The practical message is restrained: seizure timing is becoming a serious clinical-research variable, but current evidence supports better questions and better trials more than routine patient-facing forecasts or medication-timing changes.
+
+Listen and follow Audio Epilepsy Digest:
+https://audioepilepsydigest.com/
+
+AI editorial/source review for this episode:
+https://audioepilepsydigest.com/episode-006-ai-review.html
+
+Key takeaways:
+- Seizure timing can reflect circadian, sleep-wake, sleep-drive, and multidien risk rhythms, but that does not make seizures reliably predictable for routine care.
+- Forecasting claims need past-only implementation, meaningful chance models, simple benchmarks, prospective validation, and attention to false alarms and patient burden.
+- Wearable, diary, and home EEG studies show why the field is plausible, but feasibility and proof of principle are not the same as clinical effectiveness.
+- Medication-timing models and sleep-drive experiments are useful for hypothesis generation, not patient-specific treatment advice.
+
+Papers discussed include:
+1. Baud MO, et al. &quot;Timing is everything: Expert opinion on researching epilepsy rhythms by the ILAE Task Force on Chronobiology.&quot; Epilepsia (2026). PMID: 41483455.
+2. Yang H, et al. &quot;Seizure forecasting with epilepsy cycles: On the causality of forecasting pipelines.&quot; Epilepsia (2026). PMID: 41591752.
+3. Andrzejak RG, et al. &quot;Are seizure forecasts and cycles better than chance? What chance?&quot; Epilepsia (2026). PMID: 41783988.
+4. Chang CY, et al. &quot;Rigorous evaluation of five models for e-diary-only seizure forecasting-retrospective and prospective datasets do not outperform the Napkin method.&quot; Epilepsia (2026). PMID: 41085335.
+5. Xiong W, et al. &quot;Forecasting seizure likelihood from cycles of self-reported events and heart rate: a prospective pilot study.&quot; eBioMedicine (2023). PMID: 37331164.
+6. Cuddapah VA, et al. &quot;Sleep drive, not total sleep amount, increases seizure risk.&quot; Nature Communications (2025). PMID: 40730814.
+
+Source review note:
+This episode went through AED's automatic two-reviewer source review. Both reviewers cleared the episode with minor caveats before human audio QA.
+
+Caveats:
+- Forecasting remains probabilistic and research-stage.
+- The sleep-drive source is preclinical and should not be treated as human sleep advice.
+- Medication-timing modeling is not a recommendation to change antiseizure medication schedules.
+- Home EEG feasibility and forecasting protocols do not yet prove clinical effectiveness.</itunes:summary>
+      <itunes:duration>00:19:52</itunes:duration>
+      <itunes:episode>6</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://media.audioepilepsydigest.com/audio/episode-006-audio.m4a" length="38369144" type="audio/mp4"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">aed-005-cognition-is-becoming-actionable</guid>
+      <title>Episode 5: Cognition Is Becoming Actionable</title>
+      <description>NOTE: This podcast is an evolving collaboration between human and AI. While we strive for accuracy, AI hosts may misinterpret or oversimplify source material. Always refer to the original published articles for clinical decision-making. If you find any claims made by the AI hosts to be inaccurate, please let us know. Your feedback directly improves future episodes.
+
+Episode 5: Cognition Is Becoming Actionable
+
+Are recent studies moving epilepsy cognition from a recognized comorbidity to a measurable and partly modifiable care target?
+
+This episode of Audio Epilepsy Digest looks at four recent Neurology and Epilepsia papers on sleep, cognitive phenotyping, psychosocial rehabilitation, and dementia-plus-epilepsy medication safety.
+
+The practical message is cautious but useful: cognition in epilepsy is becoming easier to measure and partly more actionable, but the evidence does not prove that sleep treatment prevents dementia or that rehabilitation restores objective memory.
+
+Listen and follow Audio Epilepsy Digest:
+https://audioepilepsydigest.com/
+
+AI editorial/source review for this episode:
+https://audioepilepsydigest.com/episode-005-ai-review.html
+
+Key takeaways:
+- In focal epilepsy, nonoptimal self-reported sleep was associated with worse executive function and higher dementia-risk signal, but causality remains unproven.
+- IC-CoDE is research infrastructure for reproducible cognitive phenotyping, not a clinical decision tool.
+- Cognitive and psychosocial rehabilitation improved quality of life and anxiety more clearly than objective delayed recall.
+- In dementia plus epilepsy, first ASM survival associations are clinically important but still registry-based and vulnerable to residual confounding.
+
+Papers discussed:
+1. Tai XY, et al. &quot;The Relationship Between Sleep, Cognition, and Dementia Risk in People With Focal Epilepsy.&quot; Neurology (2026). PMID: 42018962.
+2. Brunger T, et al. &quot;The International Classification of Cognitive Disorders in Epilepsy (IC-CoDE) Portal: An open source resource for neuropsychological research in epilepsy.&quot; Epilepsia (2026). PMID: 42095829.
+3. Mameniskiene R, et al. &quot;Rehabilitation of cognition and psychosocial well-being in epilepsy: Results of a randomized waiting list-controlled trial.&quot; Epilepsia (2026). PMID: 41984512.
+4. Zelano J, et al. &quot;Differences in Survival Associated With the First Antiseizure Medication in People With Dementia and Epilepsy.&quot; Neurology (2026). PMID: 41996657.
+
+Source review note:
+This episode went through AED's automatic two-reviewer source review. Both reviewers cleared the episode with minor caveats before human audio QA.
+
+Caveats:
+- Sleep duration in Tai et al. was self-reported and observational.
+- IC-CoDE should not be used for individual clinical decision-making.
+- The rehabilitation trial supports patient-reported benefit more strongly than objective cognitive improvement.
+- Zelano et al. should be read as association, not causal ASM ranking.</description>
+      <link>https://audioepilepsydigest.com/#episode-005</link>
+      <pubDate>Mon, 11 May 2026 11:00:00 +0000</pubDate>
+      <itunes:author>Erafat D. Rehim, MD</itunes:author>
+      <itunes:summary>NOTE: This podcast is an evolving collaboration between human and AI. While we strive for accuracy, AI hosts may misinterpret or oversimplify source material. Always refer to the original published articles for clinical decision-making. If you find any claims made by the AI hosts to be inaccurate, please let us know. Your feedback directly improves future episodes.
+
+Episode 5: Cognition Is Becoming Actionable
+
+Are recent studies moving epilepsy cognition from a recognized comorbidity to a measurable and partly modifiable care target?
+
+This episode of Audio Epilepsy Digest looks at four recent Neurology and Epilepsia papers on sleep, cognitive phenotyping, psychosocial rehabilitation, and dementia-plus-epilepsy medication safety.
+
+The practical message is cautious but useful: cognition in epilepsy is becoming easier to measure and partly more actionable, but the evidence does not prove that sleep treatment prevents dementia or that rehabilitation restores objective memory.
+
+Listen and follow Audio Epilepsy Digest:
+https://audioepilepsydigest.com/
+
+AI editorial/source review for this episode:
+https://audioepilepsydigest.com/episode-005-ai-review.html
+
+Key takeaways:
+- In focal epilepsy, nonoptimal self-reported sleep was associated with worse executive function and higher dementia-risk signal, but causality remains unproven.
+- IC-CoDE is research infrastructure for reproducible cognitive phenotyping, not a clinical decision tool.
+- Cognitive and psychosocial rehabilitation improved quality of life and anxiety more clearly than objective delayed recall.
+- In dementia plus epilepsy, first ASM survival associations are clinically important but still registry-based and vulnerable to residual confounding.
+
+Papers discussed:
+1. Tai XY, et al. &quot;The Relationship Between Sleep, Cognition, and Dementia Risk in People With Focal Epilepsy.&quot; Neurology (2026). PMID: 42018962.
+2. Brunger T, et al. &quot;The International Classification of Cognitive Disorders in Epilepsy (IC-CoDE) Portal: An open source resource for neuropsychological research in epilepsy.&quot; Epilepsia (2026). PMID: 42095829.
+3. Mameniskiene R, et al. &quot;Rehabilitation of cognition and psychosocial well-being in epilepsy: Results of a randomized waiting list-controlled trial.&quot; Epilepsia (2026). PMID: 41984512.
+4. Zelano J, et al. &quot;Differences in Survival Associated With the First Antiseizure Medication in People With Dementia and Epilepsy.&quot; Neurology (2026). PMID: 41996657.
+
+Source review note:
+This episode went through AED's automatic two-reviewer source review. Both reviewers cleared the episode with minor caveats before human audio QA.
+
+Caveats:
+- Sleep duration in Tai et al. was self-reported and observational.
+- IC-CoDE should not be used for individual clinical decision-making.
+- The rehabilitation trial supports patient-reported benefit more strongly than objective cognitive improvement.
+- Zelano et al. should be read as association, not causal ASM ranking.</itunes:summary>
+      <itunes:duration>00:19:02</itunes:duration>
+      <itunes:episode>5</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://media.audioepilepsydigest.com/audio/episode-005-audio.m4a" length="36747490" type="audio/mp4"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">aed-004-drug-resistant-epilepsy-in-2026</guid>
+      <title>Episode 4: Drug-Resistant Epilepsy in 2026</title>
+      <description>NOTE: This podcast is an evolving collaboration between human and AI. While we strive for accuracy, AI hosts may misinterpret or oversimplify source material. Always refer to the original published articles for clinical decision-making. If you find any claims made by the AI hosts to be inaccurate, please let us know. Your feedback directly improves future episodes.
+
+Episode 4: Drug-Resistant Epilepsy in 2026
+
+Does the pathway after two failed antiseizure medications still end in surgery?
+
+This episode of Audio Epilepsy Digest looks at the 2026 drug-resistant epilepsy treatment pathway through cenobamate surgery-timing data, the FRANCE anterior thalamic DBS trial, and emerging intracranial biomarker work.
+
+The practical message is coexistence, not replacement. Cenobamate may change timing for selected patients, surgical evaluation still matters when a structural target is plausible, ANT-DBS remains palliative rather than curative, and biomarkers are promising research tools rather than current pathway arbiters.
+
+Listen and follow Audio Epilepsy Digest:
+https://audioepilepsydigest.com/
+
+AI editorial/source review for this episode:
+https://audioepilepsydigest.com/episode-004-ai-review.html
+
+Key takeaways:
+- Pellinen's cenobamate findings are a single-center association in a selected subgroup, not proof that medication replaces surgery.
+- Kerr and McFarlane frame the key distinction: surgical delay is not the same as surgical obviation.
+- FRANCE suggests potential benefit for ANT-DBS in a highly refractory VNS-failed cohort, but it did not prove superiority over best medical therapy.
+- Aiello's ANT spectral biomarkers are hypothesis-generating and require prospective validation before clinical programming use.
+
+Papers discussed:
+1. Pellinen J, et al. &quot;Delayed and deferred surgery associated with cenobamate use in people with drug-resistant focal epilepsy.&quot; Epilepsia (2026). PMID: 41885758.
+2. Kerr WT, McFarlane KN. &quot;Redefining the treatment pathway for medication-resistant epilepsy in the cenobamate era: Surgical obviation or surgical delay.&quot; Epilepsia (2026). PMID: 41972812.
+3. Chabardes S, et al. &quot;Deep brain stimulation of the thalamus for intractable epilepsy (FRANCE study): A randomized clinical trial.&quot; Epilepsia (2026). PMID: 41902639.
+4. Aiello G, et al. &quot;Intracranial biomarkers for anterior thalamic deep brain stimulation in epilepsy: a long-term observational study.&quot; Brain (2026). PMID: 41934257.
+
+Source review note:
+This episode went through AED's automatic two-reviewer source review and regeneration loop. Earlier drafts were rejected or revised before this version cleared with minor caveats.
+
+Caveats:
+- Disparity mechanisms discussed around surgical timing should be understood as hypotheses, not findings directly tested by Pellinen.
+- Quality of life in FRANCE is multifactorial; palliative seizure-burden reduction should not be treated as equivalent to seizure freedom.
+- Cenobamate claims should remain anchored to Pellinen's selected subgroup and single-center retrospective design.</description>
+      <link>https://audioepilepsydigest.com/#episode-004</link>
+      <pubDate>Mon, 27 Apr 2026 11:00:00 +0000</pubDate>
+      <itunes:author>Erafat D. Rehim, MD</itunes:author>
+      <itunes:summary>NOTE: This podcast is an evolving collaboration between human and AI. While we strive for accuracy, AI hosts may misinterpret or oversimplify source material. Always refer to the original published articles for clinical decision-making. If you find any claims made by the AI hosts to be inaccurate, please let us know. Your feedback directly improves future episodes.
+
+Episode 4: Drug-Resistant Epilepsy in 2026
+
+Does the pathway after two failed antiseizure medications still end in surgery?
+
+This episode of Audio Epilepsy Digest looks at the 2026 drug-resistant epilepsy treatment pathway through cenobamate surgery-timing data, the FRANCE anterior thalamic DBS trial, and emerging intracranial biomarker work.
+
+The practical message is coexistence, not replacement. Cenobamate may change timing for selected patients, surgical evaluation still matters when a structural target is plausible, ANT-DBS remains palliative rather than curative, and biomarkers are promising research tools rather than current pathway arbiters.
+
+Listen and follow Audio Epilepsy Digest:
+https://audioepilepsydigest.com/
+
+AI editorial/source review for this episode:
+https://audioepilepsydigest.com/episode-004-ai-review.html
+
+Key takeaways:
+- Pellinen's cenobamate findings are a single-center association in a selected subgroup, not proof that medication replaces surgery.
+- Kerr and McFarlane frame the key distinction: surgical delay is not the same as surgical obviation.
+- FRANCE suggests potential benefit for ANT-DBS in a highly refractory VNS-failed cohort, but it did not prove superiority over best medical therapy.
+- Aiello's ANT spectral biomarkers are hypothesis-generating and require prospective validation before clinical programming use.
+
+Papers discussed:
+1. Pellinen J, et al. &quot;Delayed and deferred surgery associated with cenobamate use in people with drug-resistant focal epilepsy.&quot; Epilepsia (2026). PMID: 41885758.
+2. Kerr WT, McFarlane KN. &quot;Redefining the treatment pathway for medication-resistant epilepsy in the cenobamate era: Surgical obviation or surgical delay.&quot; Epilepsia (2026). PMID: 41972812.
+3. Chabardes S, et al. &quot;Deep brain stimulation of the thalamus for intractable epilepsy (FRANCE study): A randomized clinical trial.&quot; Epilepsia (2026). PMID: 41902639.
+4. Aiello G, et al. &quot;Intracranial biomarkers for anterior thalamic deep brain stimulation in epilepsy: a long-term observational study.&quot; Brain (2026). PMID: 41934257.
+
+Source review note:
+This episode went through AED's automatic two-reviewer source review and regeneration loop. Earlier drafts were rejected or revised before this version cleared with minor caveats.
+
+Caveats:
+- Disparity mechanisms discussed around surgical timing should be understood as hypotheses, not findings directly tested by Pellinen.
+- Quality of life in FRANCE is multifactorial; palliative seizure-burden reduction should not be treated as equivalent to seizure freedom.
+- Cenobamate claims should remain anchored to Pellinen's selected subgroup and single-center retrospective design.</itunes:summary>
+      <itunes:duration>00:16:25</itunes:duration>
+      <itunes:episode>4</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://media.audioepilepsydigest.com/audio/episode-004-audio.m4a" length="31707606" type="audio/mp4"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">aed-003-epilepsy-care-beyond-the-seizure-count</guid>
+      <title>Episode 3: Epilepsy Care Beyond the Seizure Count</title>
+      <description>NOTE: This podcast is an evolving collaboration between human and AI. While we strive for accuracy, AI hosts may misinterpret or oversimplify source material. Always refer to the original published articles for clinical decision-making. If you find any claims made by the AI hosts to be inaccurate, please let us know. Your feedback directly improves future episodes.
+
+Episode 3: Epilepsy Care Beyond the Seizure Count
+
+What should epilepsy care measure when seizure counts are not enough?
+
+This episode of Audio Epilepsy Digest looks at four recent epilepsy papers that widen the frame beyond seizure frequency. The studies move across respiratory physiology, at-home EEG monitoring, patient-facing seizure terminology, and the lived burden of epilepsy for patients and caregivers.
+
+The common thread is measurement humility. Seizure counts remain essential, but they do not capture the whole clinical problem. Better epilepsy measurement will need to integrate physiology, cognition and consciousness, real-world monitoring, patient-reported burden, and caregiver effects while staying honest about what is still research-grade rather than practice-changing.
+
+Listen and follow Audio Epilepsy Digest:
+https://erafat.github.io/audio-epilepsy-digest/
+
+AI editorial/source review for this episode:
+https://erafat.github.io/audio-epilepsy-digest/episode-003-ai-review.html
+
+Key takeaways:
+- Respiratory physiology may become an important risk-signal domain, but the current respiratory-variability study should not be heard as a validated individual SUDEP prediction tool.
+- At-home EEG self-monitoring appears feasible for selected, supported patients, but it does not replace routine EEG, ambulatory EEG, EMU evaluation, or expert interpretation.
+- Patient-facing definitions of ictal impairment of consciousness can be understandable, but terminology comprehension is not the same as proof of improved clinical outcomes.
+- Patient-burden research reinforces that seizure counts miss mood symptoms, fatigue, sleep disruption, productivity effects, and caregiver burden, while the current survey remains selected and descriptive.
+
+Papers discussed:
+1. Caplan R, et al. &quot;Association of Interictal Respiratory Variability and Severity of Postictal Hypoxemia After Generalized Convulsive Seizures.&quot; Neurology (2026). PMID: 41805401. PMCID: PMC13034677.
+2. Cousyn L, et al. &quot;Out of the lab, into real life: Evaluating at-home EEG self-monitoring.&quot; Epilepsia Open (2026). PMID: 41701004. PMCID: PMC13052238.
+3. Marcinski Nascimento D, et al. &quot;Persons with epilepsy and their caregivers understand the definition of ictal impairment of consciousness.&quot; Epilepsia (2026). PMID: 41705916. PMCID: PMC13075620.
+4. Wagner S, et al. &quot;What does it mean to live with epilepsy? Burden of illness from the patient perspective.&quot; Epilepsia Open (2026). PMID: 41770623. PMCID: PMC13052003.
+
+Source review note:
+This episode went through AED's transcript-first AI-assisted source review process. The generated audio was transcribed, checked against the full-text source packet, and forced through a pass/revise/regenerate gate. Two earlier audio candidates were rejected before this version cleared AI source review with minor caveats and then passed human audio QA.
+
+Caveats:
+- The respiratory paper supports association and biomarker potential, not individual-level SUDEP prediction.
+- The home EEG paper supports feasibility in selected, supported patients, not replacement of standard clinical EEG workflows.
+- The terminology paper supports comprehension of a proposed definition, not downstream outcome improvement.
+- The burden-of-illness paper is descriptive and selected. PHQ-9 and GAD-7 findings are screening results, not formal diagnoses, and the survey does not establish treatment status, mechanism, or medication causality.</description>
+      <link>https://audioepilepsydigest.com/#episode-003</link>
+      <pubDate>Mon, 20 Apr 2026 11:00:00 +0000</pubDate>
+      <itunes:author>Erafat D. Rehim, MD</itunes:author>
+      <itunes:summary>NOTE: This podcast is an evolving collaboration between human and AI. While we strive for accuracy, AI hosts may misinterpret or oversimplify source material. Always refer to the original published articles for clinical decision-making. If you find any claims made by the AI hosts to be inaccurate, please let us know. Your feedback directly improves future episodes.
+
+Episode 3: Epilepsy Care Beyond the Seizure Count
+
+What should epilepsy care measure when seizure counts are not enough?
+
+This episode of Audio Epilepsy Digest looks at four recent epilepsy papers that widen the frame beyond seizure frequency. The studies move across respiratory physiology, at-home EEG monitoring, patient-facing seizure terminology, and the lived burden of epilepsy for patients and caregivers.
+
+The common thread is measurement humility. Seizure counts remain essential, but they do not capture the whole clinical problem. Better epilepsy measurement will need to integrate physiology, cognition and consciousness, real-world monitoring, patient-reported burden, and caregiver effects while staying honest about what is still research-grade rather than practice-changing.
+
+Listen and follow Audio Epilepsy Digest:
+https://erafat.github.io/audio-epilepsy-digest/
+
+AI editorial/source review for this episode:
+https://erafat.github.io/audio-epilepsy-digest/episode-003-ai-review.html
+
+Key takeaways:
+- Respiratory physiology may become an important risk-signal domain, but the current respiratory-variability study should not be heard as a validated individual SUDEP prediction tool.
+- At-home EEG self-monitoring appears feasible for selected, supported patients, but it does not replace routine EEG, ambulatory EEG, EMU evaluation, or expert interpretation.
+- Patient-facing definitions of ictal impairment of consciousness can be understandable, but terminology comprehension is not the same as proof of improved clinical outcomes.
+- Patient-burden research reinforces that seizure counts miss mood symptoms, fatigue, sleep disruption, productivity effects, and caregiver burden, while the current survey remains selected and descriptive.
+
+Papers discussed:
+1. Caplan R, et al. &quot;Association of Interictal Respiratory Variability and Severity of Postictal Hypoxemia After Generalized Convulsive Seizures.&quot; Neurology (2026). PMID: 41805401. PMCID: PMC13034677.
+2. Cousyn L, et al. &quot;Out of the lab, into real life: Evaluating at-home EEG self-monitoring.&quot; Epilepsia Open (2026). PMID: 41701004. PMCID: PMC13052238.
+3. Marcinski Nascimento D, et al. &quot;Persons with epilepsy and their caregivers understand the definition of ictal impairment of consciousness.&quot; Epilepsia (2026). PMID: 41705916. PMCID: PMC13075620.
+4. Wagner S, et al. &quot;What does it mean to live with epilepsy? Burden of illness from the patient perspective.&quot; Epilepsia Open (2026). PMID: 41770623. PMCID: PMC13052003.
+
+Source review note:
+This episode went through AED's transcript-first AI-assisted source review process. The generated audio was transcribed, checked against the full-text source packet, and forced through a pass/revise/regenerate gate. Two earlier audio candidates were rejected before this version cleared AI source review with minor caveats and then passed human audio QA.
+
+Caveats:
+- The respiratory paper supports association and biomarker potential, not individual-level SUDEP prediction.
+- The home EEG paper supports feasibility in selected, supported patients, not replacement of standard clinical EEG workflows.
+- The terminology paper supports comprehension of a proposed definition, not downstream outcome improvement.
+- The burden-of-illness paper is descriptive and selected. PHQ-9 and GAD-7 findings are screening results, not formal diagnoses, and the survey does not establish treatment status, mechanism, or medication causality.</itunes:summary>
+      <itunes:duration>00:21:24</itunes:duration>
+      <itunes:episode>3</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://media.audioepilepsydigest.com/audio/episode-003-audio.m4a" length="41320990" type="audio/mp4"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">aed-002-what-seizure-counts-miss</guid>
+      <title>Episode 2: What Seizure Counts Miss</title>
+      <description>NOTE: This podcast is an evolving collaboration between human and AI. While we strive for accuracy, AI hosts may misinterpret or oversimplify source material. Always refer to the original published articles for clinical decision-making. If you find any claims made by the AI hosts to be inaccurate, please let us know. Your feedback directly improves future episodes.
+
+What changes in epilepsy care when we widen the lens beyond raw seizure counts?
+
+This episode of Audio Epilepsy Digest looks at four blind spots that appear when epilepsy care is organized too narrowly around seizure counts: etiologic workup after pediatric status epilepticus, early cognitive burden in newly diagnosed focal epilepsy, drug-specific dose logic in idiopathic generalized epilepsy, and the outcome measures used to judge rescue therapy in seizure clusters.
+
+The through-line is simple: the right clinical question changes with the problem in front of us. Sometimes the missed issue is genetics. Sometimes it is four-week verbal retention rather than 30-minute recall. Sometimes it is whether escalating lamotrigine is still doing useful work. And sometimes it is whether a rescue medication should be judged by chronic seizure freedom or by the interval between treated clusters.
+
+Topics covered:
+- when pediatric status epilepticus should prompt a stronger genetics-first lens
+- what the accelerated long-term forgetting paper actually shows, and what it does not, about early memory burden
+- why ASM dose-response should remain drug-specific rather than assumed to be uniform
+- why the diazepam nasal spray SEIVAL paper matters more for endpoint design and counseling than for immediate prescribing</description>
+      <link>https://audioepilepsydigest.com/#episode-002</link>
+      <pubDate>Fri, 17 Apr 2026 11:00:00 +0000</pubDate>
+      <itunes:author>Erafat D. Rehim, MD</itunes:author>
+      <itunes:summary>NOTE: This podcast is an evolving collaboration between human and AI. While we strive for accuracy, AI hosts may misinterpret or oversimplify source material. Always refer to the original published articles for clinical decision-making. If you find any claims made by the AI hosts to be inaccurate, please let us know. Your feedback directly improves future episodes.
+
+What changes in epilepsy care when we widen the lens beyond raw seizure counts?
+
+This episode of Audio Epilepsy Digest looks at four blind spots that appear when epilepsy care is organized too narrowly around seizure counts: etiologic workup after pediatric status epilepticus, early cognitive burden in newly diagnosed focal epilepsy, drug-specific dose logic in idiopathic generalized epilepsy, and the outcome measures used to judge rescue therapy in seizure clusters.
+
+The through-line is simple: the right clinical question changes with the problem in front of us. Sometimes the missed issue is genetics. Sometimes it is four-week verbal retention rather than 30-minute recall. Sometimes it is whether escalating lamotrigine is still doing useful work. And sometimes it is whether a rescue medication should be judged by chronic seizure freedom or by the interval between treated clusters.
+
+Topics covered:
+- when pediatric status epilepticus should prompt a stronger genetics-first lens
+- what the accelerated long-term forgetting paper actually shows, and what it does not, about early memory burden
+- why ASM dose-response should remain drug-specific rather than assumed to be uniform
+- why the diazepam nasal spray SEIVAL paper matters more for endpoint design and counseling than for immediate prescribing</itunes:summary>
+      <itunes:duration>00:21:59</itunes:duration>
+      <itunes:episode>2</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://media.audioepilepsydigest.com/audio/episode-002-audio.m4a" length="42473387" type="audio/mp4"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">aed-special-001-thalamic-seeg-standard-of-care-or-research</guid>
+      <title>Special Episode: Thalamic sEEG, Standard of Care or Research?</title>
+      <description>NOTE: This podcast is an evolving collaboration between human and AI. While we strive for accuracy, AI hosts may misinterpret or oversimplify source material. Always refer to the original published articles for clinical decision-making. If you find any claims made by the AI hosts to be inaccurate, please let us know. Your feedback directly improves future episodes.
+
+Should thalamic sEEG sampling be standard of care, selectively hypothesis-driven, or research-only?
+
+This first Audio Epilepsy Digest release takes up the February 2026 Brain debate cluster on thalamic stereoEEG and focuses on what actually matters for epileptologists at academic centers: SEEG planning, neuromodulation targeting, safety, ethics, and institutional policy.
+
+In this episode, the hosts examine:
+- whether thalamic sampling changes real clinical decision-making
+- when thalamic signals may be justified in hypothesis-driven intracranial exploration
+- how the argument shifts when neuromodulation planning is part of the goal
+- where the current literature reflects expert interpretation more than settled comparative outcomes evidence
+
+This is a source-grounded special episode built from a tightly related editorial-plus-opinions packet, so the goal is not to force false consensus. The takeaway is a practical policy conversation for current practice, with explicit attention to what remains uncertain.</description>
+      <link>https://audioepilepsydigest.com/#episode-001</link>
+      <pubDate>Fri, 03 Apr 2026 15:42:00 +0000</pubDate>
+      <itunes:author>Erafat D. Rehim, MD</itunes:author>
+      <itunes:summary>NOTE: This podcast is an evolving collaboration between human and AI. While we strive for accuracy, AI hosts may misinterpret or oversimplify source material. Always refer to the original published articles for clinical decision-making. If you find any claims made by the AI hosts to be inaccurate, please let us know. Your feedback directly improves future episodes.
+
+Should thalamic sEEG sampling be standard of care, selectively hypothesis-driven, or research-only?
+
+This first Audio Epilepsy Digest release takes up the February 2026 Brain debate cluster on thalamic stereoEEG and focuses on what actually matters for epileptologists at academic centers: SEEG planning, neuromodulation targeting, safety, ethics, and institutional policy.
+
+In this episode, the hosts examine:
+- whether thalamic sampling changes real clinical decision-making
+- when thalamic signals may be justified in hypothesis-driven intracranial exploration
+- how the argument shifts when neuromodulation planning is part of the goal
+- where the current literature reflects expert interpretation more than settled comparative outcomes evidence
+
+This is a source-grounded special episode built from a tightly related editorial-plus-opinions packet, so the goal is not to force false consensus. The takeaway is a practical policy conversation for current practice, with explicit attention to what remains uncertain.</itunes:summary>
+      <itunes:duration>00:23:36</itunes:duration>
+      <itunes:episode>1</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://media.audioepilepsydigest.com/audio/episode-001-audio.m4a" length="45572400" type="audio/mp4"/>
+    </item>
+  </channel>
+</rss>
