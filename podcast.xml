@@ -14,13 +14,53 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Medicine"/>
     <itunes:image href="https://audioepilepsydigest.com/site-assets/show-cover.png"/>
-    <lastBuildDate>Wed, 27 May 2026 15:16:38 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jun 2026 14:58:42 +0000</lastBuildDate>
     <copyright>Copyright 2026 Erafat D. Rehim, MD</copyright>
     <image>
       <url>https://audioepilepsydigest.com/site-assets/show-cover.png</url>
       <title>AED | Audio Epilepsy Digest</title>
       <link>https://audioepilepsydigest.com/</link>
     </image>
+    <item>
+      <guid isPermaLink="false">aed-008-status-epilepticus-in-critical-care</guid>
+      <title>Episode 8: Status Epilepticus in Critical Care</title>
+      <description>&lt;p&gt;NOTE: This podcast is an evolving collaboration between human and AI. While we strive for accuracy, AI hosts may misinterpret or oversimplify source material. Always refer to the original published articles for clinical decision-making. If you find any claims made by the AI hosts to be inaccurate, please let us know. Your feedback directly improves future episodes.&lt;/p&gt;
+&lt;p&gt;Episode 8: Status Epilepticus in Critical Care&lt;/p&gt;
+&lt;p&gt;This weekly recent-studies episode uses papers from roughly the last month, plus ESETT as landmark context, to ask what happens when status epilepticus moves beyond the emergency algorithm and becomes a critical-care problem.&lt;/p&gt;
+&lt;p&gt;The episode covers ICU practice variation, point-of-care AI seizure burden, perfusion imaging for seizure-vs-stroke-mimic uncertainty, VNS for SRSE/NORSE, and emergency resection in selected lesional SRSE.&lt;/p&gt;
+&lt;p&gt;The practical message is evidence-tier discipline: name the kind of evidence before naming the intervention.&lt;/p&gt;
+&lt;p&gt;Listen and follow Audio Epilepsy Digest:&lt;br /&gt;&lt;a href=&quot;https://audioepilepsydigest.com/&quot;&gt;https://audioepilepsydigest.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;AI editorial/source review for this episode:&lt;br /&gt;&lt;a href=&quot;https://audioepilepsydigest.com/episode-008-ai-review.html&quot;&gt;https://audioepilepsydigest.com/episode-008-ai-review.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Key takeaways:&lt;br /&gt;- ESETT anchors one second-line convulsive status decision point, but not ICU/SRSE/NORSE salvage care.&lt;br /&gt;- ICU status epilepticus care is shaped by cEEG access, training, and workflow limits.&lt;br /&gt;- Point-of-care AI seizure burden is a risk signal associated with discharge outcome, not proof that AI-guided treatment improves outcomes.&lt;br /&gt;- Perfusion imaging can add context in selected cases, but EEG remains central.&lt;br /&gt;- VNS and emergency resection remain salvage conversations with strict evidence boundaries.&lt;/p&gt;
+&lt;p&gt;Papers discussed include:&lt;br /&gt;1. Kapur J, et al. &quot;Randomized Trial of Three Anticonvulsant Medications for Status Epilepticus.&quot; New England Journal of Medicine (2019). PMID: 31774955.&lt;br /&gt;2. Fanet et al. &quot;Assessment of therapeutic management practices in generalized and focal motor status epilepticus.&quot; Journal of Intensive Medicine (2026).&lt;br /&gt;3. Parvizi J, et al. &quot;Point-of-Care Artificial Intelligence Measure of Seizure Burden Associates With Clinical Outcome at Discharge.&quot; Critical Care Medicine (2026). PMID: 42223304.&lt;br /&gt;4. &quot;Brain perfusion imaging in patients with status epilepticus, seizures, and IIC patterns.&quot; Clinical Neurophysiology Practice (2026).&lt;br /&gt;5. Yoo JY, et al. &quot;Vagus nerve stimulation as an adjunctive therapy for super-refractory status epilepticus including NORSE.&quot; Epilepsy &amp;amp; Behavior (2026). PMID: 41875755.&lt;br /&gt;6. &quot;Surgical resection as salvage therapy for super-refractory status epilepticus.&quot; Epilepsy &amp;amp; Behavior Reports (2026).&lt;/p&gt;
+&lt;p&gt;Caveats:&lt;br /&gt;- ESETT should not be generalized to nonconvulsive, NORSE, SRSE, neuromodulation, or surgical salvage decisions.&lt;br /&gt;- Survey data do not define an optimal ICU protocol.&lt;br /&gt;- AI seizure burden is associative and does not replace expert EEG interpretation.&lt;br /&gt;- Perfusion imaging is an adjunct, not a standalone diagnostic test.&lt;br /&gt;- VNS and emergency resection evidence is not generalizable routine care.&lt;/p&gt;</description>
+      <content:encoded>&lt;p&gt;NOTE: This podcast is an evolving collaboration between human and AI. While we strive for accuracy, AI hosts may misinterpret or oversimplify source material. Always refer to the original published articles for clinical decision-making. If you find any claims made by the AI hosts to be inaccurate, please let us know. Your feedback directly improves future episodes.&lt;/p&gt;
+&lt;p&gt;Episode 8: Status Epilepticus in Critical Care&lt;/p&gt;
+&lt;p&gt;This weekly recent-studies episode uses papers from roughly the last month, plus ESETT as landmark context, to ask what happens when status epilepticus moves beyond the emergency algorithm and becomes a critical-care problem.&lt;/p&gt;
+&lt;p&gt;The episode covers ICU practice variation, point-of-care AI seizure burden, perfusion imaging for seizure-vs-stroke-mimic uncertainty, VNS for SRSE/NORSE, and emergency resection in selected lesional SRSE.&lt;/p&gt;
+&lt;p&gt;The practical message is evidence-tier discipline: name the kind of evidence before naming the intervention.&lt;/p&gt;
+&lt;p&gt;Listen and follow Audio Epilepsy Digest:&lt;br /&gt;&lt;a href=&quot;https://audioepilepsydigest.com/&quot;&gt;https://audioepilepsydigest.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;AI editorial/source review for this episode:&lt;br /&gt;&lt;a href=&quot;https://audioepilepsydigest.com/episode-008-ai-review.html&quot;&gt;https://audioepilepsydigest.com/episode-008-ai-review.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Key takeaways:&lt;br /&gt;- ESETT anchors one second-line convulsive status decision point, but not ICU/SRSE/NORSE salvage care.&lt;br /&gt;- ICU status epilepticus care is shaped by cEEG access, training, and workflow limits.&lt;br /&gt;- Point-of-care AI seizure burden is a risk signal associated with discharge outcome, not proof that AI-guided treatment improves outcomes.&lt;br /&gt;- Perfusion imaging can add context in selected cases, but EEG remains central.&lt;br /&gt;- VNS and emergency resection remain salvage conversations with strict evidence boundaries.&lt;/p&gt;
+&lt;p&gt;Papers discussed include:&lt;br /&gt;1. Kapur J, et al. &quot;Randomized Trial of Three Anticonvulsant Medications for Status Epilepticus.&quot; New England Journal of Medicine (2019). PMID: 31774955.&lt;br /&gt;2. Fanet et al. &quot;Assessment of therapeutic management practices in generalized and focal motor status epilepticus.&quot; Journal of Intensive Medicine (2026).&lt;br /&gt;3. Parvizi J, et al. &quot;Point-of-Care Artificial Intelligence Measure of Seizure Burden Associates With Clinical Outcome at Discharge.&quot; Critical Care Medicine (2026). PMID: 42223304.&lt;br /&gt;4. &quot;Brain perfusion imaging in patients with status epilepticus, seizures, and IIC patterns.&quot; Clinical Neurophysiology Practice (2026).&lt;br /&gt;5. Yoo JY, et al. &quot;Vagus nerve stimulation as an adjunctive therapy for super-refractory status epilepticus including NORSE.&quot; Epilepsy &amp;amp; Behavior (2026). PMID: 41875755.&lt;br /&gt;6. &quot;Surgical resection as salvage therapy for super-refractory status epilepticus.&quot; Epilepsy &amp;amp; Behavior Reports (2026).&lt;/p&gt;
+&lt;p&gt;Caveats:&lt;br /&gt;- ESETT should not be generalized to nonconvulsive, NORSE, SRSE, neuromodulation, or surgical salvage decisions.&lt;br /&gt;- Survey data do not define an optimal ICU protocol.&lt;br /&gt;- AI seizure burden is associative and does not replace expert EEG interpretation.&lt;br /&gt;- Perfusion imaging is an adjunct, not a standalone diagnostic test.&lt;br /&gt;- VNS and emergency resection evidence is not generalizable routine care.&lt;/p&gt;</content:encoded>
+      <link>https://audioepilepsydigest.com/#episode-008</link>
+      <pubDate>Wed, 03 Jun 2026 14:57:33 +0000</pubDate>
+      <itunes:author>Erafat D. Rehim, MD</itunes:author>
+      <itunes:summary>NOTE: This podcast is an evolving collaboration between human and AI. While we strive for accuracy, AI hosts may misinterpret or oversimplify source material. Always refer to the original published articles for clinical decision-making. If you find any claims made by the AI hosts to be inaccurate, please let us know. Your feedback directly improves future episodes.
+
+Episode 8: Status Epilepticus in Critical Care
+
+This weekly recent-studies episode uses papers from roughly the last month, plus ESETT as landmark context, to ask what happens when status epilepticus moves beyond the emergency algorithm and becomes a critical-care problem.
+
+The episode covers ICU practice variation, point-of-care AI seizure burden, perfusion imaging for seizure-vs-stroke-mimic uncertainty, VNS for SRSE/NORSE, and emergency resection in selected lesional SRSE.
+
+The practical message is evidence-tier discipline: name the kind of evidence before naming the intervention.</itunes:summary>
+      <itunes:duration>00:15:04</itunes:duration>
+      <itunes:episode>8</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://media.audioepilepsydigest.com/audio/episode-008-audio.m4a" length="26232732" type="audio/mp4"/>
+    </item>
     <item>
       <guid isPermaLink="false">aed-007-real-world-evidence-meets-surgical-assumptions</guid>
       <title>Episode 7: Real-World Evidence Meets Surgical Assumptions</title>
