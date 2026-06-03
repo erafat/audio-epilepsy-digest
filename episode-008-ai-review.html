@@ -1,0 +1,428 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI-Assisted Source Review · Episode 8 · Audio Epilepsy Digest</title>
+<meta name="description" content="Public AI-assisted source review report for Audio Epilepsy Digest episode 8.">
+<meta name="theme-color" content="#faf5e8">
+<link rel="canonical" href="https://audioepilepsydigest.com/episode-008-ai-review.html">
+<link rel="icon" type="image/png" sizes="32x32" href="site-assets/favicon-32.png">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://audioepilepsydigest.com/episode-008-ai-review.html">
+<meta property="og:title" content="AI-Assisted Source Review · Episode 8">
+<meta property="og:description" content="How AED reviewed episode 8 against the full-text source packet before human listening QA.">
+<meta property="og:image" content="https://audioepilepsydigest.com/site-assets/aed-social-card.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper: #faf5e8;
+  --paper-card: #f6efdc;
+  --ink: #15191f;
+  --body: #2a2c2b;
+  --soft: #5a564a;
+  --rule: #b8ad97;
+  --rule-soft: #d7ccb4;
+  --accent: #a63323;
+  --teal: #1f5a5f;
+  --gold: #b58a1e;
+  --serif: "Newsreader", Georgia, "Times New Roman", serif;
+  --sans: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--body);
+  font-family: var(--serif);
+  font-size: 19px;
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+  background-image:
+    radial-gradient(circle at 10% 0%, rgba(166,51,35,.05), transparent 34rem),
+    radial-gradient(circle at 92% 18%, rgba(31,90,95,.05), transparent 34rem);
+}
+a {
+  color: var(--accent);
+  text-decoration-color: rgba(166,51,35,.35);
+  text-underline-offset: .18em;
+}
+.page {
+  max-width: 62rem;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+.topline {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 1px solid var(--rule-soft);
+  padding-bottom: .75rem;
+  color: var(--soft);
+  font-family: var(--mono);
+  font-size: .72rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.brand {
+  color: var(--ink);
+  font-weight: 600;
+  text-decoration: none;
+}
+header {
+  padding: 3rem 0 2rem;
+  border-bottom: 5px double var(--ink);
+}
+.kicker {
+  font-family: var(--mono);
+  color: var(--accent);
+  font-size: .76rem;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  margin: 0 0 .8rem;
+}
+h1 {
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  line-height: .95;
+  font-weight: 520;
+  letter-spacing: -0.02em;
+}
+.deck {
+  max-width: 44rem;
+  margin: 1.2rem 0 0;
+  font-size: 1.2rem;
+  color: var(--soft);
+}
+.notice {
+  margin: 1.75rem 0 0;
+  padding: 1rem 1.15rem;
+  border-left: 4px solid var(--accent);
+  background: rgba(166,51,35,.08);
+  font-family: var(--sans);
+  font-size: .98rem;
+}
+main {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 2.2rem;
+  padding-top: 2.25rem;
+}
+section {
+  border-top: 1px solid var(--rule-soft);
+  padding-top: 1.4rem;
+}
+section:first-child { border-top: 0; padding-top: 0; }
+h2 {
+  margin: 0 0 .85rem;
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 1.05rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+h3 {
+  margin: 1.3rem 0 .45rem;
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 1rem;
+}
+p { margin: .75rem 0; }
+ul, ol { padding-left: 1.25rem; }
+li { margin: .35rem 0; }
+blockquote {
+  margin: 1.1rem 0;
+  padding: .4rem 0 .4rem 1rem;
+  border-left: 2px solid var(--rule);
+  color: var(--ink);
+  font-size: 1.22rem;
+  line-height: 1.45;
+}
+code {
+  font-family: var(--mono);
+  font-size: .92em;
+  background: rgba(31,90,95,.08);
+  padding: .05rem .25rem;
+  border-radius: 4px;
+}
+.verdict {
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  font-family: var(--mono);
+  font-size: .82rem;
+  font-weight: 600;
+  color: var(--teal);
+  border: 1px solid rgba(31,90,95,.35);
+  background: rgba(31,90,95,.08);
+  padding: .35rem .55rem;
+  border-radius: 6px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: .85rem;
+  margin: 1rem 0;
+}
+.card {
+  border: 1px solid var(--rule-soft);
+  background: rgba(246,239,220,.7);
+  border-radius: 8px;
+  padding: .9rem;
+}
+.card .label {
+  font-family: var(--mono);
+  color: var(--accent);
+  font-size: .72rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.card strong {
+  display: block;
+  margin-top: .35rem;
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: .95rem;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-family: var(--sans);
+  font-size: .92rem;
+}
+th, td {
+  border-top: 1px solid var(--rule-soft);
+  padding: .75rem .55rem;
+  vertical-align: top;
+  text-align: left;
+}
+th {
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: .72rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.fine {
+  color: var(--soft);
+  font-family: var(--sans);
+  font-size: .92rem;
+}
+footer {
+  border-top: 1px solid var(--rule-soft);
+  margin-top: 2.5rem;
+  padding-top: 1.2rem;
+  color: var(--soft);
+  font-family: var(--sans);
+  font-size: .9rem;
+}
+.fix-badge {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: .66rem;
+  font-weight: 600;
+  letter-spacing: .05em;
+  color: var(--accent);
+  background: rgba(166,51,35,.1);
+  border: 1px solid rgba(166,51,35,.25);
+  padding: .15rem .45rem;
+  border-radius: 4px;
+  vertical-align: middle;
+  margin-left: .55rem;
+}
+.fix-badge--2 {
+  color: var(--gold);
+  background: rgba(181,138,30,.1);
+  border-color: rgba(181,138,30,.3);
+}
+.fix-badge--3 {
+  color: var(--teal);
+  background: rgba(31,90,95,.1);
+  border-color: rgba(31,90,95,.3);
+}
+.diff {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .7rem;
+  margin: .85rem 0 1.6rem;
+}
+.diff-before, .diff-after {
+  padding: .8rem 1rem;
+  border-radius: 6px;
+  font-size: .97rem;
+  line-height: 1.52;
+}
+.diff-before {
+  background: rgba(166,51,35,.07);
+  border-left: 3px solid var(--accent);
+}
+.diff-after {
+  background: rgba(31,90,95,.07);
+  border-left: 3px solid var(--teal);
+}
+.diff-label {
+  font-family: var(--mono);
+  font-size: .68rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  margin: 0 0 .4rem;
+}
+.diff-before .diff-label { color: var(--accent); }
+.diff-after .diff-label { color: var(--teal); }
+.diff p:last-child { margin-bottom: 0; }
+@media (max-width: 760px) {
+  body { font-size: 18px; }
+  .topline { display: block; }
+  .topline span { display: block; margin-bottom: .35rem; }
+  .grid { grid-template-columns: 1fr; }
+  .diff { grid-template-columns: 1fr; }
+  th, td { display: block; width: 100%; }
+  th { border-top: 1px solid var(--rule); padding-bottom: .15rem; }
+  td { border-top: 0; padding-top: .15rem; }
+}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="topline">
+    <a class="brand" href="index.html" aria-label="Audio Epilepsy Digest home">Audio Epilepsy Digest</a>
+    <span>Episode 008 · Source Review</span>
+  </div>
+
+  <header>
+    <p class="kicker">AI-Assisted Editorial Review</p>
+    <h1>Episode 8 Source Review</h1>
+    
+    <p class="deck">What was checked against the source papers, what was corrected across regenerated drafts, and which evidence-tier caveats listeners should keep in mind.</p>
+    <div class="notice">
+      This is not independent peer review. It is an internal editorial check — AI-assisted — to verify that the spoken audio stays faithful to what the published studies actually found.
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Review Goal</h2>
+      <p>The review asked a narrow question:</p>
+      <blockquote>Does the spoken audio stay faithful to the source papers, especially where clinical interpretation could be overstated?</blockquote>
+      
+      <p>The review focused on ESETT as landmark context, ICU status epilepticus practice variation, point-of-care AI seizure burden, perfusion imaging, VNS for SRSE/NORSE, and emergency resection in selected lesional SRSE.</p>
+    </section>
+
+    <section>
+      <h2>Evidence Standard</h2>
+      <p>The episode was reviewed against the full text of the source articles — not abstracts or summaries — to catch places where the audio could misrepresent scope, effect size, or clinical implications.</p>
+      <ol>
+        
+        <li>Kapur J, et al. "Randomized Trial of Three Anticonvulsant Medications for Status Epilepticus." <em>New England Journal of Medicine</em> (2019). PMID: 31774955. PMCID: PMC7098487.</li>
+        <li>Fanet et al. "Assessment of therapeutic management practices in generalized and focal motor status epilepticus: An international survey in French, Belgian, and Swiss intensive care units." <em>Journal of Intensive Medicine</em> (2026). PMCID: PMC13184470.</li>
+        <li>Parvizi J, et al. "Point-of-Care Artificial Intelligence Measure of Seizure Burden Associates With Clinical Outcome at Discharge." <em>Critical Care Medicine</em> (2026). PMID: 42223304.</li>
+        <li>"Brain perfusion imaging in patients with status epilepticus, seizures, and IIC patterns." <em>Clinical Neurophysiology Practice</em> (2026). PMCID: PMC13217417.</li>
+        <li>Yoo JY, et al. "Vagus nerve stimulation as an adjunctive therapy for super-refractory status epilepticus including NORSE: a retrospective cohort study." <em>Epilepsy &amp; Behavior</em> (2026). PMID: 41875755.</li>
+        <li>"Surgical resection as salvage therapy for super-refractory status epilepticus: a report of two cases." <em>Epilepsy &amp; Behavior Reports</em> (2026). PMCID: PMC13091227.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Process</h2>
+      <div class="grid">
+        <div class="card"><span class="label">Step 1</span><strong>Generate from full text</strong><p class="fine">The episode was generated directly from the source papers, with explicit instructions to preserve study scope and avoid overstating findings.</p></div>
+        <div class="card"><span class="label">Step 2</span><strong>Transcribe audio</strong><p class="fine">The audio was converted to text so spoken claims could be checked line by line against the papers.</p></div>
+        <div class="card"><span class="label">Step 3</span><strong>Audit claims</strong><p class="fine">Each spoken claim was traced back to the source text and flagged if it overstated, misrepresented, or went beyond what the study supported.</p></div>
+      </div>
+      <p>Each draft received one editorial verdict: <em>cleared</em>, <em>cleared with minor notes</em>, <em>needs revision</em>, or <em>re-record required</em>. A draft could not advance until accuracy issues were resolved.</p>
+    </section>
+
+    <section>
+      <h2>Verdict History</h2>
+      <table>
+        <thead>
+          <tr><th>Draft</th><th>Verdict</th><th>What changed</th></tr>
+        </thead>
+        <tbody>
+          
+          <tr><td>First draft</td><td>Re-record required</td><td>The opening used dramatic ICU framing and several claims risked sounding more certain than the underlying studies allowed.</td></tr>
+          <tr><td>Second draft</td><td>Re-record required</td><td>Some framing improved, but mechanistic language and speculative ending language still went beyond the source packet.</td></tr>
+          <tr><td>Third draft</td><td>Needs revision</td><td>The draft was source-faithful enough for review, but human listening found that ESETT received too much airtime, the pace was too fast, and the close needed a clearer listener call to action.</td></tr>
+          <tr><td>Fourth draft</td><td>Re-record required</td><td>The ESETT segment and closing improved, but the emergency-resection section used overly certain language about the lesion driving status epilepticus.</td></tr>
+          <tr><td>Fifth draft</td><td>Re-record required</td><td>The salvage wording improved, but ESETT expanded again and added mechanism teaching that the episode did not need.</td></tr>
+          <tr><td>Sixth draft</td><td>Re-record required</td><td>The ESETT segment stayed brief, but a speculative pre-close and a few words such as "unequivocally" and "immediately halt" still made salvage therapies sound too certain.</td></tr>
+          <tr><td>Seventh draft</td><td>Cleared with minor notes</td><td>The final version keeps ESETT brief, removes speculative closing language, frames VNS and resection as selected salvage evidence, and carries minor pronunciation and pacing checks into human listening.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>How the Language Changed</h2>
+      <p>These are the specific spoken claims that failed review, shown alongside the corrected language in the published draft. Quoted or closely paraphrased from the transcripts.</p>
+
+      
+      <h3>ESETT scope <span class="fix-badge">Fixed across drafts</span></h3>
+      <div class="diff">
+        <div class="diff-before"><p class="diff-label">Earlier drafts did</p><p>Spent several minutes on ESETT, making the landmark trial feel like the episode's main study rather than a brief boundary-setting reference.</p></div>
+        <div class="diff-after"><p class="diff-label">Published version says</p><p>"ESET just anchors that one emergency decision point. It does not settle ICU, refractory, super refractory, NORSE, non-convulsive, neuromodulation, or surgical salvage care."</p></div>
+      </div>
+
+      <h3>VNS and surgical salvage certainty <span class="fix-badge fix-badge--2">Fixed across drafts</span></h3>
+      <div class="diff">
+        <div class="diff-before"><p class="diff-label">Earlier drafts risked implying</p><p>That VNS or emergency resection could be treated as a proven causal rescue pathway for broad super-refractory status epilepticus.</p></div>
+        <div class="diff-after"><p class="diff-label">Published version says</p><p>"The VNS cohort supports feasibility and safety, not causal efficacy" and "Emergency resection belongs in the selected lesional SRSE conversation, not as routine care."</p></div>
+      </div>
+
+      <h3>Closing language <span class="fix-badge fix-badge--3">Fixed in final draft</span></h3>
+      <div class="diff">
+        <div class="diff-before"><p class="diff-label">Earlier draft said</p><p>Ended with a future-looking question about whether the field was relying too much on systemic chemical suppression.</p></div>
+        <div class="diff-after"><p class="diff-label">Published version says</p><p>"As always, you can find the studies we discussed in the show notes. Take a look at the papers yourself, check the source-review page, and decide how this evidence fits into your own practice."</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Final Result</h2>
+      
+      <p><span class="verdict">Verdict: Cleared with minor notes</span></p>
+      
+      <p>No unresolved major accuracy issues were found in the final draft; the remaining notes are evidence-boundary and listening checks.</p>
+      <h3>Minor caveats carried into the show notes</h3>
+      <ul>
+        
+        <li>ESETT is landmark context for one second-line convulsive status decision point; it should not be generalized to ICU, NORSE, SRSE, neuromodulation, or surgical salvage decisions.</li>
+        <li>The ICU survey identifies systems gaps and practice variation, not an optimal treatment protocol.</li>
+        <li>Point-of-care AI seizure burden is an association and risk signal, not proof that AI-guided treatment improves outcomes.</li>
+        <li>Perfusion imaging remains adjunctive; EEG and clinical context remain central.</li>
+        <li>VNS and emergency resection are selected salvage discussions supported by retrospective or case-report evidence, not routine generalized care.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>What Changed</h2>
+      <ul>
+        
+        <li>Reduced ESETT from a full segment to a brief landmark touchpoint.</li>
+        <li>Removed ESETT mechanism teaching and trial-operational detail that distracted from the weekly update.</li>
+        <li>Reframed VNS as feasibility and perioperative safety evidence rather than causal efficacy.</li>
+        <li>Reframed emergency resection as selected lesional case-report evidence rather than a routine super-refractory status pathway.</li>
+        <li>Removed speculative pre-closing language and added a direct call to action pointing listeners to the show notes, papers, and source-review page.</li>
+        <li>Added the approved AED intro music to the release audio with a fade under the episode opening.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Boundaries</h2>
+      <p>This review does not certify clinical recommendations, replace human editorial judgment, replace independent expert review, transfer responsibility to the authors of the source studies, or make the episode a clinical guideline.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Audio Epilepsy Digest uses AI-assisted tools to help generate, transcribe, and source-check podcast drafts. Final editorial responsibility remains with AED. Original published articles remain the authoritative references.</p>
+    <p><a href="index.html">Back to Audio Epilepsy Digest</a></p>
+  </footer>
+</div>
+</body>
+</html>
