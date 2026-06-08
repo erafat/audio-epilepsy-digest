@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI-Assisted Source Review · Episode 9 · Audio Epilepsy Digest</title>
+<meta name="description" content="Public AI-assisted editorial review report for Audio Epilepsy Digest episode 9.">
+<meta name="theme-color" content="#faf5e8">
+<link rel="canonical" href="https://audioepilepsydigest.com/episode-009-ai-review.html">
+<link rel="icon" type="image/png" sizes="32x32" href="site-assets/favicon-32.png">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://audioepilepsydigest.com/episode-009-ai-review.html">
+<meta property="og:title" content="AI-Assisted Source Review · Episode 9">
+<meta property="og:description" content="How AED reviewed episode 9 before human listening QA.">
+<meta property="og:image" content="https://audioepilepsydigest.com/site-assets/aed-social-card.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper: #faf5e8;
+  --paper-card: #f6efdc;
+  --ink: #15191f;
+  --body: #2a2c2b;
+  --soft: #5a564a;
+  --rule: #b8ad97;
+  --rule-soft: #d7ccb4;
+  --accent: #a63323;
+  --teal: #1f5a5f;
+  --serif: "Newsreader", Georgia, "Times New Roman", serif;
+  --sans: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--body);
+  font-family: var(--serif);
+  font-size: 19px;
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--accent); text-underline-offset: .18em; }
+.page { max-width: 62rem; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+.topline {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 1px solid var(--rule-soft);
+  padding-bottom: .75rem;
+  color: var(--soft);
+  font-family: var(--mono);
+  font-size: .72rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.brand { color: var(--ink); font-weight: 600; text-decoration: none; }
+header { padding: 3rem 0 2rem; border-bottom: 5px double var(--ink); }
+.kicker {
+  font-family: var(--mono);
+  color: var(--accent);
+  font-size: .76rem;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  margin: 0 0 .8rem;
+}
+h1 {
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  line-height: .95;
+  font-weight: 520;
+}
+.deck { max-width: 44rem; margin: 1.2rem 0 0; font-size: 1.2rem; color: var(--soft); }
+.notice {
+  margin: 1.75rem 0 0;
+  padding: 1rem 1.15rem;
+  border-left: 4px solid var(--accent);
+  background: rgba(166,51,35,.08);
+  font-family: var(--sans);
+  font-size: .98rem;
+}
+main { display: grid; gap: 2.2rem; padding-top: 2.25rem; }
+section { border-top: 1px solid var(--rule-soft); padding-top: 1.4rem; }
+section:first-child { border-top: 0; padding-top: 0; }
+h2 {
+  margin: 0 0 .85rem;
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 1.05rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+h3 { margin: 1.3rem 0 .45rem; color: var(--ink); font-family: var(--sans); font-size: 1rem; }
+p { margin: .75rem 0; }
+ul { padding-left: 1.25rem; }
+li { margin: .35rem 0; }
+.verdict {
+  display: inline-flex;
+  font-family: var(--mono);
+  font-size: .82rem;
+  font-weight: 600;
+  color: var(--accent);
+  border: 1px solid rgba(166,51,35,.35);
+  background: rgba(166,51,35,.08);
+  padding: .35rem .55rem;
+  border-radius: 6px;
+}
+.grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .85rem; margin: 1rem 0; }
+.card { border: 1px solid var(--rule-soft); background: rgba(246,239,220,.7); border-radius: 8px; padding: .9rem; }
+.card .label { font-family: var(--mono); color: var(--accent); font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; }
+.card strong { display: block; margin-top: .35rem; color: var(--ink); font-family: var(--sans); font-size: .95rem; }
+.footer { margin-top: 3rem; border-top: 1px solid var(--rule-soft); padding-top: 1rem; color: var(--soft); font-family: var(--sans); font-size: .9rem; }
+@media (max-width: 720px) {
+  .grid { grid-template-columns: 1fr; }
+  .topline { flex-direction: column; }
+}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="topline">
+    <a class="brand" href="/">Audio Epilepsy Digest</a>
+    <span>AI-assisted editorial review</span>
+  </div>
+
+  <header>
+    <p class="kicker">Episode 9</p>
+    <h1>From Paper to Podcast: The AED Assembly Line</h1>
+    <p class="deck">A process-transparency special about how AED turns source material into medical audio while keeping final editorial responsibility human.</p>
+    <div class="notice">
+      This page describes an internal editorial source check. It is not independent peer review, and it is not a certification that the episode is error-free.
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Final Review Status</h2>
+      <p><span class="verdict">Human-cleared with review caveats</span></p>
+      <p>The AI-assisted editorial review recommended another audio pass because of process and branding issues in the spoken draft. Erafat listened to the candidate and explicitly cleared this version for release staging.</p>
+    </section>
+
+    <section>
+      <h2>What Was Checked</h2>
+      <p>Because this is a transparency episode rather than a clinical literature review, the transcript was checked against AED's own planning and process documents.</p>
+      <ul>
+        <li>Episode brief and central question</li>
+        <li>Process QA guardrail and safe on-air claims</li>
+        <li>Source log and evidence boundary</li>
+        <li>Producer brief for the special episode</li>
+        <li>Transcript of the accepted audio candidate</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Review Findings</h2>
+      <div class="grid">
+        <div class="card">
+          <span class="label">Accepted</span>
+          <strong>Core structure</strong>
+          <p>The episode follows the intended assembly-line story from source material to public audio.</p>
+        </div>
+        <div class="card">
+          <span class="label">Accepted</span>
+          <strong>Human responsibility</strong>
+          <p>The episode repeatedly states that human judgment owns clinical framing and the release decision.</p>
+        </div>
+        <div class="card">
+          <span class="label">Caveat</span>
+          <strong>Branding and close</strong>
+          <p>The review found spoken process issues that were accepted by human override rather than regenerated.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Accepted Caveats</h2>
+      <ul>
+        <li>The audio mispronounces or misstates Erafat's name once in the origin story.</li>
+        <li>The origin story contains a brief pronoun inconsistency.</li>
+        <li>The opening uses a hypothetical clinical-error example that was not part of the source packet.</li>
+        <li>The closing does not use the exact AED feedback and next-episode sign-off requested in the producer brief.</li>
+      </ul>
+      <p>These issues were judged not to change the episode's overall process explanation enough to block release after human listening review.</p>
+    </section>
+
+    <section>
+      <h2>Editorial Boundary</h2>
+      <p>The episode describes AED's own documented workflow. It should not be read as proof that AED has been externally validated as a medical education intervention. AI-assisted editorial review helps identify source drift and overstatement, but final responsibility remains with the clinician-editor.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Audio Epilepsy Digest is an evolving collaboration between human and AI. Original source materials and human editorial judgment remain central to the release process.</p>
+  </footer>
+</div>
+</body>
+</html>
