@@ -14,13 +14,52 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Medicine"/>
     <itunes:image href="https://audioepilepsydigest.com/site-assets/show-cover.png"/>
-    <lastBuildDate>Mon, 08 Jun 2026 22:01:15 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 16 Jun 2026 11:01:36 +0000</lastBuildDate>
     <copyright>Copyright 2026 Erafat D. Rehim, MD</copyright>
     <image>
       <url>https://audioepilepsydigest.com/site-assets/show-cover.png</url>
       <title>AED | Audio Epilepsy Digest</title>
       <link>https://audioepilepsydigest.com/</link>
     </image>
+    <item>
+      <guid isPermaLink="false">aed-010-a-positive-signal-with-a-negative-primary-endpoint-the-nautilus-trial</guid>
+      <title>Episode 10: A Positive Signal With a Negative Primary Endpoint: The NAUTILUS Trial</title>
+      <description>&lt;p&gt;NOTE: This podcast is an evolving collaboration between human and AI. While we strive for accuracy, AI hosts may misinterpret or oversimplify source material. Always refer to the original published articles for clinical decision-making. If you find any claims made by the AI hosts to be inaccurate, please let us know. Your feedback directly improves future episodes.&lt;/p&gt;
+&lt;p&gt;Episode 10: A Positive Signal With a Negative Primary Endpoint: The NAUTILUS Trial&lt;/p&gt;
+&lt;p&gt;This monthly special is a journal-club reading of NAUTILUS, the randomized sham-controlled trial of responsive centromedian thalamic stimulation for drug-resistant idiopathic generalized epilepsy with recurrent generalized tonic-clonic seizures.&lt;/p&gt;
+&lt;p&gt;The episode's main point is endpoint discipline: the primary safety endpoint was met, the prespecified primary effectiveness endpoint was not statistically significant, and the longer-term and post hoc signals remain clinically important but bounded.&lt;/p&gt;
+&lt;p&gt;Listen and follow Audio Epilepsy Digest:&lt;br /&gt;&lt;a href=&quot;https://audioepilepsydigest.com/&quot;&gt;https://audioepilepsydigest.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;AI editorial/source review for this episode:&lt;br /&gt;&lt;a href=&quot;https://audioepilepsydigest.com/episode-010-ai-review.html&quot;&gt;https://audioepilepsydigest.com/episode-010-ai-review.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Key takeaways:&lt;br /&gt;- NAUTILUS is best read as an encouraging signal, not a simple positive trial.&lt;br /&gt;- The prespecified time-to-second-GTCS effectiveness endpoint was not statistically significant.&lt;br /&gt;- Post hoc and 18-month seizure outcomes may still matter clinically, but they cannot erase the endpoint hierarchy.&lt;br /&gt;- The narrow practice implication is a serious counseling and referral discussion for carefully selected drug-resistant IGE patients with recurrent GTCS.&lt;br /&gt;- Thalamic RNS for IGE should not be framed as established standard-of-care therapy from this trial alone.&lt;/p&gt;
+&lt;p&gt;Papers discussed include:&lt;br /&gt;1. Uysal et al. NAUTILUS randomized controlled trial, Epilepsia (2026). PMID: 42233958.&lt;br /&gt;2. Haneef and Skrehot. Neurostimulation in generalized epilepsy, Epilepsia (2023). PMID: 36727550.&lt;br /&gt;3. Alhourani et al. Bilateral centromedian thalamic neuromodulation systematic review and IPD meta-analysis, Neuromodulation (2026). PMID: 40498441.&lt;br /&gt;4. Sisterson et al. Centromedian thalamic RNS in IGE case series, Journal of Neurology, Neurosurgery &amp;amp; Psychiatry (2022). PMID: 35217517.&lt;br /&gt;5. Nanda et al. Centromedian-region thalamic RNS in IGE and multifocal epilepsy, Epilepsia (2024). PMID: 39052021.&lt;/p&gt;
+&lt;p&gt;Caveats:&lt;br /&gt;- The Nanda 2024 82.6% average seizure reduction applies to the 17 patients with at least 1 year of follow-up, not all 21 implanted patients.&lt;br /&gt;- NAUTILUS post hoc and 18-month outcomes are encouraging but cannot rescue the negative prespecified primary effectiveness endpoint.&lt;br /&gt;- Centromedian thalamus should be understood as a plausible thalamocortical network node, not a proven circuit breaker.&lt;br /&gt;- The episode supports careful discussion and referral consideration, not a guideline-level recommendation.&lt;/p&gt;</description>
+      <content:encoded>&lt;p&gt;NOTE: This podcast is an evolving collaboration between human and AI. While we strive for accuracy, AI hosts may misinterpret or oversimplify source material. Always refer to the original published articles for clinical decision-making. If you find any claims made by the AI hosts to be inaccurate, please let us know. Your feedback directly improves future episodes.&lt;/p&gt;
+&lt;p&gt;Episode 10: A Positive Signal With a Negative Primary Endpoint: The NAUTILUS Trial&lt;/p&gt;
+&lt;p&gt;This monthly special is a journal-club reading of NAUTILUS, the randomized sham-controlled trial of responsive centromedian thalamic stimulation for drug-resistant idiopathic generalized epilepsy with recurrent generalized tonic-clonic seizures.&lt;/p&gt;
+&lt;p&gt;The episode's main point is endpoint discipline: the primary safety endpoint was met, the prespecified primary effectiveness endpoint was not statistically significant, and the longer-term and post hoc signals remain clinically important but bounded.&lt;/p&gt;
+&lt;p&gt;Listen and follow Audio Epilepsy Digest:&lt;br /&gt;&lt;a href=&quot;https://audioepilepsydigest.com/&quot;&gt;https://audioepilepsydigest.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;AI editorial/source review for this episode:&lt;br /&gt;&lt;a href=&quot;https://audioepilepsydigest.com/episode-010-ai-review.html&quot;&gt;https://audioepilepsydigest.com/episode-010-ai-review.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Key takeaways:&lt;br /&gt;- NAUTILUS is best read as an encouraging signal, not a simple positive trial.&lt;br /&gt;- The prespecified time-to-second-GTCS effectiveness endpoint was not statistically significant.&lt;br /&gt;- Post hoc and 18-month seizure outcomes may still matter clinically, but they cannot erase the endpoint hierarchy.&lt;br /&gt;- The narrow practice implication is a serious counseling and referral discussion for carefully selected drug-resistant IGE patients with recurrent GTCS.&lt;br /&gt;- Thalamic RNS for IGE should not be framed as established standard-of-care therapy from this trial alone.&lt;/p&gt;
+&lt;p&gt;Papers discussed include:&lt;br /&gt;1. Uysal et al. NAUTILUS randomized controlled trial, Epilepsia (2026). PMID: 42233958.&lt;br /&gt;2. Haneef and Skrehot. Neurostimulation in generalized epilepsy, Epilepsia (2023). PMID: 36727550.&lt;br /&gt;3. Alhourani et al. Bilateral centromedian thalamic neuromodulation systematic review and IPD meta-analysis, Neuromodulation (2026). PMID: 40498441.&lt;br /&gt;4. Sisterson et al. Centromedian thalamic RNS in IGE case series, Journal of Neurology, Neurosurgery &amp;amp; Psychiatry (2022). PMID: 35217517.&lt;br /&gt;5. Nanda et al. Centromedian-region thalamic RNS in IGE and multifocal epilepsy, Epilepsia (2024). PMID: 39052021.&lt;/p&gt;
+&lt;p&gt;Caveats:&lt;br /&gt;- The Nanda 2024 82.6% average seizure reduction applies to the 17 patients with at least 1 year of follow-up, not all 21 implanted patients.&lt;br /&gt;- NAUTILUS post hoc and 18-month outcomes are encouraging but cannot rescue the negative prespecified primary effectiveness endpoint.&lt;br /&gt;- Centromedian thalamus should be understood as a plausible thalamocortical network node, not a proven circuit breaker.&lt;br /&gt;- The episode supports careful discussion and referral consideration, not a guideline-level recommendation.&lt;/p&gt;</content:encoded>
+      <link>https://audioepilepsydigest.com/#episode-010</link>
+      <pubDate>Tue, 16 Jun 2026 11:00:00 +0000</pubDate>
+      <itunes:author>Erafat D. Rehim, MD</itunes:author>
+      <itunes:summary>NOTE: This podcast is an evolving collaboration between human and AI. While we strive for accuracy, AI hosts may misinterpret or oversimplify source material. Always refer to the original published articles for clinical decision-making. If you find any claims made by the AI hosts to be inaccurate, please let us know. Your feedback directly improves future episodes.
+
+Episode 10: A Positive Signal With a Negative Primary Endpoint: The NAUTILUS Trial
+
+This monthly special is a journal-club reading of NAUTILUS, the randomized sham-controlled trial of responsive centromedian thalamic stimulation for drug-resistant idiopathic generalized epilepsy with recurrent generalized tonic-clonic seizures.
+
+The episode's main point is endpoint discipline: the primary safety endpoint was met, the prespecified primary effectiveness endpoint was not statistically significant, and the longer-term and post hoc signals remain clinically important but bounded.
+
+Listen and follow Audio Epilepsy Digest:
+https://audioepilepsydigest.com/</itunes:summary>
+      <itunes:duration>00:21:30</itunes:duration>
+      <itunes:episode>10</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://media.audioepilepsydigest.com/audio/episode-010-audio.m4a" length="37410086" type="audio/mp4"/>
+    </item>
     <item>
       <guid isPermaLink="false">aed-009-from-paper-to-podcast-the-aed-assembly-line</guid>
       <title>Episode 9: From Paper to Podcast: The AED Assembly Line</title>
