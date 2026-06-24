@@ -14,7 +14,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Medicine"/>
     <itunes:image href="https://audioepilepsydigest.com/site-assets/show-cover.png"/>
-    <lastBuildDate>Tue, 23 Jun 2026 02:49:16 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jun 2026 18:00:20 +0000</lastBuildDate>
     <copyright>Copyright 2026 Erafat D. Rehim, MD</copyright>
     <image>
       <url>https://audioepilepsydigest.com/site-assets/show-cover.png</url>
@@ -58,6 +58,7 @@ https://audioepilepsydigest.com/</itunes:summary>
       <itunes:duration>00:20:10</itunes:duration>
       <itunes:episode>11</itunes:episode>
       <itunes:episodeType>full</itunes:episodeType>
+      <itunes:image href="https://audioepilepsydigest.com/site-assets/episode-11-cover.png"/>
       <enclosure url="https://media.audioepilepsydigest.com/audio/episode-011-audio.m4a" length="35079744" type="audio/mp4"/>
     </item>
     <item>
@@ -97,6 +98,7 @@ https://audioepilepsydigest.com/</itunes:summary>
       <itunes:duration>00:21:30</itunes:duration>
       <itunes:episode>10</itunes:episode>
       <itunes:episodeType>full</itunes:episodeType>
+      <itunes:image href="https://audioepilepsydigest.com/site-assets/episode-10-cover.png"/>
       <enclosure url="https://media.audioepilepsydigest.com/audio/episode-010-audio.m4a" length="37410086" type="audio/mp4"/>
     </item>
     <item>
@@ -136,6 +138,7 @@ https://audioepilepsydigest.com/</itunes:summary>
       <itunes:duration>00:19:15</itunes:duration>
       <itunes:episode>9</itunes:episode>
       <itunes:episodeType>full</itunes:episodeType>
+      <itunes:image href="https://audioepilepsydigest.com/site-assets/episode-9-cover.png"/>
       <enclosure url="https://media.audioepilepsydigest.com/audio/episode-009-audio-with-intro.m4a" length="33639313" type="audio/mp4"/>
     </item>
     <item>
@@ -176,6 +179,7 @@ The practical message is evidence-tier discipline: name the kind of evidence bef
       <itunes:duration>00:15:04</itunes:duration>
       <itunes:episode>8</itunes:episode>
       <itunes:episodeType>full</itunes:episodeType>
+      <itunes:image href="https://audioepilepsydigest.com/site-assets/episode-8-cover.png"/>
       <enclosure url="https://media.audioepilepsydigest.com/audio/episode-008-audio.m4a" length="26232732" type="audio/mp4"/>
     </item>
     <item>
@@ -218,6 +222,7 @@ The practical message is restrained: outcome data, visible lesions, anatomical t
       <itunes:duration>00:20:26</itunes:duration>
       <itunes:episode>7</itunes:episode>
       <itunes:episodeType>full</itunes:episodeType>
+      <itunes:image href="https://audioepilepsydigest.com/site-assets/episode-7-cover.png"/>
       <enclosure url="https://media.audioepilepsydigest.com/audio/episode-007-audio.m4a" length="39445974" type="audio/mp4"/>
     </item>
     <item>
@@ -260,6 +265,7 @@ The practical message is restrained: seizure timing is becoming a serious clinic
       <itunes:duration>00:19:52</itunes:duration>
       <itunes:episode>6</itunes:episode>
       <itunes:episodeType>full</itunes:episodeType>
+      <itunes:image href="https://audioepilepsydigest.com/site-assets/episode-6-cover.png"/>
       <enclosure url="https://media.audioepilepsydigest.com/audio/episode-006-audio.m4a" length="38369144" type="audio/mp4"/>
     </item>
     <item>
@@ -302,6 +308,7 @@ The practical message is cautious but useful: cognition in epilepsy is becoming 
       <itunes:duration>00:19:02</itunes:duration>
       <itunes:episode>5</itunes:episode>
       <itunes:episodeType>full</itunes:episodeType>
+      <itunes:image href="https://audioepilepsydigest.com/site-assets/episode-5-cover.png"/>
       <enclosure url="https://media.audioepilepsydigest.com/audio/episode-005-audio.m4a" length="36747490" type="audio/mp4"/>
     </item>
     <item>
@@ -344,6 +351,7 @@ The practical message is coexistence, not replacement. Cenobamate may change tim
       <itunes:duration>00:16:25</itunes:duration>
       <itunes:episode>4</itunes:episode>
       <itunes:episodeType>full</itunes:episodeType>
+      <itunes:image href="https://audioepilepsydigest.com/site-assets/episode-4-cover.png"/>
       <enclosure url="https://media.audioepilepsydigest.com/audio/episode-004-audio.m4a" length="31707606" type="audio/mp4"/>
     </item>
     <item>
@@ -386,6 +394,7 @@ The common thread is measurement humility. Seizure counts remain essential, but 
       <itunes:duration>00:21:24</itunes:duration>
       <itunes:episode>3</itunes:episode>
       <itunes:episodeType>full</itunes:episodeType>
+      <itunes:image href="https://audioepilepsydigest.com/site-assets/episode-3-cover.png"/>
       <enclosure url="https://media.audioepilepsydigest.com/audio/episode-003-audio.m4a" length="41320990" type="audio/mp4"/>
     </item>
     <item>
@@ -420,6 +429,7 @@ Topics covered:
       <itunes:duration>00:21:59</itunes:duration>
       <itunes:episode>2</itunes:episode>
       <itunes:episodeType>full</itunes:episodeType>
+      <itunes:image href="https://audioepilepsydigest.com/site-assets/episode-2-cover.png"/>
       <enclosure url="https://media.audioepilepsydigest.com/audio/episode-002-audio.m4a" length="42473387" type="audio/mp4"/>
     </item>
     <item>
