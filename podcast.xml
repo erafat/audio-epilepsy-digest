@@ -14,13 +14,53 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Medicine"/>
     <itunes:image href="https://audioepilepsydigest.com/site-assets/show-cover.png"/>
-    <lastBuildDate>Tue, 23 Jun 2026 18:00:20 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 30 Jun 2026 22:56:40 +0000</lastBuildDate>
     <copyright>Copyright 2026 Erafat D. Rehim, MD</copyright>
     <image>
       <url>https://audioepilepsydigest.com/site-assets/show-cover.png</url>
       <title>AED | Audio Epilepsy Digest</title>
       <link>https://audioepilepsydigest.com/</link>
     </image>
+    <item>
+      <guid isPermaLink="false">aed-012-care-pathways-before-practice-change</guid>
+      <title>Episode 12: Care Pathways Before Practice Change</title>
+      <description>&lt;p&gt;NOTE: This podcast is an evolving collaboration between human and AI. While we strive for accuracy, AI hosts may misinterpret or oversimplify source material. Always refer to the original published articles for clinical decision-making. If you find any claims made by the AI hosts to be inaccurate, please let us know. Your feedback directly improves future episodes.&lt;/p&gt;
+&lt;p&gt;Episode 12: Care Pathways Before Practice Change&lt;/p&gt;
+&lt;p&gt;This weekly recent-studies episode asks what happens when epilepsy outcomes are shaped not only by medications, procedures, or devices, but by the care pathway around the patient.&lt;/p&gt;
+&lt;p&gt;The episode follows five care-delivery signals: rural inpatient outcomes, inpatient video-EEG access after repeated seizure-related emergency visits, pediatric-to-adult transition, brain tumor-related epilepsy coordination, and a UK roadmap for technology-enabled service redesign.&lt;/p&gt;
+&lt;p&gt;Listen and follow Audio Epilepsy Digest:&lt;br /&gt;&lt;a href=&quot;https://audioepilepsydigest.com/&quot;&gt;https://audioepilepsydigest.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;AI editorial/source review for this episode:&lt;br /&gt;&lt;a href=&quot;https://audioepilepsydigest.com/episode-012-ai-review.html&quot;&gt;https://audioepilepsydigest.com/episode-012-ai-review.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Key takeaways:&lt;br /&gt;- Care pathways are measurable parts of epilepsy care, not just background logistics.&lt;br /&gt;- Rural-urban inpatient differences, vEEG access, transition care, and tumor-epilepsy coordination all point to pathway-level gaps.&lt;br /&gt;- The studies are mostly observational or service-mapping work, so they support careful questions rather than practice-changing mandates.&lt;br /&gt;- Technology can support redesign, but the roadmap source is not proof that specific digital tools improve outcomes.&lt;br /&gt;- Repeated ED visits, transition handoffs, and multidisciplinary tumor care are moments to ask whether the patient reached the right diagnostic and longitudinal services.&lt;/p&gt;
+&lt;p&gt;Papers discussed include:&lt;br /&gt;1. Rural-urban disparities in epilepsy hospitalizations in the United States. PMID: 42234954. PMCID: PMC13239426.&lt;br /&gt;2. Kozak et al. Access to inpatient video-EEG monitoring for patients with frequent seizure-related emergency visits. Epilepsy Research (2026). PMID: 42349236.&lt;br /&gt;3. Modi et al. Measuring transition success from paediatric to adult epilepsy services and its association with seizure outcomes. Archives of Disease in Childhood (2026). PMID: 42082329.&lt;br /&gt;4. Anghileri et al. Mapping integrated care for brain tumour-related epilepsy in the Italian RIN-IRCCS network. Neurological Sciences (2026). PMID: 42350833. PMCID: PMC13303563.&lt;br /&gt;5. Terry and Shankar. The future of epilepsy care in the United Kingdom: A roadmap for technology-enabled transformation. Epilepsia Open (2026). PMID: 41964582. PMCID: PMC13238867.&lt;/p&gt;
+&lt;p&gt;Caveats:&lt;br /&gt;- Rurality, vEEG access, transition success, and pathway gaps are discussed as associations or service-design signals, not causal proof.&lt;br /&gt;- Private-insurance examples in the audio should be heard as illustrative possibilities, not findings directly tested by the rural-urban study.&lt;br /&gt;- The wearable false-alarm scenario is a hypothetical service-design concern, not an observed outcome in the technology-roadmap paper.&lt;/p&gt;</description>
+      <content:encoded>&lt;p&gt;NOTE: This podcast is an evolving collaboration between human and AI. While we strive for accuracy, AI hosts may misinterpret or oversimplify source material. Always refer to the original published articles for clinical decision-making. If you find any claims made by the AI hosts to be inaccurate, please let us know. Your feedback directly improves future episodes.&lt;/p&gt;
+&lt;p&gt;Episode 12: Care Pathways Before Practice Change&lt;/p&gt;
+&lt;p&gt;This weekly recent-studies episode asks what happens when epilepsy outcomes are shaped not only by medications, procedures, or devices, but by the care pathway around the patient.&lt;/p&gt;
+&lt;p&gt;The episode follows five care-delivery signals: rural inpatient outcomes, inpatient video-EEG access after repeated seizure-related emergency visits, pediatric-to-adult transition, brain tumor-related epilepsy coordination, and a UK roadmap for technology-enabled service redesign.&lt;/p&gt;
+&lt;p&gt;Listen and follow Audio Epilepsy Digest:&lt;br /&gt;&lt;a href=&quot;https://audioepilepsydigest.com/&quot;&gt;https://audioepilepsydigest.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;AI editorial/source review for this episode:&lt;br /&gt;&lt;a href=&quot;https://audioepilepsydigest.com/episode-012-ai-review.html&quot;&gt;https://audioepilepsydigest.com/episode-012-ai-review.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Key takeaways:&lt;br /&gt;- Care pathways are measurable parts of epilepsy care, not just background logistics.&lt;br /&gt;- Rural-urban inpatient differences, vEEG access, transition care, and tumor-epilepsy coordination all point to pathway-level gaps.&lt;br /&gt;- The studies are mostly observational or service-mapping work, so they support careful questions rather than practice-changing mandates.&lt;br /&gt;- Technology can support redesign, but the roadmap source is not proof that specific digital tools improve outcomes.&lt;br /&gt;- Repeated ED visits, transition handoffs, and multidisciplinary tumor care are moments to ask whether the patient reached the right diagnostic and longitudinal services.&lt;/p&gt;
+&lt;p&gt;Papers discussed include:&lt;br /&gt;1. Rural-urban disparities in epilepsy hospitalizations in the United States. PMID: 42234954. PMCID: PMC13239426.&lt;br /&gt;2. Kozak et al. Access to inpatient video-EEG monitoring for patients with frequent seizure-related emergency visits. Epilepsy Research (2026). PMID: 42349236.&lt;br /&gt;3. Modi et al. Measuring transition success from paediatric to adult epilepsy services and its association with seizure outcomes. Archives of Disease in Childhood (2026). PMID: 42082329.&lt;br /&gt;4. Anghileri et al. Mapping integrated care for brain tumour-related epilepsy in the Italian RIN-IRCCS network. Neurological Sciences (2026). PMID: 42350833. PMCID: PMC13303563.&lt;br /&gt;5. Terry and Shankar. The future of epilepsy care in the United Kingdom: A roadmap for technology-enabled transformation. Epilepsia Open (2026). PMID: 41964582. PMCID: PMC13238867.&lt;/p&gt;
+&lt;p&gt;Caveats:&lt;br /&gt;- Rurality, vEEG access, transition success, and pathway gaps are discussed as associations or service-design signals, not causal proof.&lt;br /&gt;- Private-insurance examples in the audio should be heard as illustrative possibilities, not findings directly tested by the rural-urban study.&lt;br /&gt;- The wearable false-alarm scenario is a hypothetical service-design concern, not an observed outcome in the technology-roadmap paper.&lt;/p&gt;</content:encoded>
+      <link>https://audioepilepsydigest.com/#episode-012</link>
+      <pubDate>Wed, 01 Jul 2026 11:00:00 +0000</pubDate>
+      <itunes:author>Erafat D. Rehim, MD</itunes:author>
+      <itunes:summary>NOTE: This podcast is an evolving collaboration between human and AI. While we strive for accuracy, AI hosts may misinterpret or oversimplify source material. Always refer to the original published articles for clinical decision-making. If you find any claims made by the AI hosts to be inaccurate, please let us know. Your feedback directly improves future episodes.
+
+Episode 12: Care Pathways Before Practice Change
+
+This weekly recent-studies episode asks what happens when epilepsy outcomes are shaped not only by medications, procedures, or devices, but by the care pathway around the patient.
+
+The episode follows five care-delivery signals: rural inpatient outcomes, inpatient video-EEG access after repeated seizure-related emergency visits, pediatric-to-adult transition, brain tumor-related epilepsy coordination, and a UK roadmap for technology-enabled service redesign.
+
+Listen and follow Audio Epilepsy Digest:
+https://audioepilepsydigest.com/</itunes:summary>
+      <itunes:duration>00:21:07</itunes:duration>
+      <itunes:episode>12</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:image href="https://audioepilepsydigest.com/site-assets/episode-12-cover.png"/>
+      <enclosure url="https://media.audioepilepsydigest.com/audio/episode-012-audio.m4a" length="31169000" type="audio/mp4"/>
+    </item>
     <item>
       <guid isPermaLink="false">aed-011-signals-before-practice-change-glp1-drugs-and-the-temptation-to-overread</guid>
       <title>Episode 11: Signals Before Practice Change: GLP-1 Drugs and the Temptation to Overread</title>
