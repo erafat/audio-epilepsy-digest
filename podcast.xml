@@ -9,12 +9,16 @@
     <managingEditor>Erafat D. Rehim, MD</managingEditor>
     <webMaster>Erafat D. Rehim, MD</webMaster>
     <itunes:author>Erafat D. Rehim, MD</itunes:author>
+    <itunes:owner>
+      <itunes:name>Erafat D. Rehim, MD</itunes:name>
+      <itunes:email>audioepilepsydigest@gmail.com</itunes:email>
+    </itunes:owner>
     <itunes:summary>Audio Epilepsy Digest (AED) is a colleague-level podcast briefing on epilepsy research, controversies, and practice-shaping signals for epileptologists, epilepsy fellows, and surgical epilepsy teams.</itunes:summary>
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Medicine"/>
     <itunes:image href="https://audioepilepsydigest.com/site-assets/show-cover.png"/>
-    <lastBuildDate>Mon, 06 Jul 2026 07:01:34 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 06 Jul 2026 22:31:34 +0000</lastBuildDate>
     <copyright>Copyright 2026 Erafat D. Rehim, MD</copyright>
     <image>
       <url>https://audioepilepsydigest.com/site-assets/show-cover.png</url>
