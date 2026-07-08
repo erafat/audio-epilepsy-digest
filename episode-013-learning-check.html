@@ -194,7 +194,7 @@ form.addEventListener("submit", (event) => {
   form.querySelectorAll("input, button").forEach((control) => {
     control.disabled = true;
   });
-  score.textContent = `Locked in. Score: ${correct} of ${questions.length}`;
+  score.textContent = `Score: ${correct} of ${questions.length}`;
 });
 form.addEventListener("reset", () => {
   if (form.dataset.locked === "true") return;
