@@ -42,9 +42,20 @@ h2 { margin:0 0 .85rem; color:var(--ink); font-family:var(--sans); font-size:1.0
 .question + .question { margin-top:1rem; }
 .question fieldset { border:0; margin:0; padding:0; }
 .question legend { color:var(--ink); font-family:var(--sans); font-weight:600; line-height:1.35; padding:0; margin-bottom:.75rem; }
-.option { display:grid; grid-template-columns:1.2rem minmax(0,1fr); gap:.6rem; align-items:start; margin:.5rem 0; padding:.55rem .65rem; border:1px solid transparent; border-radius:6px; font-family:var(--sans); font-size:.98rem; line-height:1.45; }
+.option { display:grid; grid-template-columns:1.2rem 1.35rem minmax(0,1fr); gap:.5rem; align-items:start; margin:.5rem 0; padding:.55rem .65rem; border:1px solid transparent; border-radius:6px; font-family:var(--sans); font-size:.98rem; line-height:1.45; }
 .option:hover { border-color:rgba(31,90,95,.22); background:rgba(31,90,95,.055); }
 input[type="radio"] { margin-top:.18rem; accent-color:var(--teal); }
+input[type="radio"]:disabled { cursor:not-allowed; }
+.option-marker { display:inline-flex; align-items:center; justify-content:center; min-width:1.1rem; height:1.1rem; margin-top:.08rem; border-radius:999px; font-family:var(--sans); font-size:.78rem; font-weight:700; line-height:1; }
+.option-text { min-width:0; }
+.question.answered .option:has(input:checked) { background:rgba(181,138,30,.08); border-color:rgba(181,138,30,.3); }
+.question.correct .option:has(input:checked) .option-marker { color:var(--paper); background:var(--teal); }
+.question.incorrect .option:has(input:checked) .option-marker { color:var(--paper); background:var(--accent); }
+.question.correct .option:has(input:checked) .option-marker::before { content:"\2713"; }
+.question.incorrect .option:has(input:checked) .option-marker::before { content:"\00d7"; }
+form.locked .option { cursor:default; }
+form.locked .option:hover { border-color:transparent; background:transparent; }
+form.locked .question.answered .option:has(input:checked):hover { background:rgba(181,138,30,.08); border-color:rgba(181,138,30,.3); }
 .rationale { display:none; margin-top:.85rem; padding:.85rem; border-left:3px solid var(--teal); background:rgba(31,90,95,.08); font-family:var(--sans); font-size:.93rem; }
 .rationale strong { color:var(--ink); }
 .question.correct { border-color:rgba(31,90,95,.45); }
@@ -53,6 +64,7 @@ input[type="radio"] { margin-top:.18rem; accent-color:var(--teal); }
 .actions { display:flex; flex-wrap:wrap; align-items:center; gap:.75rem; margin-top:1rem; }
 button { border:1px solid var(--ink); border-radius:6px; background:var(--ink); color:var(--paper); cursor:pointer; font-family:var(--mono); font-size:.78rem; font-weight:600; letter-spacing:.08em; padding:.72rem .9rem; text-transform:uppercase; }
 button.secondary { background:transparent; color:var(--ink); }
+button:disabled { opacity:.55; cursor:not-allowed; }
 #score { min-height:1.6rem; color:var(--ink); font-family:var(--sans); font-weight:600; }
 .reflection { border-left:4px solid var(--gold); background:rgba(181,138,30,.09); padding:1rem 1.15rem; }
 .fine { color:var(--soft); font-family:var(--sans); font-size:.92rem; }
@@ -92,30 +104,30 @@ footer { border-top:1px solid var(--rule-soft); margin-top:2.5rem; padding-top:1
 <article class="question" data-answer="B">
   <fieldset>
     <legend>1. What is the episode&#x27;s central claim about useful medical AI?</legend>
-    <label class="option"><input type="radio" name="q1" value="A">Useful AI must diagnose or prescribe to matter.</label>
-    <label class="option"><input type="radio" name="q1" value="B">AI can help clinicians learn, organize evidence, and prepare, while human editors remain responsible for framing and caveats.</label>
-    <label class="option"><input type="radio" name="q1" value="C">AI source review replaces peer review.</label>
-    <label class="option"><input type="radio" name="q1" value="D">Audio generation is the first step in AED production.</label>
+    <label class="option"><input type="radio" name="q1" value="A"><span class="option-marker" aria-hidden="true"></span><span class="option-text">Useful AI must diagnose or prescribe to matter.</span></label>
+    <label class="option"><input type="radio" name="q1" value="B"><span class="option-marker" aria-hidden="true"></span><span class="option-text">AI can help clinicians learn, organize evidence, and prepare, while human editors remain responsible for framing and caveats.</span></label>
+    <label class="option"><input type="radio" name="q1" value="C"><span class="option-marker" aria-hidden="true"></span><span class="option-text">AI source review replaces peer review.</span></label>
+    <label class="option"><input type="radio" name="q1" value="D"><span class="option-marker" aria-hidden="true"></span><span class="option-text">Audio generation is the first step in AED production.</span></label>
   </fieldset>
   <div class="rationale"><strong>Correct answer: B.</strong> The episode distinguishes AI assistance from clinical authority.</div>
 </article>
 <article class="question" data-answer="A">
   <fieldset>
     <legend>2. Why does AED use transcript-first review?</legend>
-    <label class="option"><input type="radio" name="q2" value="A">To make fluent audio auditable against source material.</label>
-    <label class="option"><input type="radio" name="q2" value="B">To avoid human listening.</label>
-    <label class="option"><input type="radio" name="q2" value="C">To guarantee external validation.</label>
-    <label class="option"><input type="radio" name="q2" value="D">To remove the need for show notes.</label>
+    <label class="option"><input type="radio" name="q2" value="A"><span class="option-marker" aria-hidden="true"></span><span class="option-text">To make fluent audio auditable against source material.</span></label>
+    <label class="option"><input type="radio" name="q2" value="B"><span class="option-marker" aria-hidden="true"></span><span class="option-text">To avoid human listening.</span></label>
+    <label class="option"><input type="radio" name="q2" value="C"><span class="option-marker" aria-hidden="true"></span><span class="option-text">To guarantee external validation.</span></label>
+    <label class="option"><input type="radio" name="q2" value="D"><span class="option-marker" aria-hidden="true"></span><span class="option-text">To remove the need for show notes.</span></label>
   </fieldset>
   <div class="rationale"><strong>Correct answer: A.</strong> The process episode frames transcript-first review as the audit layer for generated audio.</div>
 </article>
 <article class="question" data-answer="B">
   <fieldset>
     <legend>3. Which caveat is most important for this process special?</legend>
-    <label class="option"><input type="radio" name="q3" value="A">AED&#x27;s process has been externally validated as a general medical education intervention.</label>
-    <label class="option"><input type="radio" name="q3" value="B">The episode describes AED&#x27;s own documented process and transparency loop, not proof of general educational effectiveness.</label>
-    <label class="option"><input type="radio" name="q3" value="C">Public review pages remove all risk of error.</label>
-    <label class="option"><input type="radio" name="q3" value="D">Human override means AI review is unnecessary.</label>
+    <label class="option"><input type="radio" name="q3" value="A"><span class="option-marker" aria-hidden="true"></span><span class="option-text">AED&#x27;s process has been externally validated as a general medical education intervention.</span></label>
+    <label class="option"><input type="radio" name="q3" value="B"><span class="option-marker" aria-hidden="true"></span><span class="option-text">The episode describes AED&#x27;s own documented process and transparency loop, not proof of general educational effectiveness.</span></label>
+    <label class="option"><input type="radio" name="q3" value="C"><span class="option-marker" aria-hidden="true"></span><span class="option-text">Public review pages remove all risk of error.</span></label>
+    <label class="option"><input type="radio" name="q3" value="D"><span class="option-marker" aria-hidden="true"></span><span class="option-text">Human override means AI review is unnecessary.</span></label>
   </fieldset>
   <div class="rationale"><strong>Correct answer: B.</strong> The show note explicitly says the process description is not external validation of AED as an intervention.</div>
 </article>
@@ -142,6 +154,7 @@ const form = document.querySelector("#quiz");
 const score = document.querySelector("#score");
 form.addEventListener("submit", (event) => {
   event.preventDefault();
+  if (form.dataset.locked === "true") return;
   const questions = Array.from(document.querySelectorAll(".question"));
   let correct = 0;
   questions.forEach((question, index) => {
@@ -156,9 +169,15 @@ form.addEventListener("submit", (event) => {
       question.classList.add("incorrect");
     }
   });
-  score.textContent = `Score: ${correct} of ${questions.length}`;
+  form.dataset.locked = "true";
+  form.classList.add("locked");
+  form.querySelectorAll("input, button").forEach((control) => {
+    control.disabled = true;
+  });
+  score.textContent = `Locked in. Score: ${correct} of ${questions.length}`;
 });
 form.addEventListener("reset", () => {
+  if (form.dataset.locked === "true") return;
   document.querySelectorAll(".question").forEach((question) => {
     question.classList.remove("answered", "correct", "incorrect");
   });

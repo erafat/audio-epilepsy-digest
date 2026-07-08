@@ -42,9 +42,20 @@ h2 { margin:0 0 .85rem; color:var(--ink); font-family:var(--sans); font-size:1.0
 .question + .question { margin-top:1rem; }
 .question fieldset { border:0; margin:0; padding:0; }
 .question legend { color:var(--ink); font-family:var(--sans); font-weight:600; line-height:1.35; padding:0; margin-bottom:.75rem; }
-.option { display:grid; grid-template-columns:1.2rem minmax(0,1fr); gap:.6rem; align-items:start; margin:.5rem 0; padding:.55rem .65rem; border:1px solid transparent; border-radius:6px; font-family:var(--sans); font-size:.98rem; line-height:1.45; }
+.option { display:grid; grid-template-columns:1.2rem 1.35rem minmax(0,1fr); gap:.5rem; align-items:start; margin:.5rem 0; padding:.55rem .65rem; border:1px solid transparent; border-radius:6px; font-family:var(--sans); font-size:.98rem; line-height:1.45; }
 .option:hover { border-color:rgba(31,90,95,.22); background:rgba(31,90,95,.055); }
 input[type="radio"] { margin-top:.18rem; accent-color:var(--teal); }
+input[type="radio"]:disabled { cursor:not-allowed; }
+.option-marker { display:inline-flex; align-items:center; justify-content:center; min-width:1.1rem; height:1.1rem; margin-top:.08rem; border-radius:999px; font-family:var(--sans); font-size:.78rem; font-weight:700; line-height:1; }
+.option-text { min-width:0; }
+.question.answered .option:has(input:checked) { background:rgba(181,138,30,.08); border-color:rgba(181,138,30,.3); }
+.question.correct .option:has(input:checked) .option-marker { color:var(--paper); background:var(--teal); }
+.question.incorrect .option:has(input:checked) .option-marker { color:var(--paper); background:var(--accent); }
+.question.correct .option:has(input:checked) .option-marker::before { content:"\2713"; }
+.question.incorrect .option:has(input:checked) .option-marker::before { content:"\00d7"; }
+form.locked .option { cursor:default; }
+form.locked .option:hover { border-color:transparent; background:transparent; }
+form.locked .question.answered .option:has(input:checked):hover { background:rgba(181,138,30,.08); border-color:rgba(181,138,30,.3); }
 .rationale { display:none; margin-top:.85rem; padding:.85rem; border-left:3px solid var(--teal); background:rgba(31,90,95,.08); font-family:var(--sans); font-size:.93rem; }
 .rationale strong { color:var(--ink); }
 .question.correct { border-color:rgba(31,90,95,.45); }
@@ -53,6 +64,7 @@ input[type="radio"] { margin-top:.18rem; accent-color:var(--teal); }
 .actions { display:flex; flex-wrap:wrap; align-items:center; gap:.75rem; margin-top:1rem; }
 button { border:1px solid var(--ink); border-radius:6px; background:var(--ink); color:var(--paper); cursor:pointer; font-family:var(--mono); font-size:.78rem; font-weight:600; letter-spacing:.08em; padding:.72rem .9rem; text-transform:uppercase; }
 button.secondary { background:transparent; color:var(--ink); }
+button:disabled { opacity:.55; cursor:not-allowed; }
 #score { min-height:1.6rem; color:var(--ink); font-family:var(--sans); font-weight:600; }
 .reflection { border-left:4px solid var(--gold); background:rgba(181,138,30,.09); padding:1rem 1.15rem; }
 .fine { color:var(--soft); font-family:var(--sans); font-size:.92rem; }
@@ -92,30 +104,30 @@ footer { border-top:1px solid var(--rule-soft); margin-top:2.5rem; padding-top:1
 <article class="question" data-answer="B">
   <fieldset>
     <legend>1. What does the RNS postapproval evidence strengthen?</legend>
-    <label class="option"><input type="radio" name="q1" value="A">A universal sequence that bypasses resection and ablation evaluation.</label>
-    <label class="option"><input type="radio" name="q1" value="B">Confidence in long-term palliative neuromodulation for selected adults with focal epilepsy.</label>
-    <label class="option"><input type="radio" name="q1" value="C">Proof that RNS is curative.</label>
-    <label class="option"><input type="radio" name="q1" value="D">Evidence that all focal epilepsy should be treated with neuromodulation first.</label>
+    <label class="option"><input type="radio" name="q1" value="A"><span class="option-marker" aria-hidden="true"></span><span class="option-text">A universal sequence that bypasses resection and ablation evaluation.</span></label>
+    <label class="option"><input type="radio" name="q1" value="B"><span class="option-marker" aria-hidden="true"></span><span class="option-text">Confidence in long-term palliative neuromodulation for selected adults with focal epilepsy.</span></label>
+    <label class="option"><input type="radio" name="q1" value="C"><span class="option-marker" aria-hidden="true"></span><span class="option-text">Proof that RNS is curative.</span></label>
+    <label class="option"><input type="radio" name="q1" value="D"><span class="option-marker" aria-hidden="true"></span><span class="option-text">Evidence that all focal epilepsy should be treated with neuromodulation first.</span></label>
   </fieldset>
   <div class="rationale"><strong>Correct answer: B.</strong> The episode keeps RNS in the selected, palliative, noncomparative evidence lane.</div>
 </article>
 <article class="question" data-answer="B">
   <fieldset>
     <legend>2. What is the correct surgical lesson from the PMG and piriform-cortex discussions?</legend>
-    <label class="option"><input type="radio" name="q2" value="A">Visible malformations and anatomical targets automatically define the epileptogenic zone.</label>
-    <label class="option"><input type="radio" name="q2" value="B">Plausible anatomy should be tested against individualized evidence rather than used as a shortcut.</label>
-    <label class="option"><input type="radio" name="q2" value="C">Piriform cortex involvement never matters.</label>
-    <label class="option"><input type="radio" name="q2" value="D">PMG surgery is never useful.</label>
+    <label class="option"><input type="radio" name="q2" value="A"><span class="option-marker" aria-hidden="true"></span><span class="option-text">Visible malformations and anatomical targets automatically define the epileptogenic zone.</span></label>
+    <label class="option"><input type="radio" name="q2" value="B"><span class="option-marker" aria-hidden="true"></span><span class="option-text">Plausible anatomy should be tested against individualized evidence rather than used as a shortcut.</span></label>
+    <label class="option"><input type="radio" name="q2" value="C"><span class="option-marker" aria-hidden="true"></span><span class="option-text">Piriform cortex involvement never matters.</span></label>
+    <label class="option"><input type="radio" name="q2" value="D"><span class="option-marker" aria-hidden="true"></span><span class="option-text">PMG surgery is never useful.</span></label>
   </fieldset>
   <div class="rationale"><strong>Correct answer: B.</strong> The episode preserves individualized mapping and avoids routine targeting shortcuts.</div>
 </article>
 <article class="question" data-answer="B">
   <fieldset>
     <legend>3. How should LLM diagnostic reasoning from seizure narratives be framed?</legend>
-    <label class="option"><input type="radio" name="q3" value="A">As clinical authorization for delegated surgical localization.</label>
-    <label class="option"><input type="radio" name="q3" value="B">As decision support with reasoning and citation limitations.</label>
-    <label class="option"><input type="radio" name="q3" value="C">As a replacement for epilepsy expertise.</label>
-    <label class="option"><input type="radio" name="q3" value="D">As proof that unstructured narratives are sufficient for diagnosis.</label>
+    <label class="option"><input type="radio" name="q3" value="A"><span class="option-marker" aria-hidden="true"></span><span class="option-text">As clinical authorization for delegated surgical localization.</span></label>
+    <label class="option"><input type="radio" name="q3" value="B"><span class="option-marker" aria-hidden="true"></span><span class="option-text">As decision support with reasoning and citation limitations.</span></label>
+    <label class="option"><input type="radio" name="q3" value="C"><span class="option-marker" aria-hidden="true"></span><span class="option-text">As a replacement for epilepsy expertise.</span></label>
+    <label class="option"><input type="radio" name="q3" value="D"><span class="option-marker" aria-hidden="true"></span><span class="option-text">As proof that unstructured narratives are sufficient for diagnosis.</span></label>
   </fieldset>
   <div class="rationale"><strong>Correct answer: B.</strong> The episode notes above-chance organization but keeps LLMs away from delegated clinical judgment.</div>
 </article>
@@ -142,6 +154,7 @@ const form = document.querySelector("#quiz");
 const score = document.querySelector("#score");
 form.addEventListener("submit", (event) => {
   event.preventDefault();
+  if (form.dataset.locked === "true") return;
   const questions = Array.from(document.querySelectorAll(".question"));
   let correct = 0;
   questions.forEach((question, index) => {
@@ -156,9 +169,15 @@ form.addEventListener("submit", (event) => {
       question.classList.add("incorrect");
     }
   });
-  score.textContent = `Score: ${correct} of ${questions.length}`;
+  form.dataset.locked = "true";
+  form.classList.add("locked");
+  form.querySelectorAll("input, button").forEach((control) => {
+    control.disabled = true;
+  });
+  score.textContent = `Locked in. Score: ${correct} of ${questions.length}`;
 });
 form.addEventListener("reset", () => {
+  if (form.dataset.locked === "true") return;
   document.querySelectorAll(".question").forEach((question) => {
     question.classList.remove("answered", "correct", "incorrect");
   });

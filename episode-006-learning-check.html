@@ -42,9 +42,20 @@ h2 { margin:0 0 .85rem; color:var(--ink); font-family:var(--sans); font-size:1.0
 .question + .question { margin-top:1rem; }
 .question fieldset { border:0; margin:0; padding:0; }
 .question legend { color:var(--ink); font-family:var(--sans); font-weight:600; line-height:1.35; padding:0; margin-bottom:.75rem; }
-.option { display:grid; grid-template-columns:1.2rem minmax(0,1fr); gap:.6rem; align-items:start; margin:.5rem 0; padding:.55rem .65rem; border:1px solid transparent; border-radius:6px; font-family:var(--sans); font-size:.98rem; line-height:1.45; }
+.option { display:grid; grid-template-columns:1.2rem 1.35rem minmax(0,1fr); gap:.5rem; align-items:start; margin:.5rem 0; padding:.55rem .65rem; border:1px solid transparent; border-radius:6px; font-family:var(--sans); font-size:.98rem; line-height:1.45; }
 .option:hover { border-color:rgba(31,90,95,.22); background:rgba(31,90,95,.055); }
 input[type="radio"] { margin-top:.18rem; accent-color:var(--teal); }
+input[type="radio"]:disabled { cursor:not-allowed; }
+.option-marker { display:inline-flex; align-items:center; justify-content:center; min-width:1.1rem; height:1.1rem; margin-top:.08rem; border-radius:999px; font-family:var(--sans); font-size:.78rem; font-weight:700; line-height:1; }
+.option-text { min-width:0; }
+.question.answered .option:has(input:checked) { background:rgba(181,138,30,.08); border-color:rgba(181,138,30,.3); }
+.question.correct .option:has(input:checked) .option-marker { color:var(--paper); background:var(--teal); }
+.question.incorrect .option:has(input:checked) .option-marker { color:var(--paper); background:var(--accent); }
+.question.correct .option:has(input:checked) .option-marker::before { content:"\2713"; }
+.question.incorrect .option:has(input:checked) .option-marker::before { content:"\00d7"; }
+form.locked .option { cursor:default; }
+form.locked .option:hover { border-color:transparent; background:transparent; }
+form.locked .question.answered .option:has(input:checked):hover { background:rgba(181,138,30,.08); border-color:rgba(181,138,30,.3); }
 .rationale { display:none; margin-top:.85rem; padding:.85rem; border-left:3px solid var(--teal); background:rgba(31,90,95,.08); font-family:var(--sans); font-size:.93rem; }
 .rationale strong { color:var(--ink); }
 .question.correct { border-color:rgba(31,90,95,.45); }
@@ -53,6 +64,7 @@ input[type="radio"] { margin-top:.18rem; accent-color:var(--teal); }
 .actions { display:flex; flex-wrap:wrap; align-items:center; gap:.75rem; margin-top:1rem; }
 button { border:1px solid var(--ink); border-radius:6px; background:var(--ink); color:var(--paper); cursor:pointer; font-family:var(--mono); font-size:.78rem; font-weight:600; letter-spacing:.08em; padding:.72rem .9rem; text-transform:uppercase; }
 button.secondary { background:transparent; color:var(--ink); }
+button:disabled { opacity:.55; cursor:not-allowed; }
 #score { min-height:1.6rem; color:var(--ink); font-family:var(--sans); font-weight:600; }
 .reflection { border-left:4px solid var(--gold); background:rgba(181,138,30,.09); padding:1rem 1.15rem; }
 .fine { color:var(--soft); font-family:var(--sans); font-size:.92rem; }
@@ -92,30 +104,30 @@ footer { border-top:1px solid var(--rule-soft); margin-top:2.5rem; padding-top:1
 <article class="question" data-answer="B">
   <fieldset>
     <legend>1. What is the safest clinical framing for seizure forecasting today?</legend>
-    <label class="option"><input type="radio" name="q1" value="A">Most patients can now receive reliable routine seizure forecasts.</label>
-    <label class="option"><input type="radio" name="q1" value="B">Forecasting remains probabilistic and research-stage, supporting better questions and trials more than routine care.</label>
-    <label class="option"><input type="radio" name="q1" value="C">Diary-only models are sufficient for medication timing.</label>
-    <label class="option"><input type="radio" name="q1" value="D">Wearable proof-of-principle studies establish clinical effectiveness.</label>
+    <label class="option"><input type="radio" name="q1" value="A"><span class="option-marker" aria-hidden="true"></span><span class="option-text">Most patients can now receive reliable routine seizure forecasts.</span></label>
+    <label class="option"><input type="radio" name="q1" value="B"><span class="option-marker" aria-hidden="true"></span><span class="option-text">Forecasting remains probabilistic and research-stage, supporting better questions and trials more than routine care.</span></label>
+    <label class="option"><input type="radio" name="q1" value="C"><span class="option-marker" aria-hidden="true"></span><span class="option-text">Diary-only models are sufficient for medication timing.</span></label>
+    <label class="option"><input type="radio" name="q1" value="D"><span class="option-marker" aria-hidden="true"></span><span class="option-text">Wearable proof-of-principle studies establish clinical effectiveness.</span></label>
   </fieldset>
   <div class="rationale"><strong>Correct answer: B.</strong> The episode explicitly keeps forecasting as research-stage and probabilistic.</div>
 </article>
 <article class="question" data-answer="C">
   <fieldset>
     <legend>2. Which requirement is central to evaluating seizure forecasts?</legend>
-    <label class="option"><input type="radio" name="q2" value="A">Using future seizure data during model construction.</label>
-    <label class="option"><input type="radio" name="q2" value="B">Avoiding chance-model comparisons.</label>
-    <label class="option"><input type="radio" name="q2" value="C">Past-only implementation, meaningful chance models, simple benchmarks, and prospective validation.</label>
-    <label class="option"><input type="radio" name="q2" value="D">Prioritizing complex models over transparent baselines.</label>
+    <label class="option"><input type="radio" name="q2" value="A"><span class="option-marker" aria-hidden="true"></span><span class="option-text">Using future seizure data during model construction.</span></label>
+    <label class="option"><input type="radio" name="q2" value="B"><span class="option-marker" aria-hidden="true"></span><span class="option-text">Avoiding chance-model comparisons.</span></label>
+    <label class="option"><input type="radio" name="q2" value="C"><span class="option-marker" aria-hidden="true"></span><span class="option-text">Past-only implementation, meaningful chance models, simple benchmarks, and prospective validation.</span></label>
+    <label class="option"><input type="radio" name="q2" value="D"><span class="option-marker" aria-hidden="true"></span><span class="option-text">Prioritizing complex models over transparent baselines.</span></label>
   </fieldset>
   <div class="rationale"><strong>Correct answer: C.</strong> The episode emphasizes methodological discipline before clinical interpretation.</div>
 </article>
 <article class="question" data-answer="B">
   <fieldset>
     <legend>3. How should the medication-timing and sleep-drive sources be used?</legend>
-    <label class="option"><input type="radio" name="q3" value="A">As patient-specific medication-change advice.</label>
-    <label class="option"><input type="radio" name="q3" value="B">As hypothesis-generating evidence, not treatment instructions.</label>
-    <label class="option"><input type="radio" name="q3" value="C">As proof that sleep amount alone determines seizure risk.</label>
-    <label class="option"><input type="radio" name="q3" value="D">As a substitute for clinical judgment.</label>
+    <label class="option"><input type="radio" name="q3" value="A"><span class="option-marker" aria-hidden="true"></span><span class="option-text">As patient-specific medication-change advice.</span></label>
+    <label class="option"><input type="radio" name="q3" value="B"><span class="option-marker" aria-hidden="true"></span><span class="option-text">As hypothesis-generating evidence, not treatment instructions.</span></label>
+    <label class="option"><input type="radio" name="q3" value="C"><span class="option-marker" aria-hidden="true"></span><span class="option-text">As proof that sleep amount alone determines seizure risk.</span></label>
+    <label class="option"><input type="radio" name="q3" value="D"><span class="option-marker" aria-hidden="true"></span><span class="option-text">As a substitute for clinical judgment.</span></label>
   </fieldset>
   <div class="rationale"><strong>Correct answer: B.</strong> The show note says medication-timing models and sleep-drive experiments should not be turned into patient-specific advice.</div>
 </article>
@@ -142,6 +154,7 @@ const form = document.querySelector("#quiz");
 const score = document.querySelector("#score");
 form.addEventListener("submit", (event) => {
   event.preventDefault();
+  if (form.dataset.locked === "true") return;
   const questions = Array.from(document.querySelectorAll(".question"));
   let correct = 0;
   questions.forEach((question, index) => {
@@ -156,9 +169,15 @@ form.addEventListener("submit", (event) => {
       question.classList.add("incorrect");
     }
   });
-  score.textContent = `Score: ${correct} of ${questions.length}`;
+  form.dataset.locked = "true";
+  form.classList.add("locked");
+  form.querySelectorAll("input, button").forEach((control) => {
+    control.disabled = true;
+  });
+  score.textContent = `Locked in. Score: ${correct} of ${questions.length}`;
 });
 form.addEventListener("reset", () => {
+  if (form.dataset.locked === "true") return;
   document.querySelectorAll(".question").forEach((question) => {
     question.classList.remove("answered", "correct", "incorrect");
   });
