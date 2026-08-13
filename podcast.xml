@@ -18,13 +18,55 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Medicine"/>
     <itunes:image href="https://audioepilepsydigest.com/site-assets/show-cover.png"/>
-    <lastBuildDate>Fri, 24 Jul 2026 19:25:56 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 13 Aug 2026 15:54:55 +0000</lastBuildDate>
     <copyright>Copyright 2026 Erafat D. Rehim, MD</copyright>
     <image>
       <url>https://audioepilepsydigest.com/site-assets/show-cover.png</url>
       <title>AED | Audio Epilepsy Digest</title>
       <link>https://audioepilepsydigest.com/</link>
     </image>
+    <item>
+      <guid isPermaLink="false">aed-016-signals-silence-zero-events</guid>
+      <title>Episode 16: Signals, Silence, and Zero Events</title>
+      <description>&lt;p&gt;NOTE: This podcast is an evolving collaboration between human and AI. While we strive for accuracy, AI hosts may misinterpret or oversimplify source material. Always refer to the original published articles for clinical decision-making. If you find any claims made by the AI hosts to be inaccurate, please let us know. Your feedback directly improves future episodes.&lt;/p&gt;
+&lt;p&gt;Episode 16: Signals, Silence, and Zero Events&lt;/p&gt;
+&lt;p&gt;What can an observational association, the absence of a consistent reported pattern, and zero observed events actually justify in medication counseling?&lt;/p&gt;
+&lt;p&gt;This episode compares three very different medication-safety evidence systems: a nationwide prenatal antiseizure-medication cohort, a global eslicarbazepine pregnancy safety database, and a small selected cohort restarting cenobamate after short interruptions. The practical method is simple: identify the denominator, comparator, missingness, exposure measurement, outcome ascertainment, and selection process before translating any memorable conclusion into care.&lt;/p&gt;
+&lt;p&gt;AED Quiz for this episode:&lt;br /&gt;&lt;a href=&quot;https://audioepilepsydigest.com/episode-016-aed-quiz.html&quot;&gt;https://audioepilepsydigest.com/episode-016-aed-quiz.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Listen and follow Audio Epilepsy Digest:&lt;br /&gt;&lt;a href=&quot;https://audioepilepsydigest.com/&quot;&gt;https://audioepilepsydigest.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Key takeaways:&lt;br /&gt;- The Korean cohort found adjusted associations with selected neurodevelopmental outcomes; it did not establish a causal medication effect.&lt;br /&gt;- Only 48.2% of exposed mothers in that cohort had epilepsy, so indication, disease severity, familial factors, and prescription-based exposure remain central limitations.&lt;br /&gt;- The eslicarbazepine database collected reports across miscarriage, congenital anomaly, neonatal adverse effect, and premature birth, but substantial missingness and the lack of a valid denominator or comparator prevent incidence and comparative-risk claims.&lt;br /&gt;- Zero attributed hypersensitivity events among 32 previously tolerant cenobamate patients is reassuring within that selected setting, but an approximate upper uncertainty bound remains near 9%.&lt;br /&gt;- Residual drug exposure is a proposed pharmacokinetic explanation, not proof of immune tolerance or authorization for a universal maintenance-dose restart protocol.&lt;/p&gt;
+&lt;p&gt;Papers discussed:&lt;br /&gt;- Kim et al. Prenatal exposure to Antiseizure Medications for all indications and the risk of neurodevelopmental disorders in offspring. Seizure. 2026. doi:10.1016/j.seizure.2026.05.030.&lt;br /&gt;- Lopes et al. Pregnancy outcomes following Eslicarbazepine acetate exposure in women with epilepsy. Seizure. 2026. doi:10.1016/j.seizure.2026.05.027.&lt;br /&gt;- Feldman et al. Hypersensitivity reaction risk when restarting cenobamate after discontinuation. Epilepsia Open. 2026. doi:10.1002/epi4.70288.&lt;/p&gt;
+&lt;p&gt;AI-assisted editorial/source review:&lt;br /&gt;&lt;a href=&quot;https://audioepilepsydigest.com/episode-016-ai-review.html&quot;&gt;https://audioepilepsydigest.com/episode-016-ai-review.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Editorial disclosure:&lt;br /&gt;Two independent AI-assisted reviews cleared the final candidate with minor notes and no blocking source-fidelity or clinical-safety finding. The remaining notes concerned prior-rash-history wording, complete reporting of pregnancy outcome categories, pronunciation of selected technical terms, separation of two rash observations, and maintaining the restart mechanism as a hypothesis. The clinician-editor listened to and approved the release candidate.&lt;/p&gt;</description>
+      <content:encoded>&lt;p&gt;NOTE: This podcast is an evolving collaboration between human and AI. While we strive for accuracy, AI hosts may misinterpret or oversimplify source material. Always refer to the original published articles for clinical decision-making. If you find any claims made by the AI hosts to be inaccurate, please let us know. Your feedback directly improves future episodes.&lt;/p&gt;
+&lt;p&gt;Episode 16: Signals, Silence, and Zero Events&lt;/p&gt;
+&lt;p&gt;What can an observational association, the absence of a consistent reported pattern, and zero observed events actually justify in medication counseling?&lt;/p&gt;
+&lt;p&gt;This episode compares three very different medication-safety evidence systems: a nationwide prenatal antiseizure-medication cohort, a global eslicarbazepine pregnancy safety database, and a small selected cohort restarting cenobamate after short interruptions. The practical method is simple: identify the denominator, comparator, missingness, exposure measurement, outcome ascertainment, and selection process before translating any memorable conclusion into care.&lt;/p&gt;
+&lt;p&gt;AED Quiz for this episode:&lt;br /&gt;&lt;a href=&quot;https://audioepilepsydigest.com/episode-016-aed-quiz.html&quot;&gt;https://audioepilepsydigest.com/episode-016-aed-quiz.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Listen and follow Audio Epilepsy Digest:&lt;br /&gt;&lt;a href=&quot;https://audioepilepsydigest.com/&quot;&gt;https://audioepilepsydigest.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Key takeaways:&lt;br /&gt;- The Korean cohort found adjusted associations with selected neurodevelopmental outcomes; it did not establish a causal medication effect.&lt;br /&gt;- Only 48.2% of exposed mothers in that cohort had epilepsy, so indication, disease severity, familial factors, and prescription-based exposure remain central limitations.&lt;br /&gt;- The eslicarbazepine database collected reports across miscarriage, congenital anomaly, neonatal adverse effect, and premature birth, but substantial missingness and the lack of a valid denominator or comparator prevent incidence and comparative-risk claims.&lt;br /&gt;- Zero attributed hypersensitivity events among 32 previously tolerant cenobamate patients is reassuring within that selected setting, but an approximate upper uncertainty bound remains near 9%.&lt;br /&gt;- Residual drug exposure is a proposed pharmacokinetic explanation, not proof of immune tolerance or authorization for a universal maintenance-dose restart protocol.&lt;/p&gt;
+&lt;p&gt;Papers discussed:&lt;br /&gt;- Kim et al. Prenatal exposure to Antiseizure Medications for all indications and the risk of neurodevelopmental disorders in offspring. Seizure. 2026. doi:10.1016/j.seizure.2026.05.030.&lt;br /&gt;- Lopes et al. Pregnancy outcomes following Eslicarbazepine acetate exposure in women with epilepsy. Seizure. 2026. doi:10.1016/j.seizure.2026.05.027.&lt;br /&gt;- Feldman et al. Hypersensitivity reaction risk when restarting cenobamate after discontinuation. Epilepsia Open. 2026. doi:10.1002/epi4.70288.&lt;/p&gt;
+&lt;p&gt;AI-assisted editorial/source review:&lt;br /&gt;&lt;a href=&quot;https://audioepilepsydigest.com/episode-016-ai-review.html&quot;&gt;https://audioepilepsydigest.com/episode-016-ai-review.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Editorial disclosure:&lt;br /&gt;Two independent AI-assisted reviews cleared the final candidate with minor notes and no blocking source-fidelity or clinical-safety finding. The remaining notes concerned prior-rash-history wording, complete reporting of pregnancy outcome categories, pronunciation of selected technical terms, separation of two rash observations, and maintaining the restart mechanism as a hypothesis. The clinician-editor listened to and approved the release candidate.&lt;/p&gt;</content:encoded>
+      <link>https://audioepilepsydigest.com/#episode-016</link>
+      <pubDate>Thu, 13 Aug 2026 11:00:00 +0000</pubDate>
+      <itunes:author>Erafat D. Rehim, MD</itunes:author>
+      <itunes:summary>NOTE: This podcast is an evolving collaboration between human and AI. While we strive for accuracy, AI hosts may misinterpret or oversimplify source material. Always refer to the original published articles for clinical decision-making. If you find any claims made by the AI hosts to be inaccurate, please let us know. Your feedback directly improves future episodes.
+
+Episode 16: Signals, Silence, and Zero Events
+
+What can an observational association, the absence of a consistent reported pattern, and zero observed events actually justify in medication counseling?
+
+This episode compares three very different medication-safety evidence systems: a nationwide prenatal antiseizure-medication cohort, a global eslicarbazepine pregnancy safety database, and a small selected cohort restarting cenobamate after short interruptions. The practical method is simple: identify the denominator, comparator, missingness, exposure measurement, outcome ascertainment, and selection process before translating any memorable conclusion into care.
+
+AED Quiz for this episode:
+https://audioepilepsydigest.com/episode-016-aed-quiz.html</itunes:summary>
+      <itunes:duration>00:21:48</itunes:duration>
+      <itunes:episode>16</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:image href="https://audioepilepsydigest.com/site-assets/episode-16-cover.png"/>
+      <enclosure url="https://media.audioepilepsydigest.com/audio/episode-016-audio.m4a" length="37937968" type="audio/mp4"/>
+    </item>
     <item>
       <guid isPermaLink="false">aed-015-fellow-bootcamp-osa-epilepsy</guid>
       <title>Episode 15: Fellow Bootcamp: OSA Is Not Just a Comorbidity</title>
@@ -64,6 +106,7 @@ https://audioepilepsydigest.com/episode-015-aed-quiz.html</itunes:summary>
       <itunes:duration>00:29:01</itunes:duration>
       <itunes:episode>15</itunes:episode>
       <itunes:episodeType>full</itunes:episodeType>
+      <itunes:image href="https://audioepilepsydigest.com/site-assets/episode-15-cover.png"/>
       <enclosure url="https://media.audioepilepsydigest.com/audio/episode-015-audio.m4a" length="42787913" type="audio/mp4"/>
     </item>
     <item>
