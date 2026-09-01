@@ -1,0 +1,436 @@
+<!doctype html>
+<!-- Episode 019 public editorial review. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI-Assisted Source Review · Episode 19 · Audio Epilepsy Digest</title>
+<meta name="description" content="Public AI-assisted source review report for Audio Epilepsy Digest episode 19.">
+<meta name="theme-color" content="#faf5e8">
+<link rel="canonical" href="https://audioepilepsydigest.com/episode-019-ai-review.html">
+<link rel="icon" type="image/png" sizes="32x32" href="site-assets/favicon-32.png">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://audioepilepsydigest.com/episode-019-ai-review.html">
+<meta property="og:title" content="AI-Assisted Source Review · Episode 19">
+<meta property="og:description" content="How AED reviewed episode 19 against the full-text source packet before human listening QA.">
+<meta property="og:image" content="https://audioepilepsydigest.com/site-assets/aed-social-card.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper: #faf5e8;
+  --paper-card: #f6efdc;
+  --ink: #15191f;
+  --body: #2a2c2b;
+  --soft: #5a564a;
+  --rule: #b8ad97;
+  --rule-soft: #d7ccb4;
+  --accent: #a63323;
+  --teal: #1f5a5f;
+  --gold: #b58a1e;
+  --serif: "Newsreader", Georgia, "Times New Roman", serif;
+  --sans: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--body);
+  font-family: var(--serif);
+  font-size: 19px;
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+  background-image:
+    radial-gradient(circle at 10% 0%, rgba(166,51,35,.05), transparent 34rem),
+    radial-gradient(circle at 92% 18%, rgba(31,90,95,.05), transparent 34rem);
+}
+a {
+  color: var(--accent);
+  text-decoration-color: rgba(166,51,35,.35);
+  text-underline-offset: .18em;
+}
+.page {
+  max-width: 62rem;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+.topline {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 1px solid var(--rule-soft);
+  padding-bottom: .75rem;
+  color: var(--soft);
+  font-family: var(--mono);
+  font-size: .72rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.brand {
+  color: var(--ink);
+  font-weight: 600;
+  text-decoration: none;
+}
+header {
+  padding: 3rem 0 2rem;
+  border-bottom: 5px double var(--ink);
+}
+.kicker {
+  font-family: var(--mono);
+  color: var(--accent);
+  font-size: .76rem;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  margin: 0 0 .8rem;
+}
+h1 {
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  line-height: .95;
+  font-weight: 520;
+  letter-spacing: -0.02em;
+}
+.deck {
+  max-width: 44rem;
+  margin: 1.2rem 0 0;
+  font-size: 1.2rem;
+  color: var(--soft);
+}
+.notice {
+  margin: 1.75rem 0 0;
+  padding: 1rem 1.15rem;
+  border-left: 4px solid var(--accent);
+  background: rgba(166,51,35,.08);
+  font-family: var(--sans);
+  font-size: .98rem;
+}
+main {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 2.2rem;
+  padding-top: 2.25rem;
+}
+section {
+  border-top: 1px solid var(--rule-soft);
+  padding-top: 1.4rem;
+}
+section:first-child { border-top: 0; padding-top: 0; }
+h2 {
+  margin: 0 0 .85rem;
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 1.05rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+h3 {
+  margin: 1.3rem 0 .45rem;
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 1rem;
+}
+p { margin: .75rem 0; }
+ul, ol { padding-left: 1.25rem; }
+li { margin: .35rem 0; }
+blockquote {
+  margin: 1.1rem 0;
+  padding: .4rem 0 .4rem 1rem;
+  border-left: 2px solid var(--rule);
+  color: var(--ink);
+  font-size: 1.22rem;
+  line-height: 1.45;
+}
+code {
+  font-family: var(--mono);
+  font-size: .92em;
+  background: rgba(31,90,95,.08);
+  padding: .05rem .25rem;
+  border-radius: 4px;
+}
+.verdict {
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  font-family: var(--mono);
+  font-size: .82rem;
+  font-weight: 600;
+  color: var(--teal);
+  border: 1px solid rgba(31,90,95,.35);
+  background: rgba(31,90,95,.08);
+  padding: .35rem .55rem;
+  border-radius: 6px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: .85rem;
+  margin: 1rem 0;
+}
+.card {
+  border: 1px solid var(--rule-soft);
+  background: rgba(246,239,220,.7);
+  border-radius: 8px;
+  padding: .9rem;
+}
+.card .label {
+  font-family: var(--mono);
+  color: var(--accent);
+  font-size: .72rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.card strong {
+  display: block;
+  margin-top: .35rem;
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: .95rem;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-family: var(--sans);
+  font-size: .92rem;
+}
+th, td {
+  border-top: 1px solid var(--rule-soft);
+  padding: .75rem .55rem;
+  vertical-align: top;
+  text-align: left;
+}
+th {
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: .72rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.fine {
+  color: var(--soft);
+  font-family: var(--sans);
+  font-size: .92rem;
+}
+footer {
+  border-top: 1px solid var(--rule-soft);
+  margin-top: 2.5rem;
+  padding-top: 1.2rem;
+  color: var(--soft);
+  font-family: var(--sans);
+  font-size: .9rem;
+}
+.fix-badge {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: .66rem;
+  font-weight: 600;
+  letter-spacing: .05em;
+  color: var(--accent);
+  background: rgba(166,51,35,.1);
+  border: 1px solid rgba(166,51,35,.25);
+  padding: .15rem .45rem;
+  border-radius: 4px;
+  vertical-align: middle;
+  margin-left: .55rem;
+}
+.fix-badge--2 {
+  color: var(--gold);
+  background: rgba(181,138,30,.1);
+  border-color: rgba(181,138,30,.3);
+}
+.fix-badge--3 {
+  color: var(--teal);
+  background: rgba(31,90,95,.1);
+  border-color: rgba(31,90,95,.3);
+}
+.diff {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .7rem;
+  margin: .85rem 0 1.6rem;
+}
+.diff-before, .diff-after {
+  padding: .8rem 1rem;
+  border-radius: 6px;
+  font-size: .97rem;
+  line-height: 1.52;
+}
+.diff-before {
+  background: rgba(166,51,35,.07);
+  border-left: 3px solid var(--accent);
+}
+.diff-after {
+  background: rgba(31,90,95,.07);
+  border-left: 3px solid var(--teal);
+}
+.diff-label {
+  font-family: var(--mono);
+  font-size: .68rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  margin: 0 0 .4rem;
+}
+.diff-before .diff-label { color: var(--accent); }
+.diff-after .diff-label { color: var(--teal); }
+.diff p:last-child { margin-bottom: 0; }
+@media (max-width: 760px) {
+  body { font-size: 18px; }
+  .topline { display: block; }
+  .topline span { display: block; margin-bottom: .35rem; }
+  .grid { grid-template-columns: 1fr; }
+  .diff { grid-template-columns: 1fr; }
+  th, td { display: block; width: 100%; }
+  th { border-top: 1px solid var(--rule); padding-bottom: .15rem; }
+  td { border-top: 0; padding-top: .15rem; }
+}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="topline">
+    <a class="brand" href="index.html" aria-label="Audio Epilepsy Digest home">Audio Epilepsy Digest</a>
+    <span>Episode 019 · Source Review</span>
+  </div>
+
+  <header>
+    <p class="kicker">AI-Assisted Editorial Review</p>
+    <h1>Episode 19 Source Review</h1>
+    <p class="deck">Twenty-one drafts were checked against the full-text evidence; causal overstatement, endpoint confusion, and narrative imbalance were corrected before the final version cleared with minor listening notes.</p>
+    <div class="notice">
+      This is not independent peer review. It is an internal editorial check — AI-assisted — to verify that the spoken audio stays faithful to what the published studies actually found.
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Review Goal</h2>
+      <p>The review asked a narrow question:</p>
+      <blockquote>Does the spoken audio stay faithful to the source papers, especially where clinical interpretation could be overstated?</blockquote>
+      <p>The review focused on post-SEEG clinical seizure reports, time to first seizure during intracranial monitoring, scheduled RNS ECoG evolution, exceptional no-stimulation cases, DBS insertional-effect observations, an author-involved predictive abstract, and interpretation of an implanted-sham randomized trial.</p>
+    </section>
+
+    <section>
+      <h2>Evidence Standard</h2>
+      <p>The episode was reviewed against the full text of the source articles — not abstracts or summaries — to catch places where the audio could misrepresent scope, effect size, or clinical implications.</p>
+      <ol>
+        <li>Roy-Chowdhury S, et al. “Does stereoelectroencephalographic depth electrode insertion alter seizure frequency? A baseline versus endpoint analysis.” <em>Epilepsia</em> (2026). PMID: 42474247.</li>
+        <li>Lane MA, et al. “The implantation effect: delay in seizure occurrence with implantation of intracranial electrodes.” <em>Acta Neurologica Scandinavica</em> (2017). PMID: 27531652.</li>
+        <li>Sun FT, et al. “Changes in the electrocorticogram after implantation of intracranial electrodes in humans: The implant effect.” <em>Clinical Neurophysiology</em> (2018). PMID: 29233473.</li>
+        <li>Thuberg D, et al. “Deep Brain Stimulation for Refractory Focal Epilepsy: Unraveling the Insertional Effect up to Five Months Without Stimulation.” <em>Neuromodulation</em> (2021). PMID: 33577139.</li>
+        <li>Rumschlag M, et al. “Extremely long RNS implantation effect: The extended impact of RNS electrodes on clinical and ECoG findings without the confounding effect of RNS stimulation.” <em>Epileptic Disorders</em> (2024). PMID: 38787629. PMCID: PMC12034247.</li>
+        <li>McCarthy PM, Burdette DE. “Responsive neurostimulation (RNS) programming.” <em>Neurotherapeutics</em> (2026). PMID: 42302539. PMCID: PMC13285825.</li>
+        <li>Uysal U, et al. “Responsive stimulation of the thalamus for idiopathic generalized epilepsy: Results of the randomized controlled NAUTILUS trial through 18 months.” <em>Epilepsia</em> (2026). PMID: 42233958.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Process</h2>
+      <div class="grid">
+        <div class="card"><span class="label">Step 1</span><strong>Generate from full text</strong><p class="fine">The episode was generated directly from the source papers, with explicit instructions to preserve study scope and avoid overstating findings.</p></div>
+        <div class="card"><span class="label">Step 2</span><strong>Transcribe audio</strong><p class="fine">The audio was converted to text so spoken claims could be checked line by line against the papers.</p></div>
+        <div class="card"><span class="label">Step 3</span><strong>Audit claims twice</strong><p class="fine">Two independent AI-assisted reviews checked spoken claims against the source text and flagged material overstatement, misrepresentation, or unsupported interpretation.</p></div>
+      </div>
+      <p>Each complete draft received two independent reviews and one combined editorial verdict: <em>cleared</em>, <em>cleared with minor notes</em>, <em>needs revision</em>, or <em>re-record required</em>. A draft could not advance until accuracy issues were resolved.</p>
+    </section>
+
+    <section>
+      <h2>Verdict History</h2>
+      <table>
+        <thead>
+          <tr><th>Draft</th><th>Verdict</th><th>What changed</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Drafts 1–7</td><td>Re-record required</td><td>Early drafts repeatedly blurred denominators, clinical and electrographic endpoints, causation, and the primary-versus-post-hoc hierarchy.</td></tr>
+          <tr><td>Drafts 8–16</td><td>Re-record required</td><td>Successive drafts fixed major sections but reintroduced unsupported biological mechanisms, invented patient behavior, causal placebo stories, or misleading trial interpretations.</td></tr>
+          <tr><td>Draft 17</td><td>Cleared with minor notes</td><td>Source fidelity cleared, but human listening found that the recent adult SEEG results were underemphasized, the randomized trial felt like the anchor, and one study transition was abrupt.</td></tr>
+          <tr><td>Draft 18</td><td>Re-record required</td><td>The new structure succeeded, but improvised mechanism and behavior narratives and an incorrect randomized-trial recap made the audio unsuitable.</td></tr>
+          <tr><td>Draft 19</td><td>Needs revision</td><td>The adult SEEG hierarchy was correct, but the ECoG and randomized-trial sections still overstated what the designs could prove.</td></tr>
+          <tr><td>Draft 20</td><td>Re-record required</td><td>Attempts to repair those phrases introduced new causal mechanisms, converted odds ratios into individual likelihood, and added an unsupported postscript.</td></tr>
+          <tr><td>Draft 21</td><td>Cleared with minor notes</td><td>A bounded subtractive edit preserved the accepted structure while removing the remaining causal overstatements and dismissive statistical language.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>How the Language Changed</h2>
+      <p>These are the specific spoken claims that failed review, shown alongside the corrected language in the published draft. Quoted or closely paraphrased from the transcripts.</p>
+
+      <h3>Adult SEEG evidence hierarchy <span class="fix-badge">Fixed: Draft 17 → 18</span></h3>
+      <div class="diff">
+        <div class="diff-before"><p class="diff-label">Earlier version</p><p>The recent adult SEEG study was introduced mainly through its limitations, while the later randomized trial carried the episode's narrative weight.</p></div>
+        <div class="diff-after"><p class="diff-label">Published version</p><p>Roy-Chowdhury is the <strong>results-first adult clinical anchor</strong>; separate follow-up snapshots, denominators, seizure-freedom counts, and limitations are then explained before Lane and Sun extend the question.</p></div>
+      </div>
+
+      <h3>Measured change versus invented mechanism <span class="fix-badge fix-badge--2">Fixed across Drafts 18–20</span></h3>
+      <div class="diff">
+        <div class="diff-before"><p class="diff-label">Failed drafts said</p><p>Electrode insertion acted like a physical wrench or lesion, with edema, healing, scar, or inflammation presented as the explanation for seizure and signal changes.</p></div>
+        <div class="diff-after"><p class="diff-label">Published version says</p><p>The studies document <strong>clinical or electrographic changes over time</strong>, but they do not identify one mechanism or assign the observed changes to implantation alone.</p></div>
+      </div>
+
+      <h3>Scheduled ECoG interpretation <span class="fix-badge fix-badge--3">Fixed: Draft 19 → 21</span></h3>
+      <div class="diff">
+        <div class="diff-before"><p class="diff-label">Draft 19 said</p><p>Constant medication “successfully removed” confounding and the signal changes were “completely independent” of stimulation.</p></div>
+        <div class="diff-after"><p class="diff-label">Published version says</p><p>Antiseizure medications were held constant and no active-versus-sham total-power difference was detected, but scheduled records are sampled snapshots, the endpoint is electrographic, and the study <strong>identifies no cause</strong>.</p></div>
+      </div>
+
+      <h3>Randomized-trial hierarchy <span class="fix-badge fix-badge--3">Fixed: Draft 19 → 21</span></h3>
+      <div class="diff">
+        <div class="diff-before"><p class="diff-label">Draft 19 said</p><p>Stimulation software failed to outperform implanted hardware, the primary result was an “efficacy mess,” and the approach's safety profile had been established.</p></div>
+        <div class="diff-after"><p class="diff-label">Published version says</p><p>The prespecified effectiveness endpoint <strong>did not reach statistical significance</strong>; the separate 84-day safety endpoint was met, observed harms are stated, and the later post-hoc result is interpreted with crossover context.</p></div>
+      </div>
+
+      <h3>Author-involved predictive hypothesis <span class="fix-badge fix-badge--3">Fixed: Draft 19 → 21</span></h3>
+      <div class="diff">
+        <div class="diff-before"><p class="diff-label">Draft 19 said</p><p>The large odds ratios amounted to “shaky math.”</p></div>
+        <div class="diff-after"><p class="diff-label">Published version says</p><p>The associations are large but <strong>highly imprecise</strong>, based on small event counts, management-dependent timing, and a single-center cohort without external validation; they are a hypothesis, not a clinical biomarker.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Final Result</h2>
+      <p><span class="verdict">Verdict: Cleared with minor notes</span></p>
+      <p>The final 24-minute episode preserved the source-specific endpoints, denominators, uncertainty, disclosures, negative primary trial result, and practical causal boundary without a remaining meaning-changing defect.</p>
+      <h3>Minor caveats carried into the show notes</h3>
+      <ul>
+        <li>The 2025 AES abstract is from the editor's own group: Erafat Rehim is the presenting author and AED editor. It is treated as author-involved, single-center, and unvalidated.</li>
+        <li>Three short subtractive edit joins and specialist pronunciations remained focused human-listening items; neither independent source review found a meaning-changing defect.</li>
+        <li>Implantation, medication changes, expectancy, regression to the mean, sampling, and active stimulation remain competing explanations across the evidence base.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>What Changed</h2>
+      <ul>
+        <li>Moved the recent adult SEEG results to the front and explained the clinical findings before the design limitations.</li>
+        <li>Made the transition from reported clinical seizures to scheduled ECoG explicit.</li>
+        <li>Kept Lane as a methodological benchmark and NAUTILUS as a late design stress test rather than either becoming the episode anchor.</li>
+        <li>Removed invented biological mechanisms, patient-behavior vignettes, causal placebo stories, and unsupported programming implications.</li>
+        <li>Separated clinical seizure outcomes, electrographic signal evolution, safety, prespecified effectiveness, and post-hoc findings.</li>
+        <li>Preserved the author/editor conflict disclosure and bounded the AES result as an imprecise, unvalidated predictive hypothesis.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Production Learning</h2>
+      <p>This episode required 21 complete or edited drafts. An earlier version cleared source-fidelity review but was superseded after clinician listening found a narrative-emphasis problem: the newest adult evidence was present but not given enough explanatory weight. The final workflow therefore added a separate narrative-emphasis audit alongside factual review.</p>
+      <p>This is an observation from one episode, not proof that more drafts or subtractive editing will improve every production. The evidence standard and two-review requirement were unchanged.</p>
+    </section>
+
+    <section>
+      <h2>Boundaries</h2>
+      <p>This review does not certify clinical recommendations, replace human editorial judgment, replace independent expert review, transfer responsibility to the authors of the source studies, or make the episode a clinical guideline.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Audio Epilepsy Digest uses AI-assisted tools to help generate, transcribe, and source-check podcast drafts. Final editorial responsibility remains with AED. Original published articles remain the authoritative references.</p>
+    <p><a href="index.html">Back to Audio Epilepsy Digest</a></p>
+  </footer>
+</div>
+</body>
+</html>
