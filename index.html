@@ -1417,7 +1417,7 @@ body.density-roomy .studio.studio--banner {
 .studio-banner {
   position: relative;
   width: 100%;
-  aspect-ratio: 1280 / 375;
+  aspect-ratio: 1280 / 476;
   overflow: hidden;
   background: #0a0d18;
 }
@@ -1425,8 +1425,7 @@ body.density-roomy .studio.studio--banner {
   display: block;
   width: 100%;
   height: 100%;
-  image-rendering: pixelated;
-  image-rendering: crisp-edges;
+  image-rendering: auto;
   user-select: none;
   -webkit-user-drag: none;
 }
@@ -1674,8 +1673,9 @@ body {
 
     <div class="studio-banner">
       <video class="studio-banner-img" autoplay loop muted playsinline
-             aria-label="Pixel art studio: human creator at a computer projecting two AI co-host robots in a hologram">
-        <source src="site-assets/banner-video.mp4" type="video/mp4">
+             poster="site-assets/banner-video-clay-puppet-poster.jpg"
+             aria-label="Clay stop-motion studio: physician-editor guiding two marionette podcast co-hosts">
+        <source src="site-assets/banner-video-clay-puppet.mp4" type="video/mp4">
       </video>
 
     </div>
